@@ -13,7 +13,7 @@ In your subform, add 3 additional objects:<br />
 
 Type: Input<br />
 Label: Upload<br />
-ID: sample_upload<br />
+ID: files_upload<br />
 Input Type (and class): Button<br />
 
 <p align="left">
@@ -30,7 +30,7 @@ Custom Code: Event: onclick, Javascript: upload(event);<br />
 
 Type: Input<br />
 Label: Filename<br />
-ID: sample_file_name<br />
+ID: files_file_name<br />
 Access: Readonly<br />
 
 <p align="left">
@@ -45,7 +45,7 @@ The file name (without prefix) is written into this field.
 
 Type: Input<br />
 Label: File Id<br />
-ID: sample_file_id<br />
+ID: files_file_id<br />
 Access: Hidden<br />
 
 <p align="left">
