@@ -39,6 +39,8 @@ Access: Readonly<br />
 
 Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(100)
 
+The file name (without prefix) is written into this field.
+
 ###### 1.3. A text field
 
 Type: Input<br />
@@ -52,6 +54,8 @@ Access: Hidden<br />
 
 Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(50)
 
+The file Id (prefix) is written into this field.
+
 ## 2. Add objects to your main form
 
 ###### 2.1. A HTML object
@@ -61,6 +65,16 @@ Label: Upload<br />
 ID: sample_upload<br />
 Access: Hidden<br />
 HTML: Add the code from [input_type_file.html](input_type_file.html).
+
+The File Upload Control is created in this HTML object and the upload is triggered.
+
+###### 2.1. A Word object
+
+This object is used to display the upload result.
+
+Type: Word<br />
+Label: Upload Result<br />
+ID: sample_msg<br />
 
 ## 3. Custom Code
 
