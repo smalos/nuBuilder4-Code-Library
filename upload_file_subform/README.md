@@ -16,10 +16,6 @@ Label: Upload<br />
 ID: files_upload<br />
 Input Type (and class): Button<br />
 
-<p align="left">
-  <img src="screenshots/sample_upload_button.png" width="450">
-</p>
-
 Custom Code: Event: onclick, Javascript: upload(event);<br />
 
 <p align="left">
@@ -33,10 +29,6 @@ Label: Filename<br />
 ID: files_file_name<br />
 Access: Readonly<br />
 
-<p align="left">
-  <img src="screenshots/sample_file_name.png" width="450">
-</p>
-
 Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(100)
 
 The file name (without prefix) is written into this field.
@@ -48,13 +40,14 @@ Label: File Id<br />
 ID: files_file_id<br />
 Access: Hidden<br />
 
-<p align="left">
-  <img src="screenshots/sample_file_id.png" width="450">
-</p>
-
 Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(50)
 
 The file Id (prefix) is written into this field.
+
+<p align="left">
+  <img src="screenshots/subform_files_objects.png" width="450">
+</p>
+
 
 ## 2. Add objects to your main form
 
