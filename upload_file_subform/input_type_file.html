@@ -24,8 +24,8 @@ $(document).ready(function(e) {
                     $("#sample_msg").html('<div class="alert alert-info"><i class="fa fa-exclamation-triangle"></i> Extension invalid. Try with <strong>Pdf, docx</strong>.</div>');
                 } else {
                     var result = JSON.parse(data);
-                    $('#' + fileField).val(result.file_name);
-		    $('#' + fileId).val(result.file_id);
+                    $('#' + fileField).val(result.file_name).change();
+		    $('#' + fileId).val(result.file_id).change();
 					
                     $("#sample_msg").html('<div class="alert alert-success"><i class="fa fa-thumbs-up"></i> Data updated successfully.</div>');
                 }
