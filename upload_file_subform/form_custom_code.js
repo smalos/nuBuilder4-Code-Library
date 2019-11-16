@@ -4,8 +4,8 @@ function upload(event) {
     var td = $(event.target);
     var t = td.attr('data-nu-prefix');
 
-    fileField = t + 'plantd_beschreibung';
-    fileId = t + 'plantd_beschreibung';
+    fileField = t + 'sample_file_name';
+    fileId = t + 'sample_file_id';
 
     $("#fileToUpload").click();
 
