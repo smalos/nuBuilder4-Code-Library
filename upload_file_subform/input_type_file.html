@@ -1,0 +1,46 @@
+<script type="text/javascript">
+
+$(document).ready(function(e) {
+
+    $('#fileToUpload').on('change', function(event) {
+
+        var file = $('#fileToUpload')[0].files[0];
+
+        var formdata = new FormData();
+        formdata.append('file', file);
+        formdata.append('record_id', nuCurrentProperties().record_id);
+
+        $("#msg").html('<div class="alert alert-info"><i class="fa fa-spin fa-spinner"></i>Uploading...</div>');
+
+        $.ajax({
+            type: "POST",
+            url: "lib/upload/upload.php",
+            data: formdata,
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function(data) {
+                if (data == 'invalid') {
+                    $("#msg").html('<div class="alert alert-info"><i class="fa fa-exclamation-triangle"></i> Extension invalid. Try with <strong>Pdf, docx</strong>.</div>');
+                } else {
+                    var result = JSON.parse(data);
+                    $('#' + fileField).val(result.file_name);
+					$('#' + fileId).val(result.file_id);
+					
+                    $("#msg").html('<div class="alert alert-success"><i class="fa fa-thumbs-up"></i> Data updated successfully.</div>');
+                }
+                $("#upload-form")[0].reset();
+
+            },
+            error: function(data) {
+                $("#msg").html(
+                    '<div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i>Upload failed.</div>'
+                );
+            }
+        });
+</script>
+
+<form id="upload-form" action="lib/upload/upload.php" method="post" enctype="multipart/form-data">   
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" name="submit" value="Upload">
+</form>
