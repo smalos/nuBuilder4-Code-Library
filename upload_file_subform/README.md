@@ -68,13 +68,13 @@ HTML: Add the code from [input_type_file.html](input_type_file.html).
 
 The File Upload Control is created in this HTML object and the upload is triggered.
 
-###### 2.1. A Word object
-
-This object is used to display the upload result.
+###### 2.2. A Word object
 
 Type: Word<br />
 Label: Upload Result<br />
 ID: sample_msg<br />
+
+This object is used to display the upload result.
 
 ## 3. Custom Code
 
