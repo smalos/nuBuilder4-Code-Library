@@ -7,7 +7,7 @@ Based on the response, the status is shown in a field on the form.
 ## 1. Add objects to your subform
 
 In your subform, add 3 additional objects:<br />
-(Replace *files* with your table field prefix. E.g. cus_upload, cus_file_name, cust_file_id)
+(Replace *files_* with your table field prefix. E.g. cus_upload, cus_file_name, cust_file_id)
 
 ###### 1.1. A button
 
@@ -15,8 +15,11 @@ Type: Input<br />
 Label: Upload<br />
 ID: files_upload<br />
 Input Type (and class): Button<br />
+Width: 70<br />
 
 Custom Code: Event: onclick, Javascript: upload(event);<br />
+
+The upload() function is later going to be added in the main form's custom code.
 
 <p align="left">
   <img src="screenshots/button_onclick.png" width="450">
@@ -28,6 +31,7 @@ Type: Input<br />
 Label: Filename<br />
 ID: files_file_name<br />
 Access: Readonly<br />
+Width: 240<br />
 
 Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(100)
 
@@ -59,13 +63,14 @@ ID: sample_upload<br />
 Access: Hidden<br />
 HTML: Add the code from [input_type_file.html](input_type_file.html).
 
-The File Upload Control is created in this HTML object and the upload is triggered.
+The File Upload Control is created in this HTML object and also the upload is triggered.
 
 ###### 2.2. A Word object
 
 Type: Word<br />
-Label: Upload Result<br />
+Label: (a Space)<br />
 ID: sample_msg<br />
+Width: 300<br />
 
 This object is used to display the upload result.
 
