@@ -99,4 +99,5 @@ Create a new folder /libs/upload/ in the root directory of nuBuilder. Also creat
 
 ## 5. Upload.php
 
-Place the [upload.php](upload.php) in folder /libs/upload/
+Place the [upload.php](upload.php) in folder /libs/upload/<br />
+Edit the allowed file extensions in that file.
