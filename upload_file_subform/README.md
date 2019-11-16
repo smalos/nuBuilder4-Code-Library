@@ -62,7 +62,7 @@ In your main form's Custom Code, add the Javascript from this file:
 
 [form_custom_code.js](form_custom_code.js).
 
-<p align="center">
+<p align="left">
   <img src="screenshots/form_custom_code.png" width="250">
 </p>
 
@@ -73,7 +73,7 @@ In your main form's Custom Code, add the Javascript from this file:
 
 Create a new folder /libs/upload/ in the root directory of nuBuilder. Also create a new folder in the upload folder named documents.
 
-<p align="center">
+<p align="left">
   <img src="screenshots/folders.png" width="250">
 </p>
 
