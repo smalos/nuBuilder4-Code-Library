@@ -1,5 +1,4 @@
-
-## 1. Add objects
+## 1. Add objects to your subform
 
 In your subform, add 3 additional objects:<br />
 (Replace *sample* with your table field prefix. E.g. cus_upload, cus_file_name, cust_file_id)
@@ -47,7 +46,9 @@ Access: Hidden<br />
 
 Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(50)
 
-###### 1.4. A HTML object
+## 2. Add objects to your main form
+
+###### 2.1. A HTML object
 
 Type: HTML<br />
 Label: Upload<br />
@@ -55,7 +56,7 @@ ID: sample_upload<br />
 Access: Hidden<br />
 HTML: Add the code from [input_type_file.html](input_type_file.html).
 
-## 2. Custom Code
+## 3. Custom Code
 
 In your main form's Custom Code, add the Javascript from this file: 
 
@@ -68,7 +69,7 @@ In your main form's Custom Code, add the Javascript from this file:
 <br />
 (Replace *sample* with your table field prefix. E.g. cus_file_name, cus_file_id)
 
-## 3. Create Folders
+## 4. Create Folders
 
 Create a new folder /libs/upload/ in the root directory of nuBuilder. Also create a new folder in the upload folder named documents.
 
@@ -76,6 +77,6 @@ Create a new folder /libs/upload/ in the root directory of nuBuilder. Also creat
   <img src="screenshots/folders.png" width="250">
 </p>
 
-## 4. Upload.php
+## 5. Upload.php
 
 Place the [upload.php](upload.php) in folder /libs/upload/
