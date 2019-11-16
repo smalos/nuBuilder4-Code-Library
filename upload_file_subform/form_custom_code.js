@@ -1,4 +1,5 @@
 var fileField;
+var fileId;
 
 function upload(event) {
     var td = $(event.target);
