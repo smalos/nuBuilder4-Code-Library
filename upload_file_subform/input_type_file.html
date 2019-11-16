@@ -25,7 +25,7 @@ $(document).ready(function(e) {
                 } else {
                     var result = JSON.parse(data);
                     $('#' + fileField).val(result.file_name);
-					$('#' + fileId).val(result.file_id);
+		    $('#' + fileId).val(result.file_id);
 					
                     $("#msg").html('<div class="alert alert-success"><i class="fa fa-thumbs-up"></i> Data updated successfully.</div>');
                 }
