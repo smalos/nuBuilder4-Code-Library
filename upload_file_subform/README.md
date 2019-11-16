@@ -12,7 +12,7 @@ In your subform, add 3 additional objects:<br />
 ###### 1.1. A button
 
 Type: Input<br />
-Label: Download<br />
+Label: Upload<br />
 ID: sample_upload<br />
 Input Type (and class): Button<br />
 
