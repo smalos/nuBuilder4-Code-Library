@@ -1,4 +1,4 @@
-In this article, I will explain how to upload a file on button click in a nuBuilder subform and store the file name its file id in a separate field in that row.
+In this article, I will explain how to upload a file on button click in a nuBuilder subform and store the file name and its file id in a separate field in that row.
 
 To do so, we create an Upload button object and assign an onclick event handler to it which triggers the Click event of the Fileupload element which in turn opens the File Upload dialog to choose the File for uploading.
 When a File is selected, it triggers the Change event handler of the Fileupload element which than starts the file upload using FormData object and PHP. The form data is sent to a server-side script (upload.php) via Ajax to process the upload and data submission.
