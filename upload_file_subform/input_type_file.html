@@ -10,7 +10,7 @@ $(document).ready(function(e) {
         formdata.append('file', file);
         formdata.append('record_id', nuCurrentProperties().record_id);
 
-        $("#msg").html('<div class="alert alert-info"><i class="fa fa-spin fa-spinner"></i>Uploading...</div>');
+        $("#sample_msg").html('<div class="alert alert-info"><i class="fa fa-spin fa-spinner"></i>Uploading...</div>');
 
         $.ajax({
             type: "POST",
@@ -21,19 +21,19 @@ $(document).ready(function(e) {
             processData: false,
             success: function(data) {
                 if (data == 'invalid') {
-                    $("#msg").html('<div class="alert alert-info"><i class="fa fa-exclamation-triangle"></i> Extension invalid. Try with <strong>Pdf, docx</strong>.</div>');
+                    $("#sample_msg").html('<div class="alert alert-info"><i class="fa fa-exclamation-triangle"></i> Extension invalid. Try with <strong>Pdf, docx</strong>.</div>');
                 } else {
                     var result = JSON.parse(data);
                     $('#' + fileField).val(result.file_name);
 		    $('#' + fileId).val(result.file_id);
 					
-                    $("#msg").html('<div class="alert alert-success"><i class="fa fa-thumbs-up"></i> Data updated successfully.</div>');
+                    $("#sample_msg").html('<div class="alert alert-success"><i class="fa fa-thumbs-up"></i> Data updated successfully.</div>');
                 }
                 $("#upload-form")[0].reset();
 
             },
             error: function(data) {
-                $("#msg").html(
+                $("#sample_msg").html(
                     '<div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i>Upload failed.</div>'
                 );
             }
