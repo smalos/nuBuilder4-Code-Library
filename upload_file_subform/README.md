@@ -7,7 +7,7 @@ Based on the response, the status is shown in a field on the form.
 ## 1. Add objects to your subform
 
 In your subform, add 3 additional objects:<br />
-(Replace *sample* with your table field prefix. E.g. cus_upload, cus_file_name, cust_file_id)
+(Replace *files* with your table field prefix. E.g. cus_upload, cus_file_name, cust_file_id)
 
 ###### 1.1. A button
 
