@@ -28,7 +28,7 @@ Width: 70<br />
 
 Custom Code: Event: onclick, Javascript: uploadFile(event);<br />
 
-The upload() function is later going to be added in the main form's custom code.
+The uploadFile() function is later going to be added in the main form's custom code.
 
 <p align="left">
   <img src="screenshots/button_upload_onclick.png" width="450">
