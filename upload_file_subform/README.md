@@ -71,7 +71,7 @@ ID: sample_upload<br />
 Access: Hidden<br />
 HTML: Add the code from [input_type_file.html](input_type_file.html).
 
-Purpose of this object:  The File Upload Control will be created in this HTML object and the upload will be triggered here.
+The HTML object holds code which creates a file upload object and processes the file upload
 
 ###### 2.2. A Word object
 
