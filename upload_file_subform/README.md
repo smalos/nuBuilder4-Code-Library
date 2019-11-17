@@ -21,7 +21,7 @@ ID: files_upload<br />
 Input Type (and class): button<br />
 Width: 70<br />
 
-Custom Code: Event: onclick, Javascript: upload(event);<br />
+Custom Code: Event: onclick, Javascript: uploadFile(event);<br />
 
 The upload() function is later going to be added in the main form's custom code.
 
