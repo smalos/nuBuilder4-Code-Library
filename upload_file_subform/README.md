@@ -38,7 +38,7 @@ ID: files_file_name<br />
 Access: Readonly<br />
 Width: 240<br />
 
-Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(100)
+Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(250)
 
 Purpose of this object: The file name (without prefix) of the uploaded file will be filled into this field.
 
@@ -64,7 +64,7 @@ ID: sample_upload<br />
 Access: Hidden<br />
 HTML: Add the code from [input_type_file.html](input_type_file.html).
 
-The File Upload Control is created in this HTML object and also the upload is triggered.
+Purpose of this object:  The File Upload Control will be created in this HTML object and the upload will be triggered here.
 
 ###### 2.2. A Word object
 
