@@ -9,12 +9,16 @@ Based on the response, the status is shown in a field on the form.
 In your subform, add 3 additional objects:<br />
 (Replace *files_* with your table field prefix. E.g. cus_upload, cus_file_name, cust_file_id)
 
+<p align="left">
+  <img src="screenshots/subform_files_objects.png" width="450">
+</p>
+
 ###### 1.1. A button
 
 Type: Input<br />
 Label: Upload<br />
 ID: files_upload<br />
-Input Type (and class): Button<br />
+Input Type (and class): button<br />
 Width: 70<br />
 
 Custom Code: Event: onclick, Javascript: upload(event);<br />
@@ -28,6 +32,7 @@ The upload() function is later going to be added in the main form's custom code.
 ###### 1.2. A text field
 
 Type: Input<br />
+Input Type (and class): text<br />
 Label: Filename<br />
 ID: files_file_name<br />
 Access: Readonly<br />
@@ -40,6 +45,7 @@ The file name (without prefix) is written into this field.
 ###### 1.3. A text field
 
 Type: Input<br />
+Input Type (and class): text<br />
 Label: File Id<br />
 ID: files_file_id<br />
 Access: Hidden<br />
@@ -47,11 +53,6 @@ Access: Hidden<br />
 Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(50)
 
 The file Id (prefix) is written into this field.
-
-<p align="left">
-  <img src="screenshots/subform_files_objects.png" width="450">
-</p>
-
 
 ## 2. Add objects to your main form
 
@@ -81,7 +82,7 @@ In your main form's Custom Code, add the Javascript from this file:
 [form_custom_code.js](form_custom_code.js).
 
 <p align="left">
-  <img src="screenshots/form_custom_code.png" width="250">
+  <img src="screenshots/form_custom_code_1.png" width="250">
 </p>
 
 <br />
