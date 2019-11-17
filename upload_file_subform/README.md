@@ -26,7 +26,7 @@ Custom Code: Event: onclick, Javascript: uploadFile(event);<br />
 The upload() function is later going to be added in the main form's custom code.
 
 <p align="left">
-  <img src="screenshots/button_onclick.png" width="450">
+  <img src="screenshots/button_upload_onclick.png" width="450">
 </p>
 
 ###### 1.2. A text field
@@ -40,7 +40,7 @@ Width: 240<br />
 
 Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(100)
 
-The file name (without prefix) is written into this field.
+Purpose of this object: The file name (without prefix) of the uploaded file will be filled into this field.
 
 ###### 1.3. A text field
 
@@ -52,7 +52,7 @@ Access: Hidden<br />
 
 Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(50)
 
-The file Id (prefix) is written into this field.
+Purpose of this object: The file Id (prefix) of the uploaded file will be filled into this field.
 
 ## 2. Add objects to your main form
 
