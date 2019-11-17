@@ -95,9 +95,9 @@ In your main form's Custom Code, add the Javascript from this file:
 <br />
 (Replace *sample* with your table field prefix. E.g. cus_file_name, cus_file_id)
 
-## 4. Create Folders
+## 4. Create folders
 
-Create a new folder /libs/upload/ in the root directory of nuBuilder. <br />
+Create a new folder /libs/upload/ in the root directory of nuBuilder where the uploaded files will be moved.<br />
 Also create a subfolder in that upload folder named documents.
 
 <p align="left">
@@ -106,5 +106,5 @@ Also create a subfolder in that upload folder named documents.
 
 ## 5. Upload.php
 
-Place the [upload.php](upload.php) in folder /libs/upload/<br />
-Edit the permitted file types allowed for the file upload in that file.
+Place the [upload.php](upload.php) in the folder /libs/upload/<br />
+Edit the permitted file types allowed for the file upload
