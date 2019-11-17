@@ -4,6 +4,11 @@ To do so, we create an Upload button object and assign an onclick event handler 
 When a File is selected, it triggers the Change event handler of the Fileupload element which than starts the file upload using FormData object and PHP. The form data is sent to a server-side script (upload.php) via Ajax to process the upload and data submission.
 Based on the response, the status is shown in a field on the form.
 
+<p align="left">
+  <img src="screenshots/video_upload.gif" width="450">
+</p>
+
+
 ## 1. Add objects to your subform
 
 In your subform, add 3 additional objects:<br />
