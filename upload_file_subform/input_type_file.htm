@@ -1,8 +1,8 @@
 <script type="text/javascript">
 
-function setUploadStatus(id, class, icon, status) {
+function setUploadStatus(id, classname, icon, status) {
 
-    var msg = '<div class="'+ class +'"><i class="' + icon + '"></i>' + status + '</div>'
+    var msg = '<div class="'+ classname +'"><i class="' + icon + '"></i>' + status + '</div>'
     
     $('#' + id).html(msg)
         .fadeTo(2000, 500).slideUp(500, function() {
