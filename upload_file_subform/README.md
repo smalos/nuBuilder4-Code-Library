@@ -1,4 +1,4 @@
-### Uploading a File on button click in a subform
+# Uploading a File on button click in a subform
 
 In this article, I will explain how to upload a file on button click in a nuBuilder subform and store the file name and its file id in a separate field in that row.
 
