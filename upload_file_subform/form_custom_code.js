@@ -8,8 +8,8 @@ var idSubForm = 'sample_files';
 
 // *****************************************
 
-var fileNameRowId;
-var fileIdRowId;
+var idRowFileName;
+var idRowFileId;
 
 function uploadFile(event) {
     var td = $(event.target);
@@ -54,7 +54,7 @@ function addDownloadLinks(subform) {
 			var fileName = sf.rows[i][cName];
 
 			if (fileName !== '') {
-				createDownloadLink(subFormId + nuPad3(i) + fileNameId, uploadFolder, fileId, fileName);
+				createDownloadLink(idSubForm + nuPad3(i) + fileNameId, uploadFolder, fileId, fileName);
 			}
     }
 }
@@ -70,7 +70,7 @@ function downloadFile(url, filename) {
 }
 
 if(nuFormType() == 'edit') {
-    addDownloadLinks(subFormId);
+    addDownloadLinks(idSubForm);
 } else
 {
     nuStopBrowserResize();
