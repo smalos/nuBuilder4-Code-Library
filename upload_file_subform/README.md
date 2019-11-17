@@ -1,3 +1,5 @@
+### Uploading a File on button click in a subform
+
 In this article, I will explain how to upload a file on button click in a nuBuilder subform and store the file name and its file id in a separate field in that row.
 
 To do so, we create an Upload button object and assign an onclick event handler to it which triggers the Click event of a (hidden) Fileupload element which in turn opens the File Upload dialog to choose the file for uploading.
