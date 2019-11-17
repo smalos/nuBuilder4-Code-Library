@@ -25,9 +25,9 @@ $(document).ready(function(e) {
                 } else {
                     var result = JSON.parse(data);
                     $('#' + fileField).val(result.file_name).change();
-		    $('#' + fileId).val(result.file_id).change();
-					
-                    $("#sample_msg").html('<div class="alert alert-success"><i class="fa fa-thumbs-up"></i> Data updated successfully.</div>');
+		            $('#' + fileId).val(result.file_id).change();		            
+		            createLink(fileField, 'libs/upload/documents/', result.file_id, result.file_name);
+                            $("#sample_msg").html('<div class="alert alert-success"><i class="fa fa-thumbs-up"></i> Data updated successfully.</div>');
                 }
                 $("#upload-form")[0].reset();
 
