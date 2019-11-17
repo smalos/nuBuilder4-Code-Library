@@ -1,7 +1,9 @@
 <script type="text/javascript">
 
-function showMessage(id, msg) {
+function setUploadStatus(id, class, icon, status) {
 
+    var msg = '<div class="'+ class +'"><i class="' + icon + '"></i>' + status + '</div>'
+    
     $('#' + id).html(msg)
         .fadeTo(2000, 500).slideUp(500, function() {
             $(this).html('');
@@ -19,7 +21,7 @@ $(document).ready(function(e) {
         formdata.append('file', file);
         formdata.append('record_id', nuCurrentProperties().record_id);
 
-        showMessage('sample_msg','<div class="alert alert-info"><i class="fa fa-spin fa-spinner"></i>Uploading...</div>');
+        setUploadStatus('sample_msg','alert alert-info','fa fa-spin fa-spinner','Uploading');
 
         $.ajax({
             type: "POST",
@@ -30,21 +32,24 @@ $(document).ready(function(e) {
             processData: false,
             success: function(data) {
                 if (data == 'invalid') {
-                    showMessage('sample_msg','<div class="alert alert-info"><i class="fa fa-exclamation-triangle"></i> Extension invalid. Try with <strong>Pdf, docx</strong>.</div>');
+                    setUploadStatus('sample_msg','alert alert-info','fa fa-exclamation-triangle','File Extension invalid. Try with <strong>Pdf, docx</strong>.');
                 } else {
                     
                     var result = JSON.parse(data);
-                    $('#' + fileNameRowId).val(result.file_name).change();
-		    $('#' + fileIdRowId).val(result.file_id).change();		            
- 		    createDownloadLink(fileNameRowId, uploadFolder, result.file_id, result.file_name);
+                    $('#' + idRowFileName).val(result.file_name).change();
+		            $('#' + idRowFileId).val(result.file_id).change();
+		            
+		            createDownloadLink(idRowFileName, uploadFolder, result.file_id, result.file_name);
 					
-                    showMessage('sample_msg','<div class="alert alert-success"><i class="fa fa-thumbs-up"></i> Data updated successfully.</div>');
+					setUploadStatus('sample_msg','alert alert-success','fa fa-thumbs-up','File uploaded successfully.');
+					
                 }
                 $("#upload-form")[0].reset();
 
             },
             error: function(data) {
-                showMessage('sample_msg','<div class="alert alert-danger"><i class="fa fa-exclamation-triangle"></i>Upload failed.</div>');
+                setUploadStatus('sample_msg','alert alert-info','fa fa-exclamation-triangle','Upload failed');
+ 
             }
         });
 	});	
