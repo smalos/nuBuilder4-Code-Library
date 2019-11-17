@@ -45,8 +45,9 @@ function createDownloadLink(field, folder, fileId, fileName) {
 function addDownloadLinks(subform) {
    
     var sf = nuSubformObject(subform);
-    var cId = sf.fields.indexOf(fileIdId);
-	var cName = sf.fields.indexOf(fileNameId);
+
+	var cName = sf.fields.indexOf(idFileName);
+    var cId = sf.fields.indexOf(idFileId);
 
     for (var i = 0; i < sf.rows.length; i++) {
 
