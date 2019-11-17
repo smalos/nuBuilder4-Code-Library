@@ -1,10 +1,10 @@
-// ** Change accordingly:
+// ** Configuration: Modify if necessary
 // *****************************************
 
 var uploadFolder = 'libs/upload/documents/';
-var fileNameId = 'files_file_name';
-var fileIdId = 'files_file_id';
-var subFormId = 'sample_files';
+var idFileName = 'files_file_name';
+var idFileId = 'files_file_id';
+var idSubForm = 'sample_files';
 
 // *****************************************
 
@@ -15,15 +15,15 @@ function uploadFile(event) {
     var td = $(event.target);
     var t = td.attr('data-nu-prefix');
 
-    fileNameRowId = t + fileNameId;
-    fileIdRowId = t + fileIdId;
+    idRowFileName = t + idFileName;
+    idRowFileId = t + idFileId;
 
     $("#fileToUpload").click();
 
 }
 
 function createDownloadLink(field, folder, fileId, fileName) {
-debugger;
+
     $('#' + field)
         .css({
             "text-decoration": "underline"
