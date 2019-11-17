@@ -6,9 +6,9 @@
 * [Import](https://www.inmotionhosting.com/support/website/phpmyadmin/import-database-using-phpmyadmin/) nuBuilder4_upload_file_subform.sql into the new database.
 * Update the following variables in nuconfig.php:
 
-nuConfigDBHost <br />
-nuConfigDBName <br />
-nuConfigDBUser <br />
-nuConfigDBPassword <br />
-nuConfigDBGlobeadminUsername - globeadmin username <br />
-nuConfigDBGlobeadminPassword - globeadmin password <br />
+  + nuConfigDBHost <br />
+  + nuConfigDBName <br />
+  + nuConfigDBUser <br />
+  + nuConfigDBPassword <br />
+  + nuConfigDBGlobeadminUsername - globeadmin username <br />
+  + nuConfigDBGlobeadminPassword - globeadmin password <br />
