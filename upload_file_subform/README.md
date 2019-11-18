@@ -69,7 +69,7 @@ Type: HTML<br />
 Label: Upload<br />
 ID: sample_upload<br />
 Access: Hidden<br />
-HTML: Add the code from [input_type_file.html](input_type_file.html).
+HTML: Add the code from [input_type_file.htm](input_type_file.htm).
 
 The HTML object holds code which creates a file upload object and processes the file upload
 
