@@ -108,4 +108,4 @@ Also create a subfolder in that upload folder named documents.
 ## 5. Upload.php
 
 Place the [upload.php](upload.php) in the folder /libs/upload/<br />
-Edit the permitted file types allowed for the file upload
+Edit the permitted file types allowed for the file upload. Change the upload directory ($uploaddir) if necessary.
