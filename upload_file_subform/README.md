@@ -93,7 +93,8 @@ In your main form's Custom Code, add the Javascript from this file:
 </p>
 
 <br />
-(Replace *sample* with your table field prefix. E.g. cus_file_name, cus_file_id)
+
+Revise the configuration settings as needed. (uploadFolder etc.)
 
 ## 4. Create folders
 
