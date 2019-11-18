@@ -55,7 +55,7 @@ function addDownloadLinks(subform) {
 			var fileName = sf.rows[i][cName];
 
 			if (fileName !== '') {
-				createDownloadLink(idSubForm + nuPad3(i) + fileNameId, uploadFolder, fileId, fileName);
+				createDownloadLink(idSubForm + nuPad3(i) + idFileName, uploadFolder, fileId, fileName);
 			}
     }
 }
