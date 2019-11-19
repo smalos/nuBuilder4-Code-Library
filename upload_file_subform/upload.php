@@ -25,7 +25,6 @@ try
 
         $record_id = isset($_POST['record_id']) ? $_POST['record_id'] : "";
         $filename = $_FILES["file"]["name"];
-        $filetype = $_FILES["file"]["type"];
         $filesize = $_FILES["file"]["size"];
 
         if ($filesize > $maxfilesize)
@@ -42,10 +41,20 @@ try
             else
             {
 
-                $file_name = sanitizeFilename(basename($_FILES['file']['name']));
+                $file_name = sanitizeFilename(basename($filename));
+				
+				// Create a unique file id
                 $file_id = time() . '_' . uniqid() . '_' . $record_id;
-                $file =  rtrim($uploaddir, '/') . '/' . $file_id . '_' . $file_name;
+				
+				$uploaddir = rtrim($uploaddir, '/') . '/';
+                $file =  $uploaddir . $file_id . '_' . $file_name;
 
+				 // Create directory if does not exist
+				if(!is_dir($uploaddir)){
+					mkdir($uploaddir, 0755);
+				 }
+				
+				// Move the file to the destination directory
                 if (move_uploaded_file($_FILES['file']['tmp_name'], $file))
                 {
                     $data['error'] = '';
