@@ -6,6 +6,8 @@ To do so, we create an upload button and assign an onclick event handler to it w
 When a File is selected, it triggers the Change event handler of the Fileupload element which then starts the file upload using FormData object and PHP. The form data is sent to a server-side script (upload.php) via Ajax to process the upload and data submission.
 Based on the response, the status is shown in a field on the form.
 
+If you just want to try the sample, go ahead and install the [Sample Database](sample%20database).
+
 <p align="left">
   <img src="screenshots/video_upload.gif" width="450">
 </p>
