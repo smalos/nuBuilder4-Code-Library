@@ -3,10 +3,7 @@
 function setUploadStatus(id, classname, icon, status) {
 
     var msg = '<div class="' + classname + '"><i class="' + icon + '"></i>' + status + '</div>';
-    $('#' + id).html(msg)
-        .fadeTo(2000, 500).slideUp(500, function() {
-            $(this).html('');
-        });
+    $('#' + id).html(msg);
 
 }
 
@@ -14,6 +11,7 @@ function setSubGridFileInfo(filename, fileid) {
      $('#' + idRowFileName).val(filename).change();
      $('#' + idRowFileId).val(fileid).change();  
 }
+
 
 $(document).ready(function(e) {
 
@@ -37,10 +35,8 @@ $(document).ready(function(e) {
             success: function(data) {
 
                 var result = JSON.parse(data);
-                if (result.status == 'error') {
-
+                if (result.error !== '') {
                     var err = "";
-
                     switch (result.error) {
                         case "INVALID_FILE_TYPE":
                             err = "The file type is not allowed.";
@@ -49,7 +45,7 @@ $(document).ready(function(e) {
                             err = "The file cannot be moved to the destination directory.";
                             break;
                         case "FILE_TOO_LARGE":
-                            err = "The file size is too large.";
+                            err = "Error: File size is larger than the allowed limit.";
                             break;
                         default:
                             err = result.error;
@@ -58,11 +54,9 @@ $(document).ready(function(e) {
 
                 } else {
 
-                    if (result.status !== 'error') {
                         setSubGridFileInfo(result.file_name, result.file_id);
                         createDownloadLink(idRowFileName, uploadFolder, result.file_id, result.file_name);
                         setUploadStatus('sample_msg', 'alert alert-success', 'fa fa-thumbs-up', nuTranslate('File uploaded successfully.'));
-                    }
 
                 }
                 $("#upload-form")[0].reset();
