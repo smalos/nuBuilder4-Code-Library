@@ -1,8 +1,7 @@
 <?php
 // Upload directory
-$uploaddir = './documents/';  
+$uploaddir = './documents/';
 //$uploaddir = $_SERVER['DOCUMENT_ROOT']."/documents/";
-
 // Allowed file extensions
 $allowed = array(
     'pdf',
@@ -11,7 +10,6 @@ $allowed = array(
 
 // Maximum file size
 $maxfilesize = 5 * 1024 * 1024; // (5 MB)
-
 try
 {
     $data = array();
@@ -42,19 +40,20 @@ try
             {
 
                 $file_name = sanitizeFilename(basename($filename));
-				
-				// Create a unique file id
-                $file_id = time() . '_' . uniqid() . '_' . $record_id;
-				
-				$uploaddir = rtrim($uploaddir, '/') . '/';
-                $file =  $uploaddir . $file_id . '_' . $file_name;
 
-				 // Create directory if does not exist
-				if(!is_dir($uploaddir)){
-					mkdir($uploaddir, 0755);
-				 }
-				
-				// Move the file to the destination directory
+                // Create a unique file id
+                $file_id = time() . '_' . uniqid() . '_' . $record_id;
+
+                $uploaddir = rtrim($uploaddir, '/') . '/';
+                $file = $uploaddir . $file_id . '_' . $file_name;
+
+                // Create directory if does not exist
+                if (!is_dir($uploaddir))
+                {
+                    mkdir($uploaddir, 0755);
+                }
+
+                // Move the file to the destination directory
                 if (move_uploaded_file($_FILES['file']['tmp_name'], $file))
                 {
                     $data['error'] = '';
