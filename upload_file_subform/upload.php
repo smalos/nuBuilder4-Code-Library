@@ -1,6 +1,7 @@
 <?php
 // Upload directory
-$uploaddir = './documents/';
+$uploaddir = './documents/';  
+//$uploaddir = $_SERVER['DOCUMENT_ROOT']."/documents/";
 
 // Allowed file extensions
 $allowed = array(
@@ -9,7 +10,8 @@ $allowed = array(
 );
 
 // Maximum file size
-$maxfilesize = 0.2 * 1024 * 1024; // (5 MB)
+$maxfilesize = 5 * 1024 * 1024; // (5 MB)
+
 try
 {
     $data = array();
@@ -26,23 +28,23 @@ try
         $filetype = $_FILES["file"]["type"];
         $filesize = $_FILES["file"]["size"];
 
-        $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
-        if (!in_array($ext, $allowed))
+        if ($filesize > $maxfilesize)
         {
-            $data['error'] = 'INVALID_FILE_TYPE';
+            $data['error'] = 'FILE_TOO_LARGE';
         }
         else
         {
-            if ($filesize > $maxfilesize)
+            $ext = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+            if (!in_array($ext, $allowed))
             {
-                $data['error'] = 'FILE_TOO_LARGE';
+                $data['error'] = 'INVALID_FILE_TYPE';
             }
             else
             {
 
                 $file_name = sanitizeFilename(basename($_FILES['file']['name']));
                 $file_id = time() . '_' . uniqid() . '_' . $record_id;
-                $file = $uploaddir . $file_id . '_' . $file_name;
+                $file =  rtrim($uploaddir, '/') . '/' . $file_id . '_' . $file_name;
 
                 if (move_uploaded_file($_FILES['file']['tmp_name'], $file))
                 {
