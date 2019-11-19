@@ -12,3 +12,6 @@
   + nuConfigDBPassword <br />
   + nuConfigDBGlobeadminUsername - globeadmin username <br />
   + nuConfigDBGlobeadminPassword - globeadmin password <br />
+  
+* Do the steps 4 + 5 from [this article](../README.md)
+
