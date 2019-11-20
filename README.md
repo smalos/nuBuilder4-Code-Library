@@ -1,4 +1,4 @@
-# nubuilder-code-snippets
+# nuBuilder 4 Code Snippets
 Code snippets for nuBuilder4
 
 ## Samples:
