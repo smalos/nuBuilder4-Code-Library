@@ -3,6 +3,9 @@ Code snippets for nuBuilder4
 
 ## Samples:
 
+
+2019-11-24: Globeadmin Helper: Quickly view an Object ID [globeadmin_view_object_id](globeadmin_view_object_id)
+
 2019-11-24: Add a "Download to CSV" button to a Browse Screen [browse_download_to_csv](browse_download_to_csv)
 
 2019-11-24: Add a total row to a Browse Screen [browse_total_rows](https://github.com/smalos/nubuilder-code-snippets/tree/master/browse_total_rows)
