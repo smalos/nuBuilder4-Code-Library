@@ -1,4 +1,4 @@
-###  Globeadmin Helper: Add Title for objects
+###  Globeadmin Helper: View the object Id at a glance
 
 As an administrator, you sometimes want to know the ID of an object at a glance.
 By adding this code under Setup -> Header, the Id of an object is displayed when you move the mouse moves an object. 
