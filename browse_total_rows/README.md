@@ -1,6 +1,6 @@
 ## addBrowseColumnTotal()
 
-The function addBrowseColumnTotal() can be added to a form's Custom Code to add a total row at the bottom of a Browse Table.
+The function [addBrowseColumnTotal()](browse_total_rows.js) can be added to a form's Custom Code to add a total row (or multiple total rows) at the bottom of a Browse Table.
 
 ```
 addBrowseColumnTotal(columns, op, number, title); 
@@ -9,9 +9,9 @@ addBrowseColumnTotal(columns, op, number, title);
 Parameters:
 
 - columns: array of columns. E.g. ['1','2']
-- op: Sum: totalOperations.SUM, Average: totalOperations.AVG, Weighted Average: totalOperations.AVG_W
-- number: number of the total column
-- title: Title of the total column
+- op (operation): Sum: totalOperations.SUM, Average: totalOperations.AVG, Weighted Average: totalOperations.AVG_W
+- (total row) number: number of the total column
+- (total row) title: Title of the total column
 
 ### Example 1:  Add a total row (sum)
 
