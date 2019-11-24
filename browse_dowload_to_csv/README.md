@@ -3,11 +3,11 @@
 1. Create a Procedure: Builders -> Procedure -> Add
 2. Code: BrowseDownloadToCSV
 3. Give it a Description
-4. Paste this PHP Code
-(I could also have used nuBuilder's db connection and PHP functions. But in this way the code can also be used independently from nuBuilder)
+4. Add the PHP code from this file: [BrowseDownloadToCSV.php](BrowseDownloadToCSV.php).
 
-
-
+<p align="left">
+  <img src="screenshots/BrowseDownloadToCSV.png" width="450">
+</p>
 
 5. Save
 
