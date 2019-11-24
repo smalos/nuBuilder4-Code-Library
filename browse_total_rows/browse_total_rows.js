@@ -113,7 +113,7 @@ function addBrowseColumnTotal(columns, op, number, title) {
 
 }
 
-if (nuFormType() == 'edit') {
+if (nuFormType() == 'browse') {
   addBrowseColumnTotal(['1','2','3','4'], totalOperations.SUM, 1, 'Sum');
   addBrowseColumnTotal(['1','2','3','4'], totalOperations.AVG, 2, 'Average');
 }
