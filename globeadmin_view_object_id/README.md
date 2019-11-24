@@ -13,7 +13,7 @@ function nuOnLoad() {
 
     // Globeadmin Helper: Quickly View the Id for objects
     var acl = nuAccessLevelCode();
-    if (acl == '') {
+    if (acl == '') { // globeadmin
 
         $("*").each(function() {
             var id = $(this).attr('id');
