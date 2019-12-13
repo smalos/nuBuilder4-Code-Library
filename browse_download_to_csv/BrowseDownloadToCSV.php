@@ -8,7 +8,7 @@ $default_file_name = 'browse-export.csv';
 
 // Setup the filename that our CSV will have when it is downloaded.
 $fileName = "#browse_export_filename#";
-if (strpos(fileName, '#') === false) {
+if (strpos($fileName, '#') === false) {
    $fileName = $default_file_name;
 }
 
