@@ -1,4 +1,4 @@
-### Enable the Browser’s Back Button
+## Enable the Browser’s Back Button
 
 ### nuBuilder's default behaviour
 The browser’s back button doesn’t return one to the previous screen.
