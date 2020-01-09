@@ -1,7 +1,7 @@
 ## Enable the Browser’s Back Button
 
 ### nuBuilder's default behaviour
-The browser’s back button doesn’t return one to the previous screen.
+The browser’s back button doesn’t take one to the previous screen.
 
 ### Expected behaviour
 Hitting the browser’s back button takes one back to the previous website page / Breadcrumb.
