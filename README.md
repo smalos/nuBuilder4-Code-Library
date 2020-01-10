@@ -1,7 +1,6 @@
 # nuBuilder 4 Code Library
-Code snippets for nuBuilder4
 
-## Samples:
+## Code snippets:
 
 2020-01-10: Make Boolean Fields Show Check Marks: [browse_show_check_marks](browse_show_check_marks)
 
