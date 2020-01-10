@@ -1,3 +1,5 @@
+### Display Labels on Top of Objects
+
 <p align="left">
   <img src="screenshots/labels_on_top.gif" width="408">
 </p>
