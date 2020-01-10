@@ -5,7 +5,7 @@
 ☛  On your Screen​ you would have a Button​ called buttonCustCount
 
 <p align="left">
-  <img src="screenshots/display_object_count.png" width="450">
+  <img src="screenshots/display_object_count.png" width="282">
 </p>
 
 ☛  Add this code to your form’s Javascript section and replace the IDs with your own ones.
