@@ -10,10 +10,10 @@
 
 ☛  Add this code to your form’s Javascript section and replace the IDs with your own ones.
 
-´´´
+```
 if (nuFormType() == 'edit') {
     $('#buttonCustCount').html($('#buttonCustCount').html() + ' (' + $('#displayCustCount').val() + ')');
 }
-´´´
+```
 
 Result: The number of records is displayed on the button:
