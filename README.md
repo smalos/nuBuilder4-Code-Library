@@ -3,6 +3,7 @@ Code snippets for nuBuilder4
 
 ## Samples:
 
+2020-01-10: Enable the Browser’s Back Button: [enable_back_button](enable_back_button)
 
 2019-11-24: Globeadmin Helper: Quickly view an Object ID [globeadmin_view_object_id](globeadmin_view_object_id)
 
