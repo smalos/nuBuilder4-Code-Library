@@ -7,7 +7,7 @@
 ```
 function custFieldLabelsOnTop(f, e) {
 
-    for (var i = 0; i &amp;lt; f.length; i++) {
+    for (var i = 0; i < f.length; i++) {
         if (jQuery.inArray(f[i], e) == -1) {
 
             var t = $('#' + f[i]).cssNumber("top");
