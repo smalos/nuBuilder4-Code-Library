@@ -3,6 +3,9 @@ Code snippets for nuBuilder4
 
 ## Samples:
 
+
+2020-01-10: Display Labels on Top of Objects: [labels_display_on_top](labels_display_on_top)
+
 2020-01-10: Display the Number of Records on a Button: [button_display_number_of_records](button_display_number_of_records)
 
 2020-01-10: Enable the Browser’s Back Button: [enable_back_button](enable_back_button)
