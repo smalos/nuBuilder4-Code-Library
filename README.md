@@ -3,6 +3,7 @@ Code snippets for nuBuilder4
 
 ## Samples:
 
+2020-01-10: Make Boolean Fields Show Check Marks: [browse_show_check_marks](browse_show_check_marks)
 
 2020-01-10: Display Labels on Top of Objects: [labels_display_on_top](labels_display_on_top)
 
