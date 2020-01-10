@@ -17,3 +17,7 @@ if (nuFormType() == 'edit') {
 ```
 
 Result: The number of records is displayed on the button:
+
+<p align="left">
+  <img src="screenshots/button_object_count.png" width="195">
+</p>
