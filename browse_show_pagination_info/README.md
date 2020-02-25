@@ -58,18 +58,6 @@ function showPaginationInfo() {
 ```
 
 ```
-function showPaginationInfo() {
-    if (nuFormType() == 'browse') {
-        var {
-            startRow,
-            endRow,
-            filteredRows
-        } = getPaginationInfo();
-        var p = "Showing " + startRow + " to " + endRow + " of " + filteredRows + " entries";
-        $('#nuBrowseFooter').append('<span style="float:left;vertical-align: middle;line-height: 25px;padding-left:5px">' + p + '</span>');
-    }
-}
-
 function nuOnLoad() {
    showPaginationInfo();
 }
