@@ -23,8 +23,12 @@ function getPaginationInfo() {
     var e; // Row number of the last record on the current page
     var s; // Row number of the first record on the current page
 
+	if (c == 0 && f > 0 & p == 1) {
+		s = 1;
+		e = f;
+	} else
     if (p == c + 1 || f == 0) {
-        s = f == 0 ? 0 : (c + 1) * r + 1;
+        s = f == 0 ? 0 : c * r + 1;
         e = f
     } else
     if (c == 0 && p > 1) {
@@ -32,7 +36,7 @@ function getPaginationInfo() {
         e = r;
     } else
     if (c > 0 && c < p) {
-        e = (c + 1) * r;
+        e = (c + 1) * r;		
         s = e - r + 1;
     };
 
