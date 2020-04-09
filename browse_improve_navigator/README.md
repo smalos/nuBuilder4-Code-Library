@@ -8,7 +8,7 @@ This will add two additional icons in the record navigator of any Browse Screen:
 In addition, this will also disable the Previous and Next buttons on the record navigator if you are at the beginning or end of a page.
 
 <p align="left">
-  <img src="screenshots/improve_navigator.png">
+  <img src="screenshots/improve_navigator.gif">
 </p>
 
 ☛  Add this Javascript code in the Header under Home ► Setup
