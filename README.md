@@ -2,6 +2,10 @@
 
 ## Code snippets:
 
+2020-04-09: Browse Screen: Improve navigator: [browse_improve_navigator](browse_improve_navigator)
+
+2020-02-25: Browse Screen: Show pagination info: [browse_show_pagination_info](browse_show_pagination_info)
+
 2020-01-10: Make Boolean Fields Show Check Marks: [browse_show_check_marks](browse_show_check_marks)
 
 2020-01-10: Display Labels on Top of Objects: [labels_display_on_top](labels_display_on_top)
