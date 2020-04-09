@@ -1,5 +1,7 @@
 ### Display Labels on Top of Objects
 
+This is especially useful when the caption is a little longer.
+
 <p align="left">
   <img src="screenshots/labels_on_top.gif" width="408">
 </p>
