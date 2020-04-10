@@ -2,6 +2,8 @@
 
 ## Code snippets:
 
+2020-04-10: Browse Screen: Add Icons in front of text: [browse_add_icon](browse_add_icon)
+
 2020-04-09: Browse Screen: Improve navigator: [browse_improve_navigator](browse_improve_navigator)
 
 2020-02-25: Browse Screen: Show pagination info: [browse_show_pagination_info](browse_show_pagination_info)
