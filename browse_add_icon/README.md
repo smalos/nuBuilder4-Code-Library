@@ -48,9 +48,10 @@ if (nuFormType() == 'browse') {
 
 
 
-### Use your own images instead of font awesome icons
+### Using your own images instead of font awesome icons
 
 ☛ Create a new folder _/ressources_ in the root directory of nuBuilder and place your image files there.
+
 ☛ Add this JavaScript code to your form's _Custom Code_ field
 
 
