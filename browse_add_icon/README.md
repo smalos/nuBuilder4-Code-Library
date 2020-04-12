@@ -8,7 +8,7 @@ This will add an icon in front of a text in a browse column using font awesome i
 </p>
 
 
-☛ Add this JavaScript code to your form's Custom Code field
+☛ Add this JavaScript code to your form's _Custom Code_ field
 
 ☛ Change the status descriptions, icons, colors in statusArr if necessary.
 
@@ -21,7 +21,7 @@ var statusArr = [
 	{status:"In progress",class:"fa fa-spinner",color:"#3498db"}          // blue
 ]
 
-function addStatusIconFA(col) {
+function addStatusIconsFA(col) {
 	
 	$("[data-nu-column='"+col+"']").each(function(index) {  
 			
@@ -42,6 +42,33 @@ Example: Add a status icon in the first column when the Browse Screen is loaded
 
 ```
 if (nuFormType() == 'browse') {
-   addStatusIconFA(0);
+   addStatusIconsFA(0);
 }
+```
+
+
+
+### Use your own images instead of font awesome icons
+
+☛ Create a new folder _/ressources_ in the root directory of nuBuilder and place your image files there.
+☛ Add this JavaScript code to your form's _Custom Code_ field
+
+
+```
+function addStatusIcons(col) {
+	$("[data-nu-column='"+col+"']").each(function(index) {  
+			
+		var status  = $(this).html();	
+		var icon = 'ressources/' + status.replace(' ','_').toLowerCase() + '.png';
+		
+		var x = '<img src="' + icon + '" style="vertical-align:middle;width:18px;height:18px;">' + '&nbsp;&nbsp;' + status;
+		$(this).html(x);
+
+	})
+}
+
+if (nuFormType() == 'browse') {
+   addStatusIcons(0);
+}
+
 ```
