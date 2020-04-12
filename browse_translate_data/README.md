@@ -3,7 +3,7 @@
 Translate data in the specified columns into the user's language.
 
 <p align="left">
-  <img src="screenshots/translate_columns.png">
+  <img src="screenshots/translate_columns.gif">
 </p>
 
 ☛  Add this JavaScript code to your form's Custom Code field:
