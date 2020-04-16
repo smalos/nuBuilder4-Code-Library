@@ -2,6 +2,8 @@
 
 ## Code snippets:
 
+2020-04-16: Browse Screen: Add delete buttons [browse_add_delete_buttons](browse_add_delete_buttons)
+
 2020-04-12: Browse Screen: Translate data [browse_translate_data](browse_translate_data)
 
 2020-04-10: Browse Screen: Add Icons in front of text [browse_add_icon](browse_add_icon)
