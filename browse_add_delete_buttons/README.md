@@ -33,7 +33,8 @@ function deleteRow(pk) {
    // Call the PHP procedure deleteRow if the confirm dialog is accepted
    
    if (confirm(nuTranslate("Delete This Record?"))) {
-
+        
+        // Set hash cookies: form id and record id. They will be used in the PHP procedure.
         nuSetProperty('deleteRow_form_id', getFormId());
         nuSetProperty('deleteRow_record_id', pk);
 
@@ -64,7 +65,7 @@ function addDeleteButtons(column) {
     
     $("[data-nu-column='" + column + "']").each(function(index) {
 
-        // Create delete buttons if row is not empty
+        // Create delete buttons if the row is not empty / primary key attribute exists
         var pk = $(this).attr('data-nu-primary-key');
         if (typeof pk !== "undefined") {
             createDeleteButton(this, pk);
