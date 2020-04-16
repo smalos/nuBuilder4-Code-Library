@@ -1,7 +1,6 @@
 ## Browse Screen: Add Delete Buttons (DRAFT)
 
-This will add delete buttons in a column of a Browse Screen. This allows a user to delete a row directly from the Browse Screen
-without having to open the Edit Screen first.
+This will show you how to add delete buttons in a column of a Browse Screen which allows a user to delete a row directly from the Browse Screen without having to open the Edit Screen first.
 
 <p align="left">
   <img src="screenshots/browse_delete_buttons.png">
