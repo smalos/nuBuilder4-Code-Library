@@ -125,6 +125,11 @@ function deleteRow($formId, $recordId){
         $qry = "DELETE FROM `$tableName` WHERE `$tablePk` = ? ";
 
         nuRunQuery($qry, [$recordId]);
+        
+        // The function afterDeleteRow() must be declared in the form's Custom Code 
+        $j = "afterDeleteRow();";
+        nuJavascriptCallback($j);
+
     } else {
         nuDisplayError(nuTranslate("Delete is disabled for this Access Level"));
     }
@@ -133,8 +138,4 @@ function deleteRow($formId, $recordId){
 
 deleteRow("#deleteRow_form_id#", "#deleteRow_record_id#");
 
-
-// The function afterDeleteRow() must be declared in the form's Custom Code 
-$j = "afterDeleteRow();";
-nuJavascriptCallback($j);
 ```
