@@ -2,6 +2,9 @@
 
 ## Code snippets:
 
+
+2020-04-16: Edit Screen: Add a Print Button [edit_add_print_button](edit_add_print_button)
+
 2020-04-16: Browse Screen: Add delete buttons [browse_add_delete_buttons](browse_add_delete_buttons)
 
 2020-04-12: Browse Screen: Translate data [browse_translate_data](browse_translate_data)
