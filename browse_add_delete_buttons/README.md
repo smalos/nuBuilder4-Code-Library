@@ -1,4 +1,4 @@
-## Browse Screen: Add Delete Buttons (DRAFT)
+## Browse Screen: Add Delete Buttons
 
 This will show you how to add delete buttons in a column of a Browse Screen which allows a user to delete a row directly from the Browse Screen without having to open the Edit Screen first.
 
@@ -9,7 +9,6 @@ This will show you how to add delete buttons in a column of a Browse Screen whic
 
 ☛ Add this JavaScript code to your form's _Custom Code_ field
 
-
 ```
 function getFormId() {
     return nuCurrentProperties().form_id;
@@ -18,6 +17,7 @@ function getFormId() {
 function nuSelectBrowse(e) {
     
     // If a delete button is clicked, don't open the Edit Screen. 
+    
     var col = $(e.target).attr('data-nu-column');
     if (col !== '0' && typeof col !== "undefined") {
         var r = $(e.target).attr('data-nu-primary-key');
@@ -30,7 +30,9 @@ function nuSelectBrowse(e) {
 
 function deleteRow(pk) {
 
-    if (confirm(nuTranslate("Delete This Record?"))) {
+   // Call the PHP procedure deleteRow if the confirm dialog is accepted
+   
+   if (confirm(nuTranslate("Delete This Record?"))) {
 
         nuSetProperty('deleteRow_form_id', getFormId());
         nuSetProperty('deleteRow_record_id', pk);
@@ -40,11 +42,14 @@ function deleteRow(pk) {
 
 }
 
+// This function is called after a successful delete operation.
 function afterDeleteRow() {    
-    // refresh the Browse Screen after deleting a row
+
+    // Refresh the Browse Screen
     nuSearchAction(1);    
 }
 
+// Creates a new button and assigns click event
 function createDeleteButton(target, pk) {
 
   var btn = $('<button type="submit" style="height:21px; border: none; vertical-align: top; background-color: #d54d49; transform: translateY(-10%); color:white" value="✖">✖</button>');
@@ -55,12 +60,11 @@ function createDeleteButton(target, pk) {
   
 }
 
-
 function addDeleteButtons(column) {
-
-    // Create delete buttons if row is not empty
+    
     $("[data-nu-column='" + column + "']").each(function(index) {
 
+        // Create delete buttons if row is not empty
         var pk = $(this).attr('data-nu-primary-key');
         if (typeof pk !== "undefined") {
             createDeleteButton(this, pk);
