@@ -13,13 +13,16 @@ In addition, this will also disable the Previous and Next buttons on the record 
 
 ☛  Add this Javascript code in the Header under Home ► Setup
 
-```
+```javascript
 function addBrowseAdditionalNavButtons() {
-	
+
     // Add additional icons first and last in Browse Screen
     if (nuFormType() == 'browse') {
 
-		var disabled = {'opacity': '0.3', 'pointer-events': 'none'};
+        var disabled = {
+            'opacity': '0.3',
+            'pointer-events': 'none'
+        };
 
         var currentPage = Number($('#browsePage').val());
         var lastPage = nuCurrentProperties().pages;
@@ -47,7 +50,7 @@ function addBrowseAdditionalNavButtons() {
 
 Call the function addBrowseAdditionalNavButtons() in  nuOnLoad()
 
-```
+```javascript
 function nuOnLoad() {
    addBrowseAdditionalNavButtons();
 }
