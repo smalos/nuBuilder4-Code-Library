@@ -7,9 +7,9 @@ Showing pagination info in the footer of a Browse Screen:
 </p>
 
 
-☛  Add this Javascript code in the Header under Home ► Setup
+☛ Add this JavaScript code in the Header under Home ► Setup. Click *Save* and log in again.
 
-```
+```javascript
 function getPaginationInfo() {
 
     r = $("div[id^='nucell_']" + "[id$='_1']").length // Number of Rows per page
@@ -61,7 +61,7 @@ function showPaginationInfo() {
 }
 ```
 
-```
+```javascript
 function nuOnLoad() {
    showPaginationInfo();
 }
