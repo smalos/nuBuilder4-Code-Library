@@ -12,7 +12,7 @@ This will add an icon in front of a text in a browse column using font awesome i
 
 ☛ Change the status descriptions, icons, colors in statusArr if necessary.
 
-```
+```javascript
 var statusArr = [
 	{status:"Pending",class:"fa fa-clock-o",color:"#f1c40f"},             // orange
 	{status:"Completed",class:"fa fa-check-circle",color:"#2ecc71"},      // green
@@ -40,7 +40,7 @@ function addStatusIconsFA(col) {
 Example: Add a status icon in the first column when the Browse Screen is loaded
 
 
-```
+```javascript
 if (nuFormType() == 'browse') {
    addStatusIconsFA(0);
 }
@@ -55,7 +55,7 @@ if (nuFormType() == 'browse') {
 ☛ Add this JavaScript code to your form's _Custom Code_ field
 
 
-```
+```javascript
 function addStatusIcons(col) {
 	$("[data-nu-column='"+col+"']").each(function(index) {  
 			
