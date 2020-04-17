@@ -8,7 +8,7 @@ This is especially useful when the caption is a little longer.
 
 ☛</strong>  Add this code to your form’s Javascript section</p>
 
-```
+```javascript
 function custFieldLabelsOnTop(f, e) {
 
     for (var i = 0; i < f.length; i++) {
@@ -32,28 +32,28 @@ jQuery.fn.cssNumber = function(prop){
 
 <p><strong>Example 1</strong>: Place the labels of all fields on top of the input fields:</p>
 
-```
+```javascript
 if (nuFormType() == 'edit') {
-    var f = nuSubformObject("").fields; // include all fields of your main form.
+    var f = nuSubformObject("").fields;          // include all fields of your main form.
     custFieldLabelsOnTop(f, []);
 }
 ```
 
 <p><strong>Example 2</strong>: Place the labels of all fields above the input fields, but exclude some</p>
 
-```
+```javascript
 if (nuFormType() == 'edit') {
-    var f = nuSubformObject("").fields; // include all fields of your form
-    var e = ["customer_firstname", "customer_lastname"]; // but exclude these fields
+    var f = nuSubformObject("").fields;          // include all fields of your form
+    var e = ["cus_firstname", "cus_lastname"];   // but exclude these fields
     custFieldLabelsOnTop(f, e);
 }
 ```
 
 <p><strong>Example 3</strong>: Place the labels of some fields above the input fields</p>
 
-```
+```javascript
 if (nuFormType() == 'edit') {
-    var f = ["customer_firstname", "customer_lastname"]; // include just these two fields
+    var f = ["cus_firstname", "cus_lastname"];   // include just these two fields
     custFieldLabelsOnTop(f, []);
 }
 ```
