@@ -8,7 +8,7 @@ Translate data in the specified columns into the user's language.
 
 ☛  Add this JavaScript code to your form's Custom Code field:
 
-```
+```javascript
 function translateColumns(columns) {
 
     $("div[id^='nucell_']").each(function(index) {
@@ -27,8 +27,13 @@ function translateColumns(columns) {
 // Call the function translateColumn() when the Browse Screen is loaded
 
 if(nuFormType() == 'browse'){
-   translateColumn([0]); // translate the 1st column
-   // translateColumn([0,1]); // translate the 1st, 2nd columns
+
+   // to translate the 1st column
+   translateColumn([0]); 
+   
+   // to translate the 1st,  2nd columns
+   // translateColumn([0,1]); 
+   
 }
 
 ```
