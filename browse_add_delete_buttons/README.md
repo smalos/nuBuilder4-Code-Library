@@ -99,11 +99,18 @@ if (nuFormType() == 'browse') {
 
 ### Create a PHP procedure
 
+<p align="left">
+  <img src="screenshots/procedure_deleteRow.png">
+</p>
+
+
 ☛ Create a Procedure: Builders -> Procedure -> Add
 
 ☛ Code: deleteRow
 
 ☛ Give it a *Description*
+
+☛ Add this code to the PHP field
 
 
 <details>
