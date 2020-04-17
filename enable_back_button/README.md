@@ -4,15 +4,16 @@
 The browser’s back button doesn’t take one to the previous screen.
 
 ### Expected behaviour
-Hitting the browser’s back button takes one back to the previous website page / Breadcrumb.
+Hitting the browser’s back button takes one back to the previous website page / nuBuilder Breadcrumb.
 
 This will make the browser’s back button work. It will detect if the back button is clicked and take you back to the previous Breadcrumb.
 
-☛  Add this Javascript code in the Header under Home ► Setup
+☛  Add this JavaScript code in the Header under Home ► Setup. Click Save and log in again.
 
-```
-function custGotoPrevBreadcrumb() {
- 
+```javascript
+function gotoPreviousBreadcrumb() {
+    
+    / If a popup is open, close it
     if (parent.$('#nuModal').length > 0) {
         nuClosePopup();
         return;
@@ -24,18 +25,19 @@ function custGotoPrevBreadcrumb() {
     }
 }
  
-function custEnableBrowserBackButton() {
+function enableBrowserBackButton() {
     window.history.pushState({page: 1}, "", "");
     window.onpopstate = function(event) {
       if(event){
-         custGotoPrevBreadcrumb();
+         gotoPreviousBreadcrumb();
       }
       else{
+        // do nothing
       }
     }
 }
  
 function nuOnLoad() {
-  custEnableBrowserBackButton();
+  enableBrowserBackButton();
 }
 ```
