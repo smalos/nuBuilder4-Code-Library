@@ -4,7 +4,7 @@ This will show you how to add delete buttons in a column of a Browse Screen whic
 
 The following steps are carried out:
 
-1) JavaScript: Adds delete buttons to a column of a Browse Screen
+1) JavaScript: Adds delete buttons to each row of a Browse Screen
 2) JavaScript: Calls a PHP procedure when a delete button is clicked
 3) PHP: Checks if the user has the delete permission for the form
 4) PHP: Deletes the record.
@@ -103,11 +103,11 @@ if (nuFormType() == 'browse') {
 
 ☛ Code: deleteRow
 
-☛ Give it a Description
+☛ Give it a *Description*
 
 
 <details>
-  <summary>Click view the code!</summary>
+  <summary>Click to view the code!</summary>
   
   ```php
 function getFormTableInfo($formId)    {
