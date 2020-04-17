@@ -18,7 +18,11 @@ The following steps are carried out:
 
 ☛ Add this JavaScript code to your form's _Custom Code_ field
 
-```
+
+<details>
+  <summary>Click to view the code!</summary>
+  
+  ```javascript
 function getFormId() {
     return nuCurrentProperties().form_id;
 }
@@ -87,7 +91,9 @@ if (nuFormType() == 'browse') {
     // Add delete buttons in the first column 
     addDeleteButtons(0);
 }
-```
+
+  ```
+</details>
 
 
 
@@ -99,7 +105,11 @@ if (nuFormType() == 'browse') {
 
 ☛ Give it a Description
 
-```
+
+<details>
+  <summary>Click view the code!</summary>
+  
+  ```php
 function getFormTableInfo($formId)    {
 
     $sql = "SELECT sfo_table, sfo_primary_key FROM `zzzzsys_form` WHERE `zzzzsys_form_id` = ?";
@@ -151,5 +161,5 @@ function deleteRow($formId, $recordId){
 }
 
 deleteRow("#deleteRow_form_id#", "#deleteRow_record_id#");
-
-```
+  ```
+</details>
