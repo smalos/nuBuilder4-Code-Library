@@ -2,6 +2,11 @@
 
 This will show you how to add delete buttons in a column of a Browse Screen which allows a user to delete a row directly from the Browse Screen without having to open the Edit Screen first.
 
+
+<p align="left">
+  <img src="screenshots/delete_row_demo.gif">
+</p>
+
 The following steps are carried out:
 
 1) JavaScript: Adds delete buttons to each row of a Browse Screen
