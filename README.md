@@ -3,6 +3,8 @@
 ## Code snippets:
 
 
+2020-04-27: Subform: Strike through a row [subform_row_strike_through](subform_row_strike_through)
+
 2020-04-16: Edit Screen: Add a Print Button [edit_add_print_button](edit_add_print_button)
 
 2020-04-16: Browse Screen: Add delete buttons [browse_add_delete_buttons](browse_add_delete_buttons)
