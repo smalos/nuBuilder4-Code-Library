@@ -23,10 +23,10 @@ function getPaginationInfo() {
     var e; // Row number of the last record on the current page
     var s; // Row number of the first record on the current page
 
-	if (c == 0 && f > 0 & p == 1) {
-		s = 1;
-		e = f;
-	} else
+    if (c == 0 && f > 0 & p == 1) {
+        s = 1;
+        e = f;
+    } else
     if (p == c + 1 || f == 0) {
         s = f == 0 ? 0 : c * r + 1;
         e = f
@@ -36,14 +36,14 @@ function getPaginationInfo() {
         e = r;
     } else
     if (c > 0 && c < p) {
-        e = (c + 1) * r;		
+        e = (c + 1) * r;
         s = e - r + 1;
     };
 
     return {
-        startRow: s,
-        endRow: e,
-        filteredRows: f
+        startRow: s
+        , endRow: e
+        , filteredRows: f
     };
 
 }
@@ -51,9 +51,9 @@ function getPaginationInfo() {
 function showPaginationInfo() {
     if (nuFormType() == 'browse') {
         var {
-            startRow,
-            endRow,
-            filteredRows
+            startRow
+            , endRow
+            , filteredRows
         } = getPaginationInfo();
         var p = "Showing " + startRow + " to " + endRow + " of " + filteredRows + " entries";
         $('#nuBrowseFooter').append('<span style="float:left;vertical-align: middle;line-height: 25px;padding-left:5px">' + p + '</span>');
