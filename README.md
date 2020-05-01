@@ -2,6 +2,7 @@
 
 ## Code snippets:
 
+2020-04-27: Subform: Add Clone Buttons to Rows [subform_add_clone_button](subform_add_clone_button)
 
 2020-04-27: Subform: Strike through a row [subform_row_strike_through](subform_row_strike_through)
 
