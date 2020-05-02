@@ -1,14 +1,14 @@
 ## Subform: Add Clone Buttons to Rows
 
-This will add Clone Buttons in each row (but the last) of a Subform.
+This code snippets shows you how to add a *Clone Button* in each row (but the last) of a Subform to copy values from one row to the last row.
 
 <p align="left">
   <img src="https://s6.gifyu.com/images/clone_row.gif" >
 </p>
 
-1. Add a button to your Subform with **Title** *Clone*
+1. First, add a new object (Type: Input, Button) to the your Subform with **Title** *Clone*
 
-2. Attach an **onclick** event to your button in the Custom Code Tab with the JavaScript  
+2. Attach an **onclick** event to your button in the *Custom Code* Tab with the JavaScript  
 
 ```javascript
 onSubformClone(event);
@@ -17,7 +17,7 @@ onSubformClone(event);
 3. Add an **afterinsertrow** event to the Subform with this JavaScript:
 
 ```javascript
-subFormAfterInserRow();
+onSubFormAfterInserRow();
 ```
 
 4. Add this JavaScript code to your form's *Custom Code* field:
@@ -65,7 +65,7 @@ function hideLastCloneButton() {
     nuHide(cloneButton);
 }
 
-function subFormAfterInserRow() {
+function onSubFormAfterInserRow() {
 
     // Show all clone buttons
     $("[id$='" + btnCloneId + "']").each(function (i, obj) {
