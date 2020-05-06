@@ -2,6 +2,8 @@
 
 ## Code snippets:
 
+2020-05-06: Browse Screen: Hide a Column [browse_hide_column](browse_hide_column)
+
 2020-05-06: Display Object: Refresh on button click [display_object_refresh](display_object_refresh)
 
 2020-04-27: Subform: Add Clone Buttons to Rows [subform_add_clone_button](subform_add_clone_button)
