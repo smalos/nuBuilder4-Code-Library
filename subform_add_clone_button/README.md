@@ -1,6 +1,6 @@
 ## Subform: Add Clone Buttons to Rows
 
-This code snippets shows you how to add a *Clone Button* in each row (but the last) of a Subform to copy values from one row to the last row.
+This code snippet shows you how to add a *Clone Button* in each row (but the last) of a Subform to copy values from one row to the last row.
 
 <p align="left">
   <img src="https://s6.gifyu.com/images/clone_row.gif" >
