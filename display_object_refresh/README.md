@@ -15,16 +15,17 @@ function getDisplayValue($obj) {
 
     $sql = "SELECT sob_display_sql FROM `zzzzsys_object` WHERE sob_all_id = ?";
     $t = nuRunQuery($sql, [$obj]);
-    $r = db_fetch_row($t);
 
-    if ($r != false) {
+    if (db_num_rows($t) == 1) {
+        $r = db_fetch_row($t);
+        if ($r != false) {
 
-        $disS = nuReplaceHashVariables($r[0]);
-        $disT = nuRunQuery($disS);
-        $disR = db_fetch_row($disT);
+            $disS = nuReplaceHashVariables($r[0]);
+            $disT = nuRunQuery($disS);
+            $disR = db_fetch_row($disT);
 
-        return ($disR != false) ? $disR[0] : false;
-
+            return ($disR != false) ? $disR[0] : false;
+        }
     }
 
     return false;
