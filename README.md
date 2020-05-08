@@ -2,6 +2,8 @@
 
 ## Code snippets:
 
+2020-05-08: Object: Conditionally Change its Color [object_change_color](object_change_color)
+
 2020-05-06: Browse Screen: Hide a Column [browse_hide_column](browse_hide_column)
 
 2020-05-06: Display Object: Refresh on button click [display_object_refresh](display_object_refresh)
