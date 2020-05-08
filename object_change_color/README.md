@@ -1,10 +1,10 @@
-## Object: Conditionally Change the Color
+## Object: Conditionally Change its Color
 
 This snippet will show you how to conditionally change the color of an object (e.g. Display Object) in reference to the content.
 E.g. setting a red background color with a bold font if the display text is "danger".
 
 <p align="left">
-  <img src="screenshots/change_colors.png">
+  <img src="screenshots/change_colors.gif">
 </p>
 
 
