@@ -31,7 +31,7 @@ function deleteClicked(event) {
         , 'text-decoration': 'none'
     };
 
-    $('[id^=' + sf + nuPad3(row) + ']').css(style);
+    $('[id^=' + sf + nuPad3(row) + ']').not(':button').css(style);
 
 }
 ```
