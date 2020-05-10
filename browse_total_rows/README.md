@@ -8,10 +8,10 @@ addBrowseColumnTotal(columns, op, number, title);
 
 The function takes the following arguments:
 
-- columns: array of columns. E.g. ['1','2']
-- op (operation): *Sum*: totalOperations.SUM, *Average*: totalOperations.AVG, *Weighted Average*: totalOperations.AVG_W
-- (total row) number: number of the total column
-- (total row) title: Title of the total column
+- **columns**: Columns for which a total will be displayed. array of columns. E.g. ['1','2']
+- **op** (operation): *Sum*: totalOperations.SUM, *Average*: totalOperations.AVG, *Weighted Average*: totalOperations.AVG_W
+- (total row) **number**: Number of the total row. There can be more than one total row. 
+- (total row) **title**: Title of the total row
 
 ### Example 1:  Add a total row (sum)
 
@@ -37,7 +37,7 @@ The function takes the following arguments:
 
 ### Using the function in several Browse Screens.
 
-If you want to use the addBrowseColumnTotal() function in several Browse Screens, you should create an external JavaScript file, instead of including the same script in every form (redundancy). Place the browse_total_rows.js in a subfolder of nuBuilder (e.g. /libs), and then refer to it by adding this JavaScript to (Setup ->) Header:
+If you want to use the addBrowseColumnTotal() function in several Browse Screens, you should create an external JavaScript file, instead of including the same script in every form (redundancy). Place the browse_total_rows.js in a subfolder of nuBuilder root directory (e.g. /libs), and then refer to it by adding this JavaScript to (Setup ->) Header:
 
 ```javascript
 </script>
