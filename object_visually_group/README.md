@@ -41,10 +41,9 @@ Visually group objects that belong together to create a clear user interface.
 
 ```
 
-☛ In your form, create a new object of type HTML.
+☛ In your form, create a new object of type HTML. Set its Width and Height to 10.
 
 ☛ Add this html code to the HTML field.
-☛ Change the style and title as needed.
 
 ```html
 <div class="content-box-header" style="height: 220px; width: 480px;">
@@ -52,3 +51,5 @@ Visually group objects that belong together to create a clear user interface.
     <div class="content"></div>
 </div>
 ```
+
+☛ Change the style and title as needed.
