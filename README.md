@@ -2,6 +2,8 @@
 
 ## Code snippets:
 
+2020-05-11: Object: Visually group related objects [object_visually_group](object_visually_group)
+
 2020-05-08: Object: Conditionally Change its Color [object_change_color](object_change_color)
 
 2020-05-06: Browse Screen: Hide a Column [browse_hide_column](browse_hide_column)
