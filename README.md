@@ -5,6 +5,8 @@
 
 ## Code snippets:
 
+2020-05-14: Browse Screen: Disable column resizing [browse_prevent_column_resize](browse_prevent_column_resize)
+
 2020-05-14: Edit Screen: Return to another form after saving [edit_goto_previous_breadcrumb](edit_goto_previous_breadcrumb)
 
 2020-05-14: Browse Screen: Multi-line column headers [browse_multiline_title](browse_multiline_title)
