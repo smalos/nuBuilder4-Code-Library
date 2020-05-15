@@ -3,7 +3,7 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets:
+## Code snippets (27)
 
 * 2020-05-15: Subform: Disable row sorting [subform_disable_sorting](subform_disable_sorting)
 
