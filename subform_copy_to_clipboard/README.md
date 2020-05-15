@@ -4,6 +4,8 @@ This code snippet shows how to copy subform data to clipboard.
 
 ☛Add this JavaScript Code to your form’s Custom Code field:
 
+❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+
 
 ```javascript
 var copyToClipboard = str => {
