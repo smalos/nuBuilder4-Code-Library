@@ -29,9 +29,9 @@ var copyToClipboard = str => {
 
 function headerToSeparatedString(fields, delimiter, includeId) {
 
-	var start = includeId == true ? 0 : 1;
-    var h = '';	
-	
+    var start = includeId == true ? 0 : 1;
+    var h = '';
+
     for (var i = start; i < fields.length - 1; i++) {
         h += fields[i] + delimiter;
     }
@@ -41,10 +41,10 @@ function headerToSeparatedString(fields, delimiter, includeId) {
 function rowToSeparatedString(rows, delimiter, includeId) {
 
     var processRow = function (row, includeId) {
-	
+
         var finalVal = '';
-		
-		 var start = includeId == true ? 0 : 1;
+
+        var start = includeId == true ? 0 : 1;
         for (var j = start; j < row.length - 1; j++) {
             var innerValue = row[j] === null ? '' : row[j].toString();
             if (row[j] instanceof Date) {
@@ -62,7 +62,7 @@ function rowToSeparatedString(rows, delimiter, includeId) {
 
     var output = "";
 
-	var start = includeId == true ? 0 : 1;
+    var start = includeId == true ? 0 : 1;
     for (var i = start; i < rows.length - 1; i++) {
         output += processRow(rows[i], includeId);
     }
@@ -72,35 +72,35 @@ function rowToSeparatedString(rows, delimiter, includeId) {
 
 
 /**
-* Copy the data of a Subform to the Clipboard
-*
-* @param {string}  sfId                 - Subform Object ID
-* @param {string}  delimiter       	- Delimiter for the data. Default: \t  (tabulator)
-* @param {bool}    [includeHeader]      - true to include the header (titles)
-* @param {bool}    [includeId]  	- true to include the Id (Primary Key)
-*
-*/
+ * Copy the data of a Subform to the Clipboard
+ *
+ * @param {string}  sfId                - Subform Object ID
+ * @param {string}  delimiter       	- Delimiter for the data. Default: \t  (tabulator)
+ * @param {bool}    [includeHeader]     - true to include the header (titles)
+ * @param {bool}    [includeId]  	- true to include the Id (Primary Key)
+ *
+ */
 
 function subGridToClipboard(sfId, delimiter, includeHeader, includeId) {
 
     var obj = nuSubformObject(sfId);
-    
-	var s = "";
-	
-	if (typeof delimiter === "undefined") {
-		var delimiter = '\t';
-	}
-	
-	if (typeof includeId === "undefined") {
-		var includeId = false;
-	}
-	
-	if (includeHeader === true) {
-		s = headerToSeparatedString(obj.fields, delimiter, includeId);
-	}
-	
-	s += rowToSeparatedString(obj.rows, delimiter, includeId);
-	
+
+    var s = "";
+
+    if (typeof delimiter === "undefined") {
+        var delimiter = '\t';
+    }
+
+    if (typeof includeId === "undefined") {
+        var includeId = false;
+    }
+
+    if (includeHeader === true) {
+        s = headerToSeparatedString(obj.fields, delimiter, includeId);
+    }
+
+    s += rowToSeparatedString(obj.rows, delimiter, includeId);
+
     copyToClipboard(s);
 }
 ```
