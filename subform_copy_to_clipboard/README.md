@@ -27,19 +27,25 @@ var copyToClipboard = str => {
 };
 
 
-function headerToSeparatedString(fields, delimiter) {
-    var h = '';
-    for (var i = 0; i < fields.length - 1; i++) {
+function headerToSeparatedString(fields, delimiter, includeId) {
+
+	var start = includeId == true ? 0 : 1;
+    var h = '';	
+	
+    for (var i = start; i < fields.length - 1; i++) {
         h += fields[i] + delimiter;
     }
     return h + '\n';
 }
 
-function rowToSeparatedString(rows, delimiter) {
+function rowToSeparatedString(rows, delimiter, includeId) {
 
-    var processRow = function (row) {
+    var processRow = function (row, includeId) {
+	
         var finalVal = '';
-        for (var j = 0; j < row.length - 1; j++) {
+		
+		 var start = includeId == true ? 0 : 1;
+        for (var j = start; j < row.length - 1; j++) {
             var innerValue = row[j] === null ? '' : row[j].toString();
             if (row[j] instanceof Date) {
                 innerValue = row[j].toLocaleString();
@@ -47,7 +53,7 @@ function rowToSeparatedString(rows, delimiter) {
             var result = innerValue.replace(/"/g, '""');
             if (result.search(/("|,|\n)/g) >= 0)
                 result = '"' + result + '"';
-            if (j > 0)
+            if (j > start)
                 finalVal += delimiter;
             finalVal += result;
         }
@@ -56,23 +62,46 @@ function rowToSeparatedString(rows, delimiter) {
 
     var output = "";
 
-    for (var i = 0; i < rows.length - 1; i++) {
-        output += processRow(rows[i]);
+	var start = includeId == true ? 0 : 1;
+    for (var i = start; i < rows.length - 1; i++) {
+        output += processRow(rows[i], includeId);
     }
 
     return output;
 }
 
 
-function subGridToClipboard(sfId, delimiter, includHeader) {
+/**
+* Copy the data of a Subform to the Clipboard
+*
+* @param {string}  sfId                 - Subform Object ID
+* @param {string}  delimiter       	- Delimiter for the data. Default: \t  (tabulator)
+* @param {bool}    [includeHeader]      - true to include the header (titles)
+* @param {bool}    [includeId]  	- true to include the Id (Primary Key)
+*
+*/
+
+function subGridToClipboard(sfId, delimiter, includeHeader, includeId) {
 
     var obj = nuSubformObject(sfId);
-    var separatedString = headerToSeparatedString(obj.fields, delimiter);
-
-	if (includHeader === true) {
-		separatedString += rowToSeparatedString(obj.rows, delimiter);
+    
+	var s = "";
+	
+	if (typeof delimiter === "undefined") {
+		var delimiter = '\t';
 	}
-    copyToClipboard(separatedString);
+	
+	if (typeof includeId === "undefined") {
+		var includeId = false;
+	}
+	
+	if (includeHeader === true) {
+		s = headerToSeparatedString(obj.fields, delimiter, includeId);
+	}
+	
+	s += rowToSeparatedString(obj.rows, delimiter, includeId);
+	
+    copyToClipboard(s);
 }
 ```
 
@@ -81,5 +110,5 @@ function subGridToClipboard(sfId, delimiter, includHeader) {
 Add a button object to your form with an onclick event. Replace "subform_id" with your Subform Object ID.
 
 ```javascript
-subGridToClipboard('subform_id', '\t', true);
+subGridToClipboard('subform_id', '\t');
 ```
