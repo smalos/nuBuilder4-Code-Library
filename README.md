@@ -6,7 +6,7 @@
 ## Code snippets:
 
 
-2020-05-14: Object: Limit character input including count [object_limit_characters](object_limit_characters)
+2020-05-15: Object: Limit character input including count [object_limit_characters](object_limit_characters)
 
 2020-05-14: Browse Screen: Disable column resizing [browse_prevent_column_resize](browse_prevent_column_resize)
 
