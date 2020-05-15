@@ -5,6 +5,9 @@ A tooltip is often used to specify extra information about something when the us
 
 ☛ Add this JavaScript Code to your form’s Custom Code field:
 
+❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+
+
 ```javascript
 
 /**
