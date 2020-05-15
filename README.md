@@ -5,6 +5,9 @@
 
 ## Code snippets:
 
+
+* 2020-05-15: Subform: Copy data to clipboard [subform_copy_to_clipboard](subform_copy_to_clipboard)
+
 * 2020-05-15: Object: Show a tooltip on hover [object_show_tooltip](object_show_tooltip)
 
 * 2020-05-15: Object: Limit character input including count [object_limit_characters](object_limit_characters)
