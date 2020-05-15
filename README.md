@@ -5,6 +5,7 @@
 
 ## Code snippets:
 
+* 2020-05-15: Subform: Disable row sorting [subform_disable_sorting](subform_disable_sorting)
 
 * 2020-05-15: Subform: Copy data to clipboard [subform_copy_to_clipboard](subform_copy_to_clipboard)
 
