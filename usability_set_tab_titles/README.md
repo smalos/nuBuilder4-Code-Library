@@ -1,7 +1,7 @@
 ###  Usability: Set individual tab titles
 
 Having multiple tabs open with the same titles makes it hard to find the right tab when you need it, and jumping from tab to tab is hardly a productive activity
-This code will set a individual tab titles for each tab.
+This code will set individual tab titles for each tab.
 
 <p align="left">
   <img src="screenshots/setting_tabs_titles.png" >
@@ -18,7 +18,7 @@ This code will set a individual tab titles for each tab.
  */
 function setTabTitle(prefix) {
     var t = window.nuFORM.getProperty('title');
-    if (t == "") {
+    if (t === "") {
         t = "Properties";
     }
     prefix = (typeof prefix === "undefined") ? "" : prefix + " - ";
@@ -26,6 +26,7 @@ function setTabTitle(prefix) {
 }    
 
 function nuOnLoad() {
+    // Set tab titles with the prefix *MyCars* (replace with your nuBuilder instance name)
     setTabTitle("MyCars");   
 }
 ```
