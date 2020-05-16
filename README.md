@@ -5,8 +5,9 @@
 
 ## Code snippets (28)
 
+* 2020-05-16: Globeadmin: Add a Quick Access Menu [globeadmin_quick_access_menu](globeadmin_quick_access_menu)
 
-* 2020-05-15: Usability: Set individual tab titles [usability_set_tab_titles](usability_set_tab_titles)
+* 2020-05-16: Usability: Set individual tab titles [usability_set_tab_titles](usability_set_tab_titles)
 
 * 2020-05-15: Subform: Disable row sorting [subform_disable_sorting](subform_disable_sorting)
 
