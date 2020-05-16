@@ -1,7 +1,7 @@
 ###  Usability: Set individual tab titles
 
 Having multiple tabs open with the same titles makes it hard to find the right tab when you need it, and jumping from tab to tab is hardly a productive activity
-This code will set a tab title for each tab.
+This code will set a individual tab titles for each tab.
 
 <p align="left">
   <img src="screenshots/setting_tabs_titles.png" >
