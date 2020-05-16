@@ -1,12 +1,14 @@
 ### Display Labels on Top of Objects
 
-This is especially useful when the caption is a little longer.
+This is especially useful when the caption is a little longer and it would take up too much space horizontally.
 
 <p align="left">
-  <img src="screenshots/labels_on_top.gif" width="408">
+  <img src="screenshots/labels_on_top.gif">
 </p>
 
 ☛</strong>  Add this code to your form’s Javascript section</p>
+
+❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
 
 ```javascript
 function custFieldLabelsOnTop(f, e) {
@@ -30,7 +32,7 @@ jQuery.fn.cssNumber = function(prop){
 };
 ```
 
-<p><strong>Example 1</strong>: Place the labels of all fields on top of the input fields:</p>
+#### ✪ <p><strong>Example 1</strong>: Place the labels of all fields on top of the input fields:</p>
 
 ```javascript
 if (nuFormType() == 'edit') {
@@ -39,7 +41,7 @@ if (nuFormType() == 'edit') {
 }
 ```
 
-<p><strong>Example 2</strong>: Place the labels of all fields above the input fields, but exclude some</p>
+#### ✪ <p><strong>Example 2</strong>: Place the labels of all fields above the input fields, but exclude some</p>
 
 ```javascript
 if (nuFormType() == 'edit') {
@@ -49,7 +51,7 @@ if (nuFormType() == 'edit') {
 }
 ```
 
-<p><strong>Example 3</strong>: Place the labels of some fields above the input fields</p>
+#### ✪ <p><strong>Example 3</strong>: Place the labels of some fields above the input fields</p>
 
 ```javascript
 if (nuFormType() == 'edit') {
