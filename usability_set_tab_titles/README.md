@@ -22,7 +22,7 @@ function setTabTitle(prefix) {
         t = "Properties";
     }
     prefix = (typeof prefix === "undefined") ? "" : prefix + " - ";
-  //  document.title = prefix + t;
+    document.title = prefix + t;
 }    
 
 function nuOnLoad() {
