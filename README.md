@@ -3,7 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (29)
+## Code snippets (30)
+
+
+* 2020-05-16: Object: Create a (autocomplete) datalist [object_create_datalist](object_create_datalist)
 
 * 2020-05-16: Globeadmin: Add a Quick Access Menu [globeadmin_quick_access_menu](globeadmin_quick_access_menu)
 
