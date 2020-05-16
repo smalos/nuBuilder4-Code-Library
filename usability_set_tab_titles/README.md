@@ -7,7 +7,7 @@ This code will set a individual tab titles for each tab.
   <img src="screenshots/setting_tabs_titles.png" >
 </p>
 
-☛  Add this JavaScript code in the Header under Home ► Setup. Click Save and log in again.
+☛  Add this JavaScript code in the Header (❓ [Home ► Setup](/common/setup_header.gif)). Click Save and log in again.
 
 ```javascript
 
