@@ -3,7 +3,7 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (28)
+## Code snippets (29)
 
 * 2020-05-16: Globeadmin: Add a Quick Access Menu [globeadmin_quick_access_menu](globeadmin_quick_access_menu)
 
