@@ -32,7 +32,9 @@ jQuery.fn.cssNumber = function(prop){
 };
 ```
 
-#### ✪ <p><strong>Example 1</strong>: Place the labels of all fields on top of the input fields:</p>
+#### ✪ Example 1: 
+
+Place the labels of all fields on top of the input fields:
 
 ```javascript
 if (nuFormType() == 'edit') {
@@ -41,7 +43,9 @@ if (nuFormType() == 'edit') {
 }
 ```
 
-#### ✪ <p><strong>Example 2</strong>: Place the labels of all fields above the input fields, but exclude some</p>
+#### ✪ Example 2</strong>: 
+  
+Place the labels of all fields above the input fields, but exclude some
 
 ```javascript
 if (nuFormType() == 'edit') {
@@ -51,7 +55,9 @@ if (nuFormType() == 'edit') {
 }
 ```
 
-#### ✪ <p><strong>Example 3</strong>: Place the labels of some fields above the input fields</p>
+#### ✪ Example 3: 
+
+Place the labels of some fields above the input fields
 
 ```javascript
 if (nuFormType() == 'edit') {
