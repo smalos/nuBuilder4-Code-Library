@@ -13,7 +13,7 @@ This will make the browser’s back button work. It will detect if the back butt
 ```javascript
 function gotoPreviousBreadcrumb() {
     
-    / If a popup is open, close it
+    // If a popup is open, close it
     if (parent.$('#nuModal').length > 0) {
         nuClosePopup();
         return;
