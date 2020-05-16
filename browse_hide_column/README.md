@@ -1,11 +1,11 @@
 ### Hide a Column in a Browse Screen
 
 This code snippet shows how to hide a column in a Browse Screen. 
-Possible applications are, for example, if columns should not be displayed for certain access levels or if the object is displayed in an iFrame.
+Possible applications are, for example, if columns should not be displayed for certain access levels or if the object is displayed in an iFrame and you do not want to show one or more columns.
 
 The function setBrowseColumnSize(), as its name says, also allows to resize columns.
 
-☛ In you form's Custom Code, paste this JavaScript:
+☛ In you form's Custom Code, paste this JavaScript (❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif))
 
 ```javascript
 function iniFrame() {
