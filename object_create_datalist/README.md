@@ -4,6 +4,10 @@ The HTML `<datalist>` tag is is used to provide an auto complete feature on form
 These suggested values will appear in the input control as a dropdown list and the available options will be filtered as the user enters data into the input control.
 It also allows users to enter a custom value that is not in the list.
 
+<p align="left">
+  <img src="screenshots/datalist.gif">
+</p>
+
 The function addDatalist() will turn a Text Input Object into a datalist Element.
 
 ☛ Add this JavaScript Code to your form’s Custom Code field:
