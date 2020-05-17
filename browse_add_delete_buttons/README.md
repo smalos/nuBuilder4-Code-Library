@@ -13,7 +13,7 @@ The following steps are carried out:
 2) JavaScript: Calls a PHP procedure when a delete button is clicked
 3) PHP: Checks if the user has the delete permission for the form
 4) PHP: Deletes the record.
-5) PHP: Calls the JavaScript function afterDeleteRow()
+5) PHP: Calls the JavScript function afterDeleteRow()
 5) JavasScript: Refreshes the Browse Screen
 
 <p align="left">
@@ -23,6 +23,7 @@ The following steps are carried out:
 
 ☛ Add this JavaScript code to your form's _Custom Code_ field
 
+❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
 
 <details>
   <summary>Click to view the code!</summary>
@@ -63,7 +64,6 @@ function deleteRow(pk) {
 
 // This function is called after a successful delete operation.
 function afterDeleteRow() {    
-
     // Refresh the Browse Screen
     nuSearchAction(1);    
 }
@@ -99,8 +99,6 @@ if (nuFormType() == 'browse') {
 
   ```
 </details>
-
-
 
 
 ### Create a PHP procedure
