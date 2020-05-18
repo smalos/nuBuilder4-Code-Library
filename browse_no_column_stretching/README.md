@@ -1,4 +1,4 @@
-## Browse Screen: Prevent the columns from becoming too wide
+## Browse Screen: Prevent columns from becoming too wide
 
 By default, nuBuilder stretches browse columns to fill the document width. 
 Too wide columns will be harder for the eye to follow and to read.
