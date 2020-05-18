@@ -11,6 +11,13 @@ Too wide columns will be harder for the eye to follow and to read.
 To disable column stretching, the nuStopBrowserResize() function has to be added to a form's Custom Code > Javascript, 
 for each Browse Screen you want to disable the auto resizing.
 
+Result: The columns are more compacted:
+
+<p align="left">
+  <img src="screenshots/narrow_columns.png">
+</p>
+
+
 If you want to disable the column auto resizing globally (and also for all other nuBuilder Browse Screens),
 
 ☛  add this JavaScript in the Header (❓ [Home ► Setup](/common/setup_header.gif)). Click Save and log in again.
