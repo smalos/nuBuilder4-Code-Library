@@ -5,7 +5,7 @@
 
 ## Code snippets (31)
 
-* 2020-05-16: Browse Screen: Prevent columns from becoming too wide [browse_no_column_stretching](browse_no_column_stretching)
+* 2020-05-18: Browse Screen: Prevent columns from becoming too wide [browse_no_column_stretching](browse_no_column_stretching)
 
 * 2020-05-16: Object: Create a (autocomplete) datalist [object_create_datalist](object_create_datalist)
 
