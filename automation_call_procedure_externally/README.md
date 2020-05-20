@@ -1,6 +1,6 @@
 ## Automation: How to run a PHP procedure from outside nuBuilder?
 
-☛ Place [nucall_ext.php](nucall_ext.php) in a subfolder of your nuBuilder root directory (e.g. /libs)
+☛ Place [nucall_ext.php](nucall_ext.php) in a *subfolder* of your nuBuilder root directory (e.g. /libs)
 
 ☛ Create a new [Procedure](https://wiki.nubuilder.net/nubuilderforte/index.php/Procedures) (optional)
 
