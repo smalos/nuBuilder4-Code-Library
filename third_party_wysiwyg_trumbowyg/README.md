@@ -56,6 +56,7 @@ li {
 The DIV *cus_notes_tr* is going to be converted into a WYSIWYG editor as soon as your form loads (Step 6)
 
 5. Create a Textarea object with (e.g.) the ID *cus_notes*. Also create this column in your table (Type text)
+   Set its access to Hidden.
      
 6. Add this JavaScript to your form's Custom Code field
    ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
@@ -92,7 +93,7 @@ if (nuFormType() == 'edit') {
 function nuBeforeSave() {
 
     // Get the html code of the trumbowyg editor and assign it to the nuBuilder object
-    var html = $('#cus_notes').trumbowyg('html');
+    var html = $('#cus_notes_tr').trumbowyg('html');
     $('#cus_notes').val(html).change();
     return true;
 
