@@ -12,8 +12,8 @@
 
 Call nucall_ext.php and pass these two parameters:
 
-* *p* (Procedure): replace test with your Procedure code.
-* *acc* (Access Level): replace acl_cron_job with your Access Level.
+* *p* (Procedure): replace test with your Procedure Code.
+* *acc* (Access Level): replace acl_cron_job with your Access Level Code.
 
 E.g. http://localhost/nubuilder/nucall_ext.php?p=test&acc=acl_cron_job
 
