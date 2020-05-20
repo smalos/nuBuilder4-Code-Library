@@ -1,4 +1,4 @@
-## Third party: How to include a WYSIWYG Editor in nuBuilder
+## Third party: How to include a WYSIWYG Editor
 
 This article is going to show you how to include the [Trumbowyg](http://alex-d.github.io/Trumbowyg/) WYSIWYG editor in nuBuilder.
 
@@ -42,6 +42,7 @@ Trumbowyg.js is a lightweight, customizable, extendable, semantic, cross-browser
 
 
 4. In your form, create a new object of type HTML. Any object ID can be entered.
+   ☛  Add this code in the HTML field (HTML tab).
    
 ```htm   
 <style>
@@ -52,12 +53,13 @@ li {
 
 <div id="cus_notes_tr" placeholder="Placeholder here..." style="background:white"></div>
 ```
+The DIV *cus_notes_tr* is going to be converted into a WYSIWYG editor as soon as your form loads (Step 6)
 
-The DIV cus_notes_tr is going to be converted into a WYSIWYG editor as soon as your form loads (Step 6)
-
-5. Create a Textarea object with the name *cus_notes* (Name can be different, change it in step 6 as well)
-
+5. Create a Textarea object with (e.g.) the ID *cus_notes*. Also create this column in your table (Type text)
+     
 6. Add this JavaScript to your form's Custom Code field
+   ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+   
 ```javascript
 
 if (nuFormType() == 'edit') {
