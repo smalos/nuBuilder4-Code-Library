@@ -3,9 +3,11 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (32)
+## Code snippets (33)
 
-* 2020-05-18: Third party: How to include a WYSIWYG Editor [third_party_wysiwyg_trumbowyg](third_party_wysiwyg_trumbowyg)
+* 2020-05-20: Automation: How to run a PHP procedure from outside nuBuilder? [automation_call_procedure_externally](
+automation_call_procedure_externally)
+* 2020-05-20: Third party: How to include a WYSIWYG Editor [third_party_wysiwyg_trumbowyg](third_party_wysiwyg_trumbowyg)
 
 * 2020-05-18: Browse Screen: Prevent columns from becoming too wide [browse_no_column_stretching](browse_no_column_stretching)
 
