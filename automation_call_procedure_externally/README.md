@@ -6,13 +6,13 @@
 
 ☛ Create a new [Access Level](https://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level). For security reasons, do not assign that Access Level to a user. 
 
-☛ Add the Procedures to the Access Level.
+☛ Add the Procedure to the Access Level.
 
 #### ✪ Example
 
 Call nucall_ext.php and pass these two parameters:
 
-* *p* (Procedure): replace test with your Procedure name.
+* *p* (Procedure): replace test with your Procedure code.
 * *acc* (Access Level): replace acl_cron_job with your Access Level.
 
 E.g. http://localhost/nubuilder/nucall_ext.php?p=test&acc=acl_cron_job
