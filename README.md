@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (33)
+## Code snippets (34)
+
+* 2020-05-21: Object: Better user experience when entering a date of birth [object_enter_date_of_birth](object_enter_date_of_birth)
 
 * 2020-05-20: Automation: How to run a PHP procedure from outside nuBuilder? [automation_call_procedure_externally](
 automation_call_procedure_externally)
