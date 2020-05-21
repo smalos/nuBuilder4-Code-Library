@@ -29,7 +29,8 @@ Trumbowyg.js is a lightweight, customizable, extendable, semantic, cross-browser
 </p>
 
 
-
+<details>
+  <summary>Click to view the code!</summary>
 ```javascript
 </script>
 
@@ -39,9 +40,13 @@ Trumbowyg.js is a lightweight, customizable, extendable, semantic, cross-browser
 
 <script>
 ```
+</details>
+
+When the form is loaded, the HTML content from the textarea object is copied to the corresponding trumbowyg object. 
 
 
 4. In your form, create a new object of type HTML. Any object ID can be entered.
+
    ☛  Add this code in the HTML field (HTML tab).
    
 ```htm   
@@ -55,12 +60,17 @@ li {
 ```
 The DIV *cus_notes_tr* is going to be converted into a WYSIWYG editor as soon as your form loads (Step 6)
 
-5. Create a Textarea object with (e.g.) the ID *cus_notes*. Also create this column in your table (Type text)
-   Set its access to Hidden.
+5. Create a Textarea object with (e.g.) the ID *cus_notes*. Set its access to Hidden.
+   
+   Also create this column in your table (Type text)
+   
      
 6. Add this JavaScript to your form's Custom Code field
    ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
-   
+
+<details>
+  <summary>Click to view the code!</summary>
+
 ```javascript
 
 if (nuFormType() == 'edit') {
@@ -99,6 +109,7 @@ function nuBeforeSave() {
 
 }
 ```
+</details>
 
 #### Useful links:
 
