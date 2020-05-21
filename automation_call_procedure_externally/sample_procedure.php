@@ -1,7 +1,7 @@
 // Send reminders to users for their pending tasks
 
 $s	= "
-		SELECT task_status, task_id, sus_email
+		SELECT task_id, sus_email
 		FROM tasks
 		LEFT JOIN zzzzsys_user ON zzzzsys_user_id = task_user_id
 		WHERE task_status = 'pending'
