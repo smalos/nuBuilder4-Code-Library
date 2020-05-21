@@ -30,7 +30,8 @@ Trumbowyg.js is a lightweight, customizable, extendable, semantic, cross-browser
 
 
 <details>
-  <summary>Click to view the code!</summary>
+ <summary>Click to view the code!</summary>
+  
 ```javascript
 </script>
 
@@ -49,7 +50,7 @@ When the form is loaded, the HTML content from the textarea object is copied to 
 
    ☛  Add this code in the HTML field (HTML tab).
    
-```htm   
+```html   
 <style>
 li {
     display: list-item;
