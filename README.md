@@ -3,7 +3,7 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (34)
+## Code snippets (35)
 
 * 2020-05-21: Edit Screen: Setting Up Next and Back Buttons [edit_record_navigator](edit_record_navigator)
 
