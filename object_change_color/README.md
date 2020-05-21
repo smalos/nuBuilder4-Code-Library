@@ -12,14 +12,6 @@ E.g. setting a red background color with a bold font if the display text is "dan
 
 
 ```javascript
-
-// bg: background color, fg: foreground color, weight: font feight
-var colorConditions = {
-    'danger':  {'bg': 'red', 'fg': 'white', 'weight': 'bold'},
-    'fine':    {'bg': 'green', 'fg': 'white', 'weight': 'normal'},
-    'other':   {'bg': 'black', 'fg': 'white', 'weight': 'normal'}
-};
-
 function setConditionalColors(id, conditions) {
     obj = $('#' + id);
     for (cond in conditions) {
@@ -33,9 +25,19 @@ function setConditionalColors(id, conditions) {
 }
 ```
 
-Example: Call the function when the edit Screen is loaded:
+#### ✪ Example: 
+
+Call the function setConditionalColors() when the Edit Screen is loaded.
+If the object contains the word danger, its background is going to be red with a white font and a bold font-weight.
 
 ```javascript
+// bg: background color, fg: foreground color, weight: font feight
+var colorConditions = {
+    'danger':  {'bg': 'red', 'fg': 'white', 'weight': 'bold'},
+    'fine':    {'bg': 'green', 'fg': 'white', 'weight': 'normal'},
+    'other':   {'bg': 'black', 'fg': 'white', 'weight': 'normal'}
+};
+
 if (nuFormType() == 'edit') {
    setConditionalColors('objId ', colorConditions);  // replace objId with your object id
 }
