@@ -12,11 +12,13 @@
 
 Call nucall_ext.php and pass these two parameters:
 
-* *p* (Procedure): replace test with your Procedure Code.
-* *acc* (Access Level): replace acl_cron_job with your Access Level Code.
+* **p** (Procedure): replace test with your Procedure Code.
+* **acc** (Access Level): replace acl_cron_job with your Access Level Code.
 
-E.g. http://localhost/nubuilder/nucall_ext.php?p=test&acc=acl_cron_job
+E.g. http://localhost/nubuilder/libs/nucall_ext.php?p=test&acc=acl_cron_job
 
 Now you may want to set up a cron job to call the script on a scheduled basis.
 A cron job in PHP powered systems, in particular, is often used to ensure timely execution of important tasks including executing or scheduling a code 
-snippet. They are often used for system maintenance.
+snippet. 
+
+They are often used for system maintenance, to send automated reminder emails etc.
