@@ -5,6 +5,8 @@
 
 ## Code snippets (34)
 
+* 2020-05-21: Edit Screen: Setting Up Next and Back Buttons [edit_record_navigator](edit_record_navigator)
+
 * 2020-05-21: Object: Better user experience when entering a date of birth [object_enter_date_of_birth](object_enter_date_of_birth)
 
 * 2020-05-20: Automation: How to run a PHP procedure from outside nuBuilder? [automation_call_procedure_externally](
