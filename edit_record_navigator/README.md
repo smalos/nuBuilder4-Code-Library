@@ -9,6 +9,8 @@ Add two button objects to you form:
 
 This will allow the user to cycle through the records being returned from the Browse Screen.
 
+_Note_: This is limited to the records that are shown on the current Browse page.
+
 <p align="left">
   <img src="screenshots/edit_record_navigator.gif">
 </p>
