@@ -3,7 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (36)
+## Code snippets (37)
+
+
+* 2020-05-22: jQuery: Applying nuBuilder functions to multiple objects [jquery_apply_functions_to_multiple_objects](jquery_apply_functions_to_multiple_objects)
 
 * 2020-05-21: Third party: How to send sms with Twilio? [third_party_send_sms](third_party_send_sms)
 
