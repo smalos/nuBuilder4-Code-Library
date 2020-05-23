@@ -55,7 +55,7 @@ $(":input") .nuDisable();
 
 #### ✪ Example 5: Hide all <button> and <input> elements of type="button"   
 ```javascript
-$(":input") .nuHide();  
+$(":button") .nuHide();  
 ```
 
 #### ✪ Example 6: Enable all <div> elements that contain the text 'teacher'    
