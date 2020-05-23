@@ -3,8 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (37)
+## Code snippets (38)
 
+
+* 2020-05-23: Subform: Make a Conditionally Required Field [suform_conditionally_required_fields](suform_conditionally_required_fields)
 
 * 2020-05-22: jQuery: Applying nuBuilder functions to multiple objects [jquery_apply_functions_to_multiple_objects](jquery_apply_functions_to_multiple_objects)
 
