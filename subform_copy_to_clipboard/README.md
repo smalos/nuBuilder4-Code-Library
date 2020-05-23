@@ -1,6 +1,6 @@
 ### Subform: Copy data to clipboard
 
-This code snippet shows how to copy subform data to clipboard.
+The code snippet shows how to copy all data of a subform to the clipboard as tab-separated data, so you can easily paste the information into a spreadsheet or other file. 
 
 ☛Add this JavaScript Code to your form’s Custom Code field:
 
@@ -77,7 +77,7 @@ function rowToSeparatedString(rows, delimiter, includeId) {
  * @param {string}  sfId                - Subform Object ID
  * @param {string}  delimiter       	- Delimiter for the data. Default: \t  (tabulator)
  * @param {bool}    [includeHeader]     - true to include the header (titles)
- * @param {bool}    [includeId]  	- true to include the Id (Primary Key)
+ * @param {bool}    [includeId]  	    - true to include the Id (Primary Key)
  *
  */
 
