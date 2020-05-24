@@ -1,4 +1,4 @@
-### Using Google Translate to translate text
+### Third party: Using Google Translate to translate text
 
 This example shows how to auto-translate from any language to English using Google's Cloud Translation - Basic (v2).
 
