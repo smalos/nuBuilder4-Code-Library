@@ -3,11 +3,11 @@
 In nuBuilderPro (v3) it was possible to run a Procedure at the server's command line via a cron jobs etc. 
 (Allow Non Secure Access). Unfortunately, this is no longer possible with nuBuilder 4.
 
-Therefore I created a nucall_ext.php file which makes this possible again.
+Therefore, I created nucall_ext.php which makes this possible again.
 
 ☛ Place [nucall_ext.php](nucall_ext.php) in a *subfolder* of your nuBuilder root directory (e.g. /libs)
 
-☛ Create a new [Procedure](https://wiki.nubuilder.net/nubuilderforte/index.php/Procedures) if you do not have one already or check out this [sample Procedure](sample_procedure.php).
+☛ Next, create a new [Procedure](https://wiki.nubuilder.net/nubuilderforte/index.php/Procedures) if you do not have one already or check out this [sample Procedure](sample_procedure.php). 
 
 ☛ Create a new [Access Level](https://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level). For security reasons, do not assign that Access Level to a user. 
 
