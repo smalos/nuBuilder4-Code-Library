@@ -109,7 +109,7 @@ Position all labels of the subform with ID subfromObjID at the top of their obje
 if (nuFormType() == 'edit') {
     $('[id^=subfromObjID]).labelOnTop();
 }
-
+```
 
 ### ✪ Example 6: 
 
@@ -119,3 +119,4 @@ Position the label of the Object with ID firstname in the subform with ID subfro
 if (nuFormType() == 'edit') {
 	$('[id^=subfromObjID][id$=firstname]').labelOnTop();
 }
+```
