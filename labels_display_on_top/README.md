@@ -1,4 +1,4 @@
-### Display Labels on Top of Objects
+### Positioning labels above objects
 
 This is especially useful when the caption is a little longer and it would take up too much space horizontally.
 
@@ -11,57 +11,111 @@ This is especially useful when the caption is a little longer and it would take 
 ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
 
 ```javascript
-function custFieldLabelsOnTop(f, e) {
+
+/**
+ * Position a label at the top of its object
+ *
+ * @param  {array}   f     - Array of object IDs to include
+ * @param  {array}   e     - Array of object IDs to exclude
+ */
+
+function labelOnTop(f, e) {
 
     for (var i = 0; i < f.length; i++) {
         if (jQuery.inArray(f[i], e) == -1) {
 
-            var t = $('#' + f[i]).cssNumber("top");
-            var l = $('#' + f[i]).cssNumber("left");
             $('#' + 'label_' + f[i]).css({
-                'top': t - 18,
-                'left': l - 15
+                'top': parseInt($(this).css("top")) - 18,
+                'left': parseInt($(this).css("left")) - 15,
+				'text-align': 'left'
             })
         }
     }
 }
 
-jQuery.fn.cssNumber = function(prop){
-    var v = parseInt(this.css(prop),10);
-    return isNaN(v) ? 0 : v;
+// Add a function called labelOnTop to $.fn and it will be available just like any other jQuery object method
+
+/**
+ *
+ * @param   {int}   [offsetTop]     - Left offset to the object in pixels
+ * @param   {int}   [offsetLeft]    - Left offset to the object in pixels
+ */
+ 
+jQuery.fn.labelOnTop = function(offsetTop = -18, offsetLeft = 0){
+
+	return this.each(function() {
+		$('#' + 'label_' + this.id).css({
+			'top': parseInt($(this).css("top")) + offsetTop,
+			'left': parseInt($(this).css("left")) + offsetLeft,
+			'text-align': 'left'
+		})		
+    });	
+	
 };
+
 ```
 
 #### ✪ Example 1: 
 
-Place the labels of all fields on top of the input fields:
+Position the labels of all object at the top of their objects:
 
 ```javascript
 if (nuFormType() == 'edit') {
-    var f = nuSubformObject("").fields;          // include all fields of your main form.
-    custFieldLabelsOnTop(f, []);
+    var f = nuSubformObject("").fields;          // include all objects of your main form.
+    labelOnTop(f, []);
 }
 ```
 
 #### ✪ Example 2</strong>: 
   
-Place the labels of all fields above the input fields, but exclude some
+Position the labels of all objects above their objects, but exclude some:
 
 ```javascript
 if (nuFormType() == 'edit') {
-    var f = nuSubformObject("").fields;          // include all fields of your form
-    var e = ["cus_firstname", "cus_lastname"];   // but exclude these fields
-    custFieldLabelsOnTop(f, e);
+    var f = nuSubformObject("").fields;          // include all objects of your form
+    var e = ["cus_firstname", "cus_lastname"];   // but exclude these two objects
+    labelOnTop(f, e);
 }
 ```
 
 #### ✪ Example 3: 
 
-Place the labels of some fields above the input fields
+Position the labels of some objects above their objects:
 
 ```javascript
 if (nuFormType() == 'edit') {
-    var f = ["cus_firstname", "cus_lastname"];   // include just these two fields
-    custFieldLabelsOnTop(f, []);
+    var f = ["cus_firstname", "cus_lastname"];   // include just these two objects
+    labelOnTop(f, []);
 }
 ```
+
+#### ✪ Example 4: 
+
+Position the labels of all objects at the top of their objects:
+
+```javascript
+if (nuFormType() == 'edit') {
+    $('input').labelOnTop();
+}
+```
+
+### ✪ Example 5: 
+
+Position all labels of the subform with ID subfromObjID at the top of their objects:
+(Do not forget to do the positioning again when a new subform row is added. Use the afterinsertrow event of the subform.)
+
+
+```javascript
+if (nuFormType() == 'edit') {
+    $('[id^=subfromObjID]).labelOnTop();
+}
+
+
+### ✪ Example 6: 
+
+Position the label of the Object with ID firstname in the subform with ID subfromObjID at the top of its object:
+
+```javascript
+if (nuFormType() == 'edit') {
+	$('[id^=subfromObjID][id$=firstname]').labelOnTop();
+}
