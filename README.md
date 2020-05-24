@@ -3,8 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (39)
+## Code snippets (40)
 
+
+* 2020-05-24: <b>Third Party:</b> Using Google Translate to translate text [⮕ view](third_party_google_translate)
 
 * 2020-05-24: <b>UX:</b> Display the Logged in User Name [⮕ view](ux_display_user_name)
 
