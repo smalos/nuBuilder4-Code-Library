@@ -3,8 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (38)
+## Code snippets (39)
 
+
+* 2020-05-24: UX: Display the Logged in User Name [⮕ view](ux_display_user_name)
 
 * 2020-05-23: Subform: Make a Conditionally Required Field [⮕ view](suform_conditionally_required_fields)
 
