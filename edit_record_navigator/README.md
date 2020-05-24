@@ -11,7 +11,7 @@ This will allow the user to cycle through the records being returned from the Br
 
 _Note_: This example is limited to the records that are shown on the current Browse page.
 
-The [advanced code](/advanced/README.md) does not have this limitation but it requires a PHP Procedure.
+The [advanced code](/edit_record_navigator/advanced/README.md) does not have this limitation but it requires a PHP Procedure.
 
 <p align="left">
   <img src="screenshots/edit_record_navigator.gif">
