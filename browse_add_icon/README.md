@@ -11,8 +11,6 @@ The function addStatusIconsFA() can be used to add icons in front of a text in a
 ☛ Add this JavaScript to your form's _Custom Code_ field:
  ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
  
-☛ Change the status descriptions, icons, colors in statusArr if necessary.
-
 ```javascript
 function addStatusIconsFA(col, statusArr) {
 	
@@ -34,6 +32,7 @@ function addStatusIconsFA(col, statusArr) {
 
 Add a status icon in the first column when the Browse Screen is loaded.
 
+☛ Change the status descriptions, icons, colors in statusArr if necessary.
 
 ```javascript
 
