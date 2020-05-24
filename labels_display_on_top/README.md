@@ -97,7 +97,7 @@ if (nuFormType() == 'edit') {
 }
 ```
 
-### ✪ Example 5: 
+#### ✪ Example 5: 
 
 Position all labels of the subform with ID subfromObjID at the top of their objects:
 (Do not forget to do the positioning again when a new subform row is added. Use the afterinsertrow event of the subform.)
@@ -109,7 +109,7 @@ if (nuFormType() == 'edit') {
 }
 ```
 
-### ✪ Example 6: 
+#### ✪ Example 6: 
 
 Position the label of the Object with ID firstname in the subform with ID subfromObjID at the top of its object:
 
