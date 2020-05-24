@@ -12,7 +12,7 @@ Trumbowyg.js is a lightweight, customizable, extendable, semantic, cross-browser
 
 1. Download Trumbowyg from https://codeload.github.com/Alex-D/Trumbowyg/zip/master
 
-2. Unzip the archive and place the contents of the subfolder \dist in a new subdirectory (e.g. "libs\trumbowyg") of you nuBuilder installation
+2. Unzip the archive. and place the contents of the subfolder \dist in a new subdirectory (e.g. "libs\trumbowyg") of your nuBuilder installation (Only files in the dist directory are required)
 
 
 <p align="left">
@@ -43,8 +43,6 @@ Trumbowyg.js is a lightweight, customizable, extendable, semantic, cross-browser
 ```
 </details>
 
-When the form is loaded, the HTML content from the textarea object is copied to the corresponding trumbowyg object. 
-
 
 4. In your form, create a new object of type HTML. Any object ID can be entered.
 
@@ -59,6 +57,7 @@ li {
 
 <div id="cus_notes_tr" placeholder="Placeholder here..." style="background:white"></div>
 ```
+
 The DIV *cus_notes_tr* is going to be converted into a WYSIWYG editor as soon as your form loads (Step 6)
 
 5. Create a Textarea object with (e.g.) the ID *cus_notes*. Set its access to Hidden.
