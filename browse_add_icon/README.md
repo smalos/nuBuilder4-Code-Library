@@ -1,6 +1,6 @@
 ## Browse Screen: Add Icons in front of text
 
-This will add an icon in front of a text in a browse column using font awesome icons ( https://fontawesome.com/v4.7.0/icons/ )
+The function addStatusIconsFA() can be used to add icons in front of a text in a Browse column using [font awesome icons]( https://fontawesome.com/v4.7.0/icons/).
 
 
 <p align="left">
@@ -8,20 +8,13 @@ This will add an icon in front of a text in a browse column using font awesome i
 </p>
 
 
-☛ Add this JavaScript code to your form's _Custom Code_ field
-
+☛ Add this JavaScript to your form's _Custom Code_ field:
+ ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+ 
 ☛ Change the status descriptions, icons, colors in statusArr if necessary.
 
 ```javascript
-var statusArr = [
-	{status:"Pending",class:"fa fa-clock-o",color:"#f1c40f"},             // orange
-	{status:"Completed",class:"fa fa-check-circle",color:"#2ecc71"},      // green
-	{status:"Cancelled",class:"fa fa-ban",color:"#e74c3c"},               // red	
-	{status:"New",class:"fa fa-circle-o",color:"#707070"},                // grey
-	{status:"In progress",class:"fa fa-spinner",color:"#3498db"}          // blue
-]
-
-function addStatusIconsFA(col) {
+function addStatusIconsFA(col, statusArr) {
 	
 	$("[data-nu-column='"+col+"']").each(function(index) {  
 			
@@ -37,12 +30,23 @@ function addStatusIconsFA(col) {
 }
 ```
 
-Example: Add a status icon in the first column when the Browse Screen is loaded
+#### ✪ Example 
+
+Add a status icon in the first column when the Browse Screen is loaded.
 
 
 ```javascript
+
+var statusArr = [
+	{status:"Pending",class:"fa fa-clock-o",color:"#f1c40f"},             // orange
+	{status:"Completed",class:"fa fa-check-circle",color:"#2ecc71"},      // green
+	{status:"Cancelled",class:"fa fa-ban",color:"#e74c3c"},               // red	
+	{status:"New",class:"fa fa-circle-o",color:"#707070"},                // grey
+	{status:"In progress",class:"fa fa-spinner",color:"#3498db"}          // blue
+]
+
 if (nuFormType() == 'browse') {
-   addStatusIconsFA(0);
+    addStatusIconsFA(0, statusArr); // 0 = 1st column
 }
 ```
 
@@ -52,7 +56,7 @@ if (nuFormType() == 'browse') {
 
 ☛ Create a new folder _/ressources_ in the root directory of nuBuilder and place your image files there.
 
-☛ Add this JavaScript code to your form's _Custom Code_ field
+☛ Add this JavaScript code to your form's _Custom Code_ field.
 
 
 ```javascript
