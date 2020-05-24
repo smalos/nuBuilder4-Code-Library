@@ -3,8 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (40)
+## Code snippets (41)
 
+
+* 2020-05-24: <b>Globeadmin:</b> Add a Refresh Button [⮕ view](globeadmin_add_refresh_button)
 
 * 2020-05-24: <b>Third Party:</b> Using Google Translate to translate text [⮕ view](third_party_google_translate)
 
@@ -30,7 +32,7 @@ automation_call_procedure_externally)
 
 * 2020-05-16: <b>Globeadmin:</b> Add a Quick Access Menu [⮕ view](globeadmin_quick_access_menu)
 
-* 2020-05-16: <b>Usability: </b> Set individual tab titles [⮕ view](usability_set_tab_titles)
+* 2020-05-16: <b>UX: </b> Set individual tab titles [⮕ view](usability_set_tab_titles)
 
 * 2020-05-15: <b>Subform:</b> Disable row sorting [⮕ view](subform_disable_sorting)
 
@@ -76,7 +78,7 @@ automation_call_procedure_externally)
 
 * 2020-01-10: <b>Edit Screen:</b> Display the Number of Records on a Button [⮕ view](button_display_number_of_records)
 
-* 2020-01-10: <b>Usability:</b> Enable the Browser’s Back Button [⮕ view](enable_back_button)
+* 2020-01-10: <b>UX:</b> Enable the Browser’s Back Button [⮕ view](enable_back_button)
 
 * 2019-11-24: <b>Globeadmin Helper:</b> Quickly view an Object ID [⮕ view](globeadmin_view_object_id)
 
