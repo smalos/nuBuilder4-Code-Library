@@ -11,23 +11,21 @@ This is especially useful when the caption is a little longer and it would take 
 ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
 
 ```javascript
-
 /**
  * Position a label at the top of its object
  *
  * @param  {array}   f     - Array of object IDs to include
  * @param  {array}   e     - Array of object IDs to exclude
  */
-
 function labelOnTop(f, e) {
 
     for (var i = 0; i < f.length; i++) {
         if (jQuery.inArray(f[i], e) == -1) {
 
             $('#' + 'label_' + f[i]).css({
-                'top': parseInt($(this).css("top")) - 18,
-                'left': parseInt($(this).css("left")) - 15,
-				'text-align': 'left'
+                'top': parseInt($(this).css("top")) - 18
+                , 'left': parseInt($(this).css("left")) - 15
+                , 'text-align': 'left'
             })
         }
     }
@@ -40,17 +38,17 @@ function labelOnTop(f, e) {
  * @param   {int}   [offsetTop]     - Left offset to the object in pixels
  * @param   {int}   [offsetLeft]    - Left offset to the object in pixels
  */
- 
-jQuery.fn.labelOnTop = function(offsetTop = -18, offsetLeft = 0){
 
-	return this.each(function() {
-		$('#' + 'label_' + this.id).css({
-			'top': parseInt($(this).css("top")) + offsetTop,
-			'left': parseInt($(this).css("left")) + offsetLeft,
-			'text-align': 'left'
-		})		
-    });	
-	
+jQuery.fn.labelOnTop = function (offsetTop = -18, offsetLeft = 0) {
+
+    return this.each(function () {
+        $('#' + 'label_' + this.id).css({
+            'top': parseInt($(this).css("top")) + offsetTop
+            , 'left': parseInt($(this).css("left")) + offsetLeft
+            , 'text-align': 'left'
+        })
+    });
+
 };
 
 ```
