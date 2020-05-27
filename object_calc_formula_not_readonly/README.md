@@ -14,15 +14,17 @@ Calling enableFormulaField() in the Header will activate the formula field perma
 ```javascript
 // Make the Formula Field (Object -> Calc Tab) not readonly
 function enableFormulaField() {
- 
-if (window.global_access) {
-	   if ((nuCurrentProperties().form_id == 'nuobject')) {		  
-		  $("#sob_calc_formula").prop("readonly", false).removeClass('nuReadonly');
-	   }
-   }
+
+    if (window.global_access) {
+        if ((nuCurrentProperties().form_id == 'nuobject')) {
+            $("#sob_calc_formula")
+                .prop("readonly", false)
+                .removeClass('nuReadonly');
+        }
+    }
 }
 
 function nuOnLoad() {
-	enableFormulaField();
+    enableFormulaField();
 }
 ```
