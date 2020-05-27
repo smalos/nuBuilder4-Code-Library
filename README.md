@@ -3,8 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (41)
+## Code snippets (42)
 
+* 2020-05-27: <b>Object:</b> How to make the Formula field editable [→ view](object_calc_formula_not_readonly)
 
 * 2020-05-24: <b>Globeadmin:</b> Add a Refresh Button [→ view](globeadmin_add_refresh_button)
 
