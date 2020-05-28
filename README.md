@@ -3,11 +3,11 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (42)
+## Code snippets (43)
 
 
 
-* 2020-05-27: <b>Calculation:</b> Duration between two Times [→ view](time_calculation_time_difference)
+* 2020-05-28: <b>Calculation:</b> Duration between two Times [→ view](time_calculation_time_difference)
 
 * 2020-05-27: <b>Object:</b> How to make the Formula field editable [→ view](object_calc_formula_not_readonly)
 
