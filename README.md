@@ -5,6 +5,10 @@
 
 ## Code snippets (42)
 
+
+
+* 2020-05-27: <b>Calculation:</b> Duration between two Times [→ view](time_calculation_time_difference)
+
 * 2020-05-27: <b>Object:</b> How to make the Formula field editable [→ view](object_calc_formula_not_readonly)
 
 * 2020-05-24: <b>Globeadmin:</b> Add a Refresh Button [→ view](globeadmin_add_refresh_button)
