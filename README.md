@@ -3,9 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (43)
+## Code snippets (44)
 
 
+* 2020-05-28: <b>Third party:</b> jQuery UI Timepicker [→ view](third_party_timepicker)
 
 * 2020-05-28: <b>Calculation:</b> Duration between two Times [→ view](time_calculation_time_difference)
 
