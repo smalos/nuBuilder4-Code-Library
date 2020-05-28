@@ -1,5 +1,5 @@
 
-###  Object: How to make the Formula field editable
+###  Globeadmin: How to make the Formula field editable
 
 You have created a (complex) formula and want to edit it later? Unfortunately, the formula field is readonly, so that changes are not possible. 
 You have to re-create the whole formula...
