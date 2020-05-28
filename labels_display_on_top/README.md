@@ -23,8 +23,8 @@ function labelOnTop(f, e) {
         if (jQuery.inArray(f[i], e) == -1) {
 
             $('#' + 'label_' + f[i]).css({
-                'top': parseInt($(this).css("top")) - 18
-                , 'left': parseInt($(this).css("left")) - 15
+                   'top': parseInt($('#'+f[i]).css("top")) - 18
+                , 'left': parseInt($('#'+f[i]).css("left"))- 15
                 , 'text-align': 'left'
             })
         }
