@@ -10,7 +10,7 @@ This is especially useful if you log in with different users (to test functional
 
 ```javascript
 function showLoggedInUser() {   
-  $('.nuBuilderLink').html(window.global_access ? nuCurrentProperties().user_id : nuCurrentProperties().username).attr('href', '').css({
+$('.nuBuilderLink').html(window.global_access ? nuCurrentProperties().user_id : nuUserName()).attr('href', '').css({
     'cursor': 'pointer'
     , 'pointer-events': 'none'
 });
