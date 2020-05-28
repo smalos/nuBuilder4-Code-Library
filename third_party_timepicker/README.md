@@ -40,75 +40,27 @@ The plugin is very easy to integrate in your form for your time (hours / minutes
 
       ☛  Replace *time_obj_id* with the Object Id of the text input Object for which the timepicker should be displayed.
 
-<details>
- <summary>Click to view the code!</summary>
-
   ```javascript
-  //  Init TimePicker
-  if (nuFormType() == 'edit') {
+if (nuFormType() == 'edit') {
 
-      if ($('#time_obj_id').data('timepicker') === undefined) {
+    var timeObj = 'time_obj_id';
 
-          $('#time_obj_id').timepicker({
-              //
-              // Options
-              timeSeparator: ':', // The character to use to separate hours and minutes. (default: ':')
-              showLeadingZero: true, // Define whether or not to show a leading zero for hours < 10. (default: true)
-              showMinutesLeadingZero: true, // Define whether or not to show a leading zero for minutes < 10.(default: true)
+    if ($('#' + timeObj).data('timepicker') === undefined) {
+        $('#' + timeObj).timepicker({
+			timeSeparator: ':',           // The caracter to use to separate hours and minutes. (default: ':')
+			showLeadingZero: true,        // Define whether or not to show a leading zero for hours < 10. (default: true)
+			showMinutesLeadingZero: true, // Define whether or not to show a leading zero for minutes < 10. (default: true)
+			showPeriod: false,            // Define whether or not to show AM/PM with selected time. (default: false)
+			hourText: 'Hour',             // Define the locale text for "Hours"
+			minuteText: 'Minute',         // Define the locale text for "Minute"
+			amPmText: ['AM', 'PM'],       // Define the locale text for periods
+			defaultTime: '08:00'          // Define a default time to use if displayed inline or input is empty
+		});
+	}
+	nuHasNotBeenEdited();
+}	  
+```
 
-              showPeriodLabels: false, // Define if the AM/PM labels on the left are displayed. (default: true)
-              periodSeparator: ' ', // The character to use to separate the time from the time period.
-              altField: '#alternate_input', // Define an alternate input to parse selected time to
-              //   defaultTime: now,         // Used as default time when input field is empty or for inline timePicker
-              // (set to 'now' for the current time, '' for no highlighted time, default value: now)
-
-              // trigger options
-              showOn: 'focus', // Define when the timepicker is shown.
-              // 'focus': when the input gets focus, 'button' when the button trigger element is clicked,
-              // 'both': when the input gets focus and when the button is clicked.
-              button: null, // jQuery selector that acts as button trigger. ex: '#trigger_button'
-
-              // Localization
-              hourText: 'Hour', // Define the locale text for "Hours"
-              minuteText: 'Minute', // Define the locale text for "Minute"
-              amPmText: ['AM', 'PM'], // Define the locale text for periods
-
-              // Position
-              myPosition: 'left top', // Corner of the dialog to position, used with the jQuery UI Position utility if present.
-              atPosition: 'left bottom', // Corner of the input to position
-
-              // Events: Not Implemented
-
-              // custom hours and minutes
-              hours: {
-                  starts: 7, // First displayed hour
-                  ends: 18 // Last displayed hour
-              },
-              minutes: {
-                  starts: 0, // First displayed minute
-                  ends: 55, // Last displayed minute
-                  interval: 5, // Interval of displayed minutes
-                  manual: [] // Optional extra entries for minutes
-              },
-              rows: 4, // Number of rows for the input tables, minimum 2, makes more sense if you use multiple of 2
-              showHours: true, // Define if the hours section is displayed or not. Set to false to get a minute only dialog
-              showMinutes: true, // Define if the minutes section is displayed or not. Set to false to get an hour only dialog
-
-              // buttons
-              showCloseButton: false, // shows an OK button to confirm the edit
-              closeButtonText: 'Done', // Text for the confirmation button (ok button)
-              showNowButton: false, // Shows the 'now' button
-              nowButtonText: 'Now', // Text for the now button
-              showDeselectButton: false, // Shows the deselect time button
-              deselectButtonText: 'Deselect' // Text for the deselect button
-
-          });
-
-      }
-      nuHasNotBeenEdited();
-  }
-  ```
-</details>
 
 #### Useful links:
 
