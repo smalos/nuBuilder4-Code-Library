@@ -20,7 +20,7 @@ This will strike through a row and turn its text to red when the delete checkbox
 function deleteClicked(event) {
 
     var id = event.target.id;
-    var sf = "sfObj"; //<----- replace with your Subform Object ID !
+    var sf = $('#'+ id).attr('data-nu-checkbox');
 
     var row = id.substring(sf.length, sf.length + 3);
     style = $('#' + id).is(":checked") ? {
