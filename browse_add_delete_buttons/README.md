@@ -1,7 +1,8 @@
 ## Browse Screen: Add Delete Buttons
 
-This will show you how to add delete buttons in a column of a Browse Screen which allows a user to delete a row directly from the Browse Screen without having to open the Edit Screen first.
+This snippet will show you how to add delete buttons in each row of a Browse Column.  
 
+This snippet will show you how how to add delete buttons in each row of a Browse Column. This allows a user to delete records directly from the Browse Screen without having to open the Edit Screen first.
 
 <p align="left">
   <img src="screenshots/delete_row_demo.gif">
@@ -10,18 +11,18 @@ This will show you how to add delete buttons in a column of a Browse Screen whic
 The following steps are carried out:
 
 1) JavaScript: Adds delete buttons to each row of a Browse Screen
-2) JavaScript: Calls a PHP procedure when a delete button is clicked
-3) PHP: Checks if the user has the delete permission for the form
-4) PHP: Deletes the record.
-5) PHP: Calls the JavScript function afterDeleteRow()
-5) JavasScript: Refreshes the Browse Screen
+2) JavaScript: On clicking a delete button, a PHP procedure is executed
+3) PHP Procedure: Checks if the user has the delete permission for the form
+4) PHP Procedure: Deletes the record.
+5) PHP Procedure: Calls the JavaScript function afterDeleteRow()
+5) afterDeleteRow() function: Refreshes the Browse Screen
 
 <p align="left">
   <img src="screenshots/browse_delete_buttons.png">
 </p>
 
 
-☛ Add this JavaScript code to your form's _Custom Code_ field
+☛ Add this JavaScript code to your form's _Custom Code_ field.
 
 ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
 
@@ -103,7 +104,7 @@ if (nuFormType() == 'browse') {
 
 ### Create a PHP procedure
 
-☛ Create a Procedure: Builders -> Procedure -> Add
+☛ Create a [Procedure](https://wiki.nubuilder.net/nubuilderforte/index.php/Procedures): Tab Builders -> Procedure -> Add
 
 <p align="left">
   <img src="screenshots/procedure_deleteRow.png">
