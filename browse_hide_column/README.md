@@ -12,6 +12,13 @@ function iniFrame() {
     return window.location !== window.parent.location;
 }
 
+```javascript
+/**
+ * Set the column size of a Browse Screen
+ *
+ * @param  {int}  column     - Column number (first column = 0, second column = 1 etc.)
+ * @param  {int}  size       - Size in pixels
+ */
 function setBrowseColumnSize(column, size) {
     var cw = this;
     if (iniFrame()) {
@@ -21,7 +28,7 @@ function setBrowseColumnSize(column, size) {
     cw.nuSetBrowserColumns(cw.nuFORM.breadcrumbs[cw.nuFORM.breadcrumbs.length - 1].column_widths)
 }
 
-// Example, Hide the first column 
+// Example, Hide the first column by setting it column width to 0.
 $(function () {
     setBrowseColumnSize(0, 0);
 });
