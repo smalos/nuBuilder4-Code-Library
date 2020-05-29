@@ -12,6 +12,7 @@ function iniFrame() {
     return window.location !== window.parent.location;
 }
 
+ /*
  * Set the column size of a Browse Screen
  *
  * @param  {int}  column     - Column number (first column = 0, second column = 1 etc.)
