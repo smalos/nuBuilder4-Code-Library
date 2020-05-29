@@ -25,8 +25,13 @@ function setBrowseColumnSize(column, size) {
     cw.nuFORM.breadcrumbs[cw.nuFORM.breadcrumbs.length - 1].column_widths[column] = size;
     cw.nuSetBrowserColumns(cw.nuFORM.breadcrumbs[cw.nuFORM.breadcrumbs.length - 1].column_widths)
 }
+```
 
-// Example, Hide the first column by setting it column width to 0.
+
+#### ✪ Example
+
+Hide the first column by setting its column width to 0.
+```javascript
 $(function () {
     setBrowseColumnSize(0, 0);
 });
