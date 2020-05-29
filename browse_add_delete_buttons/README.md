@@ -1,7 +1,5 @@
 ## Browse Screen: Add Delete Buttons
 
-This snippet will show you how to add delete buttons in each row of a Browse Column.  
-
 This snippet will show you how how to add delete buttons in each row of a Browse Column. This allows a user to delete records directly from the Browse Screen without having to open the Edit Screen first.
 
 <p align="left">
