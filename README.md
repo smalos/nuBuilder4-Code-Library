@@ -3,8 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (44)
+## Code snippets (45)
 
+
+* 2020-05-31: <b>Subform:</b> Enable keyboard navigation [→ view](subform_keyboard_navigation)
 
 * 2020-05-28: <b>Third party:</b> jQuery UI Timepicker [→ view](third_party_timepicker)
 
