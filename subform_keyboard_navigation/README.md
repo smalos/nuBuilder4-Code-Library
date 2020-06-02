@@ -33,22 +33,23 @@ function initShortcutHandler() {
             var keyCode = e.keyCode || e.which,
                 keys = { up: 38, down: 40 };
 
+            var result = false;
             switch (keyCode) {
                 case keys.up:
-                    subformMoveFocus(-1);
+                    result = subformMoveFocus(-1);
                     break;
                 case keys.down:
-                    subformMoveFocus(1);
+                    result = subformMoveFocus(1);
                     break;
                 default:
                     return;
             }
-            e.preventDefault();
+            
+            if (result) e.preventDefault();
 
         }
     }
 }
-
 
 function nuOnLoad() {
 
