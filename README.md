@@ -3,8 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (46)
+## Code snippets (47)
 
+
+* 2020-06-05: <b>Third Party:</b> How to show a gauge chart? [→ view](third_party_gauge_chart)
 
 * 2020-06-05: <b>Browse:</b> Show Logging Activity [→ view](browse_show_logging_activity)
 
