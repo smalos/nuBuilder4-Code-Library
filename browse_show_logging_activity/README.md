@@ -12,8 +12,18 @@ To get rid of the double-quotes, we can use *JSON_UNQUOTE()* and FROM_UNIXTIME()
 ☛ Add this SQL to the SQL field (Browse Tab). Replace *my_table* with your table name.
 
 ```mysql
-SELECT 
-
+SELECT
+    my_table_id,
+    added_user,
+    added_time,
+    viewed_user,
+    viewed_time,
+    edited_user,
+    edited_time
+FROM (   
+	SELECT  
+	
+	my_table_id, -- replace with the primary key!
 	JSON_UNQUOTE(JSON_EXTRACT(my_table_nulog, '$.added.user')) as added_user,
 	FROM_UNIXTIME(JSON_EXTRACT(my_table_nulog, '$.added.time')) as added_time,
 
@@ -22,7 +32,8 @@ SELECT
 
 	JSON_UNQUOTE(JSON_EXTRACT(my_table_nulog, '$.edited.user')) as edited_user,
 	FROM_UNIXTIME(JSON_EXTRACT(my_table_nulog, '$.edited.time')) as edited_time
-
-from my_table
+	
+	from my_table
+) T
 ```
 
