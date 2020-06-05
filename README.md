@@ -3,8 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (45)
+## Code snippets (46)
 
+
+* 2020-06-05: <b>Browse:</b> Show Logging Activity [→ view](browse_show_logging_activity)
 
 * 2020-05-31: <b>Subform:</b> Enable keyboard navigation [→ view](subform_keyboard_navigation)
 
