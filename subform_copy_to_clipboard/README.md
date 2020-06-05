@@ -1,6 +1,6 @@
 ### Subform: Copy data to clipboard
 
-This code snippet shows how to copy all data of a subform to the clipboard as tab-separated data, so you can easily paste the information into a spreadsheet or other file. 
+This code snippet shows how to copy all data of a subform to the clipboard as tab-separated data, so you can easily paste the information into a spreadsheet (e.g. Excel) or elsewhere. 
 
 ☛Add this JavaScript Code to your form’s Custom Code field. (Or in the (Setup -> Header), if the function is used in several forms)
 
@@ -81,7 +81,7 @@ function rowToSeparatedString(rows, delimiter, includeId) {
  *
  */
 
-function subGridToClipboard(sfId, delimiter, includeHeader, includeId) {
+function subformToClipboard(sfId, delimiter, includeHeader, includeId) {
 
     var obj = nuSubformObject(sfId);
 
@@ -110,5 +110,5 @@ function subGridToClipboard(sfId, delimiter, includeHeader, includeId) {
 Add a button object to your form with an onclick event. Replace "subform_id" with your Subform Object ID.
 
 ```javascript
-subGridToClipboard('subform_id', '\t');
+subformToClipboard('subform_id', '\t');
 ```
