@@ -3,8 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (47)
+## Code snippets (48)
 
+* 2020-06-07: <b>Edit Screen:</b> Show Logging Activity [→ view](edit_show_logging_activity)
 
 * 2020-06-05: <b>Third Party:</b> How to show a gauge chart? [→ view](third_party_gauge_chart)
 
