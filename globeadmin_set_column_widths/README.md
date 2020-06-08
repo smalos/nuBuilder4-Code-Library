@@ -4,6 +4,10 @@ It is relatively tedious to set the column widths in a browse screen. In princip
 This helper provides an easier solution: Use the mouse to set the column widths, then call the dialog "Form Properties" and click on the link "Width". 
 Now all column widths are automatically applied.
 
+<p align="left">
+  <img src="screenshots/setbrowsecolumnwidth.gif">
+</p>
+
 ☛  Add this JavaScript in the Header (❓ [Home ► Setup](/common/setup_header.gif)). Click Save and log in again.
   
 ```javascript
