@@ -5,7 +5,7 @@ This helper provides an easier solution: Use the mouse to set the column widths,
 Now all column widths are automatically applied.
 
 <p align="left">
-  <img src="screenshots/setbrowsecolumnwidth.gif">
+  <img src="screenshots/setbrowsecolumnwidths.gif">
 </p>
 
 ☛  Add this JavaScript in the Header (❓ [Home ► Setup](/common/setup_header.gif)). Click Save and log in again.
