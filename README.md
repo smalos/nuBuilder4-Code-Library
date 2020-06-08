@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (48)
+## Code snippets (49)
+
+* 2020-06-07: <b>Globeadmin Helper</b> An easy way to set the Column Widths in a Browse Screen [→ view](globeadmin_set_column_widths)
 
 * 2020-06-07: <b>Edit Screen:</b> Show Logging Activity [→ view](edit_show_logging_activity)
 
