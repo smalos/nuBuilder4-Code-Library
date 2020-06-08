@@ -1,4 +1,4 @@
-## Globeadmin Helper: An easy way to set the Column Withs in a Browse Screen.
+## Globeadmin Helper: An easy way to set the Column Widths in a Browse Screen.
 
 It is relatively tedious to set the column widths in a browse screen. In principle, you guess the column width and then set the values.
 This helper provides an easier solution: Use the mouse to set the column widths, then call the dialog "Form Properties" and click on the link "Width". 
