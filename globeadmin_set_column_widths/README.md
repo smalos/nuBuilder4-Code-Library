@@ -52,5 +52,11 @@ function initSetBrowseWidthHelper() {
             }
         }
     }
-} ```
+} 
 
+function nuOnLoad() {
+
+    initSetBrowseWidthHelper();
+
+}
+```
