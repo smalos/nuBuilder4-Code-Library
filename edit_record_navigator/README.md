@@ -25,7 +25,13 @@ The [advanced code](/edit_record_navigator/advanced/README.md) does not have thi
 ```javascript
 function openRecord(r, test) {
 
-    var rows = nuFORM.breadcrumbs[nuFORM.breadcrumbs.length - 2].browse_rows;
+    var result = false;
+    var bc = nuFORM.breadcrumbs[nuFORM.breadcrumbs.length - 2];
+    if (typeof bc === 'undefined') {
+        return result;
+    }
+
+    var rows = bc.browse_rows;
     pks = rows.map(x => x[0]);
 
     var idx = pks.indexOf(nuCurrentProperties().record_id);
@@ -33,7 +39,7 @@ function openRecord(r, test) {
     gotoPk = pks[idx + r];
     result = typeof gotoPk !== "undefined";
 
-    if (result && !test == true) {
+    if (result && !test === true) {
         nuForm(nuGetProperty('form_id'), gotoPk, '', '', '1');
     }
 
