@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (49)
+## Code snippets (50)
+
+* 2020-06-10: <b>Select Object:</b> Change the Background Color of the selected Option [→ view](object_select_change_color)
 
 * 2020-06-07: <b>Globeadmin Helper</b> An easy way to set the Column Widths in a Browse Screen [→ view](globeadmin_set_column_widths)
 
