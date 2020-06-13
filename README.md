@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (50)
+## Code snippets (51)
+
+* 2020-06-13: <b>PHP:</b> How to pass data to a PHP Procedure [→ view](php_procedure_pass_data)
 
 * 2020-06-10: <b>Select Object:</b> Change the Background Color of the selected Option [→ view](object_select_change_color)
 
