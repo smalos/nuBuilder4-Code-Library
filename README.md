@@ -5,6 +5,8 @@
 
 ## Code snippets (51)
 
+* 2020-06-15: <b>UX:</b> Position the Save Button within the Form [→ view](ux_position_the_save_button)
+
 * 2020-06-13: <b>PHP:</b> How to pass data to a PHP Procedure [→ view](php_procedure_pass_data)
 
 * 2020-06-10: <b>Select Object:</b> Change the Background Color of the selected Option [→ view](object_select_change_color)
