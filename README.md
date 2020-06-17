@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (51)
+## Code snippets (52)
+
+* 2020-06-17: <b>Globeadmin Helper</b> Add additional Developer Action Buttons [→ view](globeadmin_dev_buttons)
 
 * 2020-06-15: <b>UX:</b> Position the Save Button within the Form [→ view](ux_position_the_save_button)
 
