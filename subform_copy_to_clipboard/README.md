@@ -62,8 +62,7 @@ function rowToSeparatedString(rows, delimiter, includeId) {
 
     var output = "";
 
-    var start = includeId == true ? 0 : 1;
-    for (var i = start; i < rows.length - 1; i++) {
+    for (var i = 0; i < rows.length - 1; i++) {
         output += processRow(rows[i], includeId);
     }
 
