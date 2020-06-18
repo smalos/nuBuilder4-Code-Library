@@ -3,9 +3,11 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (52)
+## Code snippets (53)
 
-* 2020-06-17: <b>Globeadmin Helper</b> Add additional Developer Action Buttons [→ view](globeadmin_dev_buttons)
+* 2020-06-18: <b>Browse Screen:</b> Add Dropdowns to Filter Columns [→ view](browse_add_filter_dropdowns)
+
+* 2020-06-17: <b>Globeadmin Helper:</b> Add additional Developer Action Buttons [→ view](globeadmin_dev_buttons)
 
 * 2020-06-15: <b>UX:</b> Position the Save Button within the Form [→ view](ux_position_the_save_button)
 
@@ -13,17 +15,17 @@
 
 * 2020-06-10: <b>Select Object:</b> Change the Background Color of the selected Option [→ view](object_select_change_color)
 
-* 2020-06-07: <b>Globeadmin Helper</b> An easy way to set the Column Widths in a Browse Screen [→ view](globeadmin_set_column_widths)
+* 2020-06-07: <b>Globeadmin Helper:</b> An easy way to set the Column Widths in a Browse Screen [→ view](globeadmin_set_column_widths)
 
 * 2020-06-07: <b>Edit Screen:</b> Show Logging Activity [→ view](edit_show_logging_activity)
 
 * 2020-06-05: <b>Third Party:</b> How to show a gauge chart? [→ view](third_party_gauge_chart)
 
-* 2020-06-05: <b>Browse:</b> Show Logging Activity [→ view](browse_show_logging_activity)
+* 2020-06-05: <b>Browse Screen:</b> Show Logging Activity [→ view](browse_show_logging_activity)
 
 * 2020-05-31: <b>Subform:</b> Enable keyboard navigation [→ view](subform_keyboard_navigation)
 
-* 2020-05-28: <b>Third party:</b> jQuery UI Timepicker [→ view](third_party_timepicker)
+* 2020-05-28: <b>Third Party:</b> jQuery UI Timepicker [→ view](third_party_timepicker)
 
 * 2020-05-28: <b>Calculation:</b> Duration between two Times [→ view](time_calculation_time_difference)
 
@@ -39,7 +41,7 @@
 
 * 2020-05-22: <b>jQuery:</b> Applying nuBuilder functions to multiple objects [→ view](jquery_apply_functions_to_multiple_objects)
 
-* 2020-05-21: <b>Third party:</b> How to send SMS with Twilio? [→ view](third_party_send_sms)
+* 2020-05-21: <b>Third Party:</b> How to send SMS with Twilio? [→ view](third_party_send_sms)
 
 * 2020-05-21: <b>Edit Screen:</b> Setting Up Next and Back Buttons [→ view](edit_record_navigator)
 
