@@ -14,6 +14,10 @@ function editPHP(type) {
     nuForm('nuphp', nuCurrentProperties().form_id + '_' + type, 'justphp', '', 2);
 }
 
+function openCurrentProperties() {
+    nuForm('nuform', window.nuFORM.getCurrent().form_id, '', '', 2);
+}
+
 function addDevButton(i, v, f) {
     var button = "<input id='nu" + i + "Button' type='button' class='nuActionButton' value='" + nuTranslate(v) + "' onclick='" + f + "'>";
     $('#nuActionHolder').prepend(button);
@@ -29,7 +33,7 @@ function addDevButtons() {
 
         $('#nuActionHolder').css('height', '50px');
 
-        addDevButton("DevBtnProperties", "Prop", "nuForm('nuform', window.nuFORM.getCurrent().form_id, '', '', 2);");
+        addDevButton("DevBtnProperties", "Prop", "openCurrentProperties();");
         if (b || l) { addDevButton("DevBtnBE", "BE", 'editPHP("BE");'); }
         if (e) { addDevButton("DevBtnBB", "BB", 'editPHP("BB");'); }
         if (e) { addDevButton("DevBtnBS", "BS", 'editPHP("BS");'); }
