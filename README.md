@@ -3,7 +3,7 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (53)
+## Code snippets (54)
 
 * 2020-06-18: <b>Browse Screen:</b> Add Dropdowns to Filter Columns [→ view](browse_add_filter_dropdowns)
 
