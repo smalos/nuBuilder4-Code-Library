@@ -111,3 +111,6 @@ Click "Choose File" and pick the csv_sample.csv.
 </p>
 
 If the file was successfully imported, a message "CSV upload completed!" is displayed.
+
+
+**Credits**: Janusz
