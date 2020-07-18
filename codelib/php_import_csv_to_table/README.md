@@ -66,7 +66,7 @@ nuJavascriptCallback($js);
 
 #### Create a HTML object
 
-1. In your form, create a new object of type HTML. Any object ID can be entered.
+7. In your form, create a new object of type HTML. Any object ID can be entered.
 The HTML object holds code which creates a file upload object and processes the file upload.
 
    ☛  Add this code in the HTML field (HTML tab).
