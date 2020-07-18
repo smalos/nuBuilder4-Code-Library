@@ -3,7 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (54)
+## Code snippets (55)
+
+
+* 2020-07-18: <b>PHP:</b> How to import a CSV file into a database table [→ view](codelib/php_import_csv_to_table)
 
 * 2020-06-18: <b>Browse Screen:</b> Add Dropdowns to Filter Columns [→ view](codelib/browse_add_filter_dropdowns)
 
@@ -47,8 +50,8 @@
 
 * 2020-05-21: <b>Object:</b> Better user experience when entering a date of birth [→ view](codelib/object_enter_date_of_birth)
 
-* 2020-05-20: <b>Automation:</b> How to run a PHP procedure from outside nuBuilder? [→ view](codelib/
-automation_call_procedure_externally)
+* 2020-05-20: <b>Automation:</b> How to run a PHP procedure from outside nuBuilder? [→ view](codelib/automation_call_procedure_externally)
+
 * 2020-05-20: <b>Third party:</b> How to include a WYSIWYG Editor [→ view](codelib/third_party_wysiwyg_trumbowyg)
 
 * 2020-05-18: <b>Browse Screen:</b> Prevent columns from becoming too wide [→ view](codelib/browse_no_column_stretching)
