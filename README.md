@@ -3,8 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (60)
+## Code snippets (61)
 
+* 2020-07-19: <b>Edit Screen:</b> Upload a File to the Server on Button Click [→ view](codelib/edit_upload_file)
 
 * 2020-07-19: <b>Browse Screen:</b> Restrict users to view their own records only [→ view](codelib/browse_limit_users_to_own_data)
 
