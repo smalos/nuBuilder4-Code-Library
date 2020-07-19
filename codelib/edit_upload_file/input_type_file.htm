@@ -6,17 +6,20 @@ function saveFileName(ObjId, fileId, fileName) {
 
 $(document).ready(function(e) {
 
+    $("#loading_spinner").hide();
+    
     $('#fileToUpload').on('change', function(event) {
 
+        $("#loading_spinner").show();
+        
         var file = $(this)[0].files[0];
-
         var formdata = new FormData();
         formdata.append('file', file);
         formdata.append('record_id', nuCurrentProperties().record_id);
 
         $.ajax({
             type: "POST",
-            url: "libs/upload/upload_file.php",
+            url: "libs/upload/upload.php",
             data: formdata,
             contentType: false,
             cache: false,
@@ -44,15 +47,17 @@ $(document).ready(function(e) {
 
                 } else {
                     nuMessage([nuTranslate("Upload successful:") + ' ' + result.file_name]);
-                    saveFileName('file_name', result.file_name, result.file_id);
+                    saveFileName('file_name', result.file_id, result.file_name);
                 }
 
                 $("#upload-form")[0].reset();
+                $("#loading_spinner").hide();
 
             },
             error: function(data) {
                 nuMessage([nuTranslate("Upload Failed")]);
                 $("#upload-form")[0].reset();
+                $("#loading_spinner").hide();
             }
         });
     });
@@ -60,6 +65,7 @@ $(document).ready(function(e) {
 
 </script>
 
-<form id="upload-form" action="libs/upload/upload_file.php" method="post" enctype="multipart/form-data">   
-    <input type="file" name="fileToUpload" id="fileToUpload">
+<form id="upload-form" action="libs/upload/upload.php" method="post" enctype="multipart/form-data">   
+    <input type="file" name="fileToUpload" id="fileToUpload"><br>
+    <div id="loading_spinner"><i class="fa fa-spinner fa-pulse"></i> Uploading</div>
 </form>
