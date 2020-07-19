@@ -113,6 +113,6 @@
 
 * 2019-11-24: <b>Browse Screen:</b> Add a "Download to CSV" button [→ view](codelib/browse_download_to_csv)
 
-* 2019-11-24: <b>Browse Screen:</b> Add a total row [→ view](codelib/https://github.com/smalos/nubuilder-code-snippets/tree/master/browse_total_rows)
+* 2019-11-24: <b>Browse Screen:</b> Add a total row [→ view](codelib/browse_total_rows)
 
 * 2019-11-17: <b>Subform:</b> Uploading a File on button click [→ view](codelib/https://github.com/smalos/nubuilder-code-snippets/tree/master/upload_file_subform)
