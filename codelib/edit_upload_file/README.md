@@ -14,8 +14,10 @@ The HTML object holds code which creates a file upload object and processes the 
 ### 2. Add a Text Object
 Type: Input (Text)<br />
 Label: Filename<br />
-ID: file_name<br />
+ID: file_name (e.g.)<br />
 Width: 150<br />
+
+Also create this column in your database table (in phpMyAdmin). Type: VARCHAR(100)
 
 This object is used to store the filename that is returned by the PHP script.
 
