@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (56)
+## Code snippets (57)
+
+* 2020-07-19: <b>JavaScript:</b> Format seconds [→ view](codelib/javascript_format_seconds)
 
 * 2020-07-19: <b>Browse Screen:</b> Conditionally format data [→ view](codelib/browse_conditional_formatting)
 
