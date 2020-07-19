@@ -72,6 +72,15 @@ The HTML object holds code which creates a file upload object and processes the 
    ☛  Add this code in the HTML field (HTML tab).
 
 ```javascript
+
+<style>
+input[type=file] {
+  border: 2px solid green;
+  border-radius: 5px;
+  padding: 20px 20px;
+}
+</style>
+
 <input type='file' id="csvupload" onChange="readSingleFile(this);"/>
 
 <script>
