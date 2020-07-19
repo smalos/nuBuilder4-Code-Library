@@ -3,7 +3,10 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (59)
+## Code snippets (60)
+
+
+* 2020-07-19: <b>Browse Screen:</b> Restrict users to view their own records only [→ view](codelib/browse_limit_users_to_own_data)
 
 * 2020-07-19: <b>JavaScript:</b> Add Days to a Date [→ view](codelib/javascript_add_days)
 
