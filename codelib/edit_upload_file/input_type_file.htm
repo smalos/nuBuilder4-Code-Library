@@ -3,7 +3,15 @@
 function saveFileName(ObjId, fileId, fileName) {
     $('#'+ObjId).val(fileId + '_' + fileName).change();
 }
-
+function setFileLink(ObjId) {
+	var file = $('#'+ ObjId);
+	var url = 'libs/upload/files/' + fileName.val();
+	file.css('cursor','pointer');
+	file.click(function () { 
+	   window.open(url);
+	});
+}
+    
 $(document).ready(function(e) {
 
     $("#loading_spinner").hide();
@@ -47,7 +55,10 @@ $(document).ready(function(e) {
 
                 } else {
                     nuMessage([nuTranslate("Upload successful:") + ' ' + result.file_name]);
+                    
+                    // Save the file_id + file_name in a separate text object: 
                     saveFileName('file_name', result.file_id, result.file_name);
+                    setFileLink('file_name');
                 }
 
                 $("#upload-form")[0].reset();
