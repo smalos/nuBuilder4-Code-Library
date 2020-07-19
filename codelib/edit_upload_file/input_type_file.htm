@@ -14,6 +14,11 @@ function setFileLink(ObjId) {
     
 $(document).ready(function(e) {
 
+    if (nuIsNewRecord()) {
+	 nuMessage([nuTranslate('Please save the form first before uploading a file.')]);
+	 return;
+    }      
+	
     $("#loading_spinner").hide();
     
     $('#fileToUpload').on('change', function(event) {
