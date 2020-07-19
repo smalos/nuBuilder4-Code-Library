@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (58)
+## Code snippets (59)
+
+* 2020-07-19: <b>JavaScript:</b> Add Days to a Date [→ view](codelib/javascript_add_days)
 
 * 2020-07-19: <b>JavaScript:</b> Get the current Date (and Time) [→ view](codelib/javascript_get_date_time)
 
