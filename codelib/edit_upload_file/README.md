@@ -28,7 +28,7 @@ Place the [upload_file.php](upload_file.php) in the folder /libs/upload/<br />
 Edit the permitted file types allowed for the file upload. Change the upload directory ($uploaddir) if necessary.
 
 
-## 4. Create the upload folder
+### 4. Create the upload folder
 
 Create a new folder with the name *files* in the folder /libs/upload/ 
 
