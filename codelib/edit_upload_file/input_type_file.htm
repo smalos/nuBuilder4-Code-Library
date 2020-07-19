@@ -1,0 +1,65 @@
+<script>
+
+function saveFileName(ObjId, fileId, fileName) {
+    $('#'+ObjId).val(fileId + '_' + fileName).change();
+}
+
+$(document).ready(function(e) {
+
+    $('#fileToUpload').on('change', function(event) {
+
+        var file = $(this)[0].files[0];
+
+        var formdata = new FormData();
+        formdata.append('file', file);
+        formdata.append('record_id', nuCurrentProperties().record_id);
+
+        $.ajax({
+            type: "POST",
+            url: "libs/upload/upload_file.php",
+            data: formdata,
+            contentType: false,
+            cache: false,
+            processData: false,
+            success: function(data) {
+
+                var result = JSON.parse(data);
+                if (result.error !== '') {
+                    var err = "";
+                    switch (result.error) {
+                        case "INVALID_FILE_TYPE":
+                            err = "The file type is not allowed.";
+                            break;
+                        case "ERROR_MOVING_FILE":
+                            err = "The file cannot be moved to the destination directory.";
+                            break;
+                        case "FILE_TOO_LARGE":
+                            err = "Error: File size is larger than the allowed limit.";
+                            break;
+                        default:
+                            err = result.error;
+                    }
+                    
+                    nuMessage([nuTranslate("Upload Failed:") + ' ' + nuTranslate(err)]);
+
+                } else {
+                    nuMessage([nuTranslate("Upload successful:") + ' ' + result.file_name]);
+                    saveFileName('file_name', result.file_name, result.file_id);
+                }
+
+                $("#upload-form")[0].reset();
+
+            },
+            error: function(data) {
+                nuMessage([nuTranslate("Upload Failed")]);
+                $("#upload-form")[0].reset();
+            }
+        });
+    });
+});
+
+</script>
+
+<form id="upload-form" action="libs/upload/upload_file.php" method="post" enctype="multipart/form-data">   
+    <input type="file" name="fileToUpload" id="fileToUpload">
+</form>
