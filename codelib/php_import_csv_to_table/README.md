@@ -1,6 +1,20 @@
 ### PHP: How to import a CSV file into a database table
 
 This snippet will show how to read the contents of a CSV file and insert that data into a database table. 
+
+The final result is going to look like this:
+
+<p align="left">
+  <img src="screenshots/csv_import_demo.gif">
+</p>
+
+The following steps are carried out:
+
+* Step 1: Select the CSV File to be imported
+* Step 2: The First few rows of data will be previewed, verify everything is fine.
+* Step 3: Once Ok with preview, hit the "Import Data" Button.
+* Step 4: If the file was successfully imported, a message "CSV upload completed!" is displayed.
+
 We will start by looking at the contents of the CSV file that we are importing. 
 
 <p align="left">
@@ -84,30 +98,66 @@ input[type=file] {
 <input type='file' id="csvupload" onChange="readSingleFile(this);"/>
 
 <script>
-    function readSingleFile(e) {
+	
+	var content;
 
-        var file = e.files[0];
+	function genHTMLTable(header, data) {
 
-        if (!file) {
-            return;
-        }
 
-        var reader = new FileReader();
-        reader.onload = function (e) {
-            var content = e.target.result;
-            $("#csvupload").val(null);
-            uploadFile(content);
+	    var table = "<table border='1' style='border-collapse: collapse;'><tbody><tr>";
+	    for (var i = 0; i < header.length; i++) {
+	        table = table + "<td><strong>" + header[i] + "</strong></td>";
+	    }
 
-        };
-        reader.readAsText(file);
-    }
+	    table = table + '</tr><tr>';
+	    for (l = 0; l < data.length; l++) {
+	        v = data[l].split(';');
+	        for (var i = 0; i < v.length; i++) {
+	            table = table + "<td>" + v[i] + "</td>";
+	        }
 
-    function uploadFile(content) {
-        nuSetProperty('csv_content', content);
-        nuRunPHPHidden('csv_upload', 0);
-    }
+	        table = table + "</tr><tr>";
+	    }
+
+	    table = table + "</tr></tbody></table>";
+
+	    return table;
+	}
+
+
+	function readSingleFile(e) {
+
+	    var file = e.files[0];
+
+	    if (!file) {
+	        return;
+	    }
+
+	    var reader = new FileReader();
+	    reader.onload = function (e) {
+	        content = e.target.result;
+	        $("#csvupload").val(null);
+
+
+	        var firstLine = content.split("\n").slice(0, 5);
+
+	        var preview = genHTMLTable(['col1', 'col2', 'col3'], firstLine);
+	        var buttons = '<button id="uploadbutton" type="button" onclick="uploadFile();" class="nuActionButton">Import Data</button> <button onclick="$(\'#nuMessageDiv\').remove();" class="nuActionButton nuSaveButtonEdited">Cancel</button>';
+	        nuMessage(['<h1>CSV Import Preview</h1><h3>(First 5 lines)</h2><center>' + preview + '</center><br><br>' + buttons]);
+
+	    };
+	    reader.readAsText(file);
+	}
+
+	function uploadFile() {
+	    nuDisable('uploadbutton');
+	    nuSetProperty('csv_content', content);
+	    nuRunPHPHidden('csv_upload', 0);
+	}
+	
 
 </script>
+
 
 ```
 
@@ -118,8 +168,6 @@ Click "Choose File" and pick the csv_sample.csv.
 <p align="left">
   <img src="screenshots/file_input.png">
 </p>
-
-If the file was successfully imported, a message "CSV upload completed!" is displayed.
 
 
 **Credits**: Janusz
