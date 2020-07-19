@@ -3,8 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (55)
+## Code snippets (56)
 
+* 2020-07-19: <b>Browse Screen:</b> Conditionally format data [→ view](codelib/browse_conditional_formatting)
 
 * 2020-07-18: <b>PHP:</b> How to import a CSV file into a database table [→ view](codelib/php_import_csv_to_table)
 
