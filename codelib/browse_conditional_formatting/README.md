@@ -12,13 +12,15 @@ Below is an image showing the result of applying this code to a Browse Screen.
 </p>
 
 
+### Example 1: 
+
+This code will make the negative numbers show up in red in column 3 and 4, while everything else remains the same.
+
+
 ☛Add this JavaScript Code to your form’s Custom Code field. 
 
 ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
 
-### Example 1: 
-
-This code wil  make the negative numbers show up in red in column 3 and 4, while everything else remains the same.
 
 ```javascript
 function browseNegativeNumbersRed() {
@@ -36,11 +38,11 @@ if (nuFormType() == 'browse') {
 
 ### Example 2: 
 
-In the example below, we will set conditional formatting in column 3 so that a cell's background color:
+In the example below, we will set conditional formatting in column 3 so that a cell's background color
 
-- turns red if it contains a value smaller than 0
+- turns red if it contains a value smaller than 0.
 - turns blue if it contains a value greater than equal to 20.
-- turns yellow in all other cases
+- turns yellow in all other cases.
 
 
 ```javascript
