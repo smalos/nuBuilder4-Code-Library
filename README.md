@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (63)
+## Code snippets (64)
+
+* 2020-07-25: <b>Edit Screen:</b> How to validate form entries before saving? [→ view](codelib/edit_form_validation)
 
 * 2020-07-25: <b>Select Object:</b> How to get the text value of a selected option? [→ view](codelib/object_select_selected_text)
 
