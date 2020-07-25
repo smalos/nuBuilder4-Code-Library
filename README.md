@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (62)
+## Code snippets (63)
+
+* 2020-07-25: <b>Select Object:</b> How to get the text value of a selected option? [→ view](codelib/object_select_selected_text)
 
 * 2020-07-25: <b>Globeadmin:</b> How do Hide certain Fields from users? [→ view](codelib/globeadmin_hide_fields_from_users)
 
