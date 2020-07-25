@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (61)
+## Code snippets (62)
+
+* 2020-07-25: <b>Globeadmin:</b> How do Hide certain Fields from users? [→ view](codelib/globeadmin_hide_fields_from_users)
 
 * 2020-07-19: <b>Edit Screen:</b> Upload a File to the Server on Button Click [→ view](codelib/edit_upload_file)
 
