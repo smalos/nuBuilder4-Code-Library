@@ -8,7 +8,7 @@ This code does not have the limitation that you can only navigate to records tha
 
 #### JavaScript Code
 
-☛ Add the JavaScript code from the file [edit_record_navigation.js](edit_record_navigation.js) in the Header (❓ [Home ► Setup](/common/setup_header.gif)) or include it with the <script> tag. Click Save and log in again.
+☛ Add the JavaScript code from the file [edit_record_navigation.js](edit_record_navigation.js) in the Header (❓ [Home ► Setup](/codelib/common/setup_header.gif)) or include it with the <script> tag. Click Save and log in again.
 
 #### PHP Code
 
