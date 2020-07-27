@@ -4,7 +4,7 @@ This code snippet shows how to copy all data of a subform to the clipboard as ta
 
 ☛Add this JavaScript Code to your form’s Custom Code field. (Or in the (Setup -> Header), if the function is used in several forms)
 
-❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 
 ```javascript
