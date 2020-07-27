@@ -9,7 +9,7 @@ E.g. setting a blue selection color when the selected option text is "Pending".
 
 
 ☛ Add this JavaScript to your form's Custom Code field:
- ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+ ❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 ```javascript
 function initChangeSelectColor(t, arr) {
