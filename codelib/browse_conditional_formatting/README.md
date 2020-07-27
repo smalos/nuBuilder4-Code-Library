@@ -19,7 +19,7 @@ This code will make the negative numbers show up in red in column 3 and 4, while
 
 ☛Add this JavaScript Code to your form’s Custom Code field. 
 
-❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 
 ```javascript
@@ -59,7 +59,3 @@ if (nuFormType() == 'browse') {
   browseConditionalFormatting();
 }
 ```
-
-
-
-
