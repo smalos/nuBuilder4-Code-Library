@@ -11,12 +11,11 @@ The plugin is very easy to integrate in your form for your time (hours / minutes
 </p>
 
 
-
 1. **Download** the Timepicker from https://github.com/fgelinas/timepicker/archive/master.zip
 
 2. **Unzip** the archive. and place the contents in a new subdirectory (e.g. "libs\timepicker") of your nuBuilder installation.
 
-3. ☛  Add this code in the **Header** (❓ [Home ► Setup](/common/setup_header.gif)). Click Save and log in again.
+3. ☛  Add this code in the **Header** (❓ [Home ► Setup](/codelib/common/setup_header.gif)). Click Save and log in again.
 
 
    <details>
