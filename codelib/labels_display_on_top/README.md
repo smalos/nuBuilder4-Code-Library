@@ -6,9 +6,9 @@ This is especially useful when the caption is a little longer and it would take 
   <img src="screenshots/labels_on_top.gif">
 </p>
 
-☛</strong>  Add this code to your form’s Javascript section</p>
+☛</strong>  Add this JavaScript to your form’s Custom Code field</p>
 
-❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 ```javascript
 /**
