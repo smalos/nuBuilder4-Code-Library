@@ -21,7 +21,7 @@ Trumbowyg.js is a lightweight, customizable, extendable, semantic, cross-browser
 
 
 
-3. ☛  Add this code in the Header (❓ [Home ► Setup](/common/setup_header.gif)). Click Save and log in again.
+3. ☛  Add this code in the Header (❓ [Home ► Setup](/codelib/common/setup_header.gif)). Click Save and log in again.
 
 
 <p align="left">
@@ -66,7 +66,7 @@ The DIV *cus_notes_tr* is going to be converted into a WYSIWYG editor as soon as
    
      
 6. Add this JavaScript to your form's Custom Code field
-   ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+   ❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 <details>
   <summary>Click to view the code!</summary>
