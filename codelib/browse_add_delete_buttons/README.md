@@ -22,7 +22,7 @@ The following steps are carried out:
 
 ☛ Add this JavaScript code to your form's _Custom Code_ field.
 
-❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 <details>
   <summary>Click to view the code!</summary>
