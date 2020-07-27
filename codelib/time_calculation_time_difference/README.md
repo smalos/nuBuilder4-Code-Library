@@ -24,7 +24,7 @@ timeChanged(event)
 
 ☛ Add this JavaScript Code to your form’s Custom Code field. 
 
-❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 ```javascript
 function isValidTime(timeString) {
