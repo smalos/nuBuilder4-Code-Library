@@ -9,7 +9,7 @@ This snippet fetches the text from the clipboard and pastes it into an input fie
 
 ☛  Add this code to your form’s custom code field.
 
-❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 ```javascript
 function pasteText(t) {
