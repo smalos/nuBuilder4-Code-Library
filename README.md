@@ -3,7 +3,7 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (64)
+## Code snippets (65)
 
 
 * 2020-07-27: <b>Input:</b> Use a Button to Paste text from the Clipboard [→ view](codelib/input_paste_text_from_clipboard)
