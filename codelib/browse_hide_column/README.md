@@ -5,7 +5,7 @@ Possible applications are, for example, if columns should not be displayed for c
 
 The function setBrowseColumnSize(), as its name says, also allows to resize columns.
 
-☛ In you form's Custom Code, paste this JavaScript (❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif))
+☛ In you form's Custom Code, paste this JavaScript (❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif))
 
 ```javascript
 function iniFrame() {
