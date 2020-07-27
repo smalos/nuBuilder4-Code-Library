@@ -6,7 +6,7 @@
 
 
 ☛ Add this JavaScript to your form's Custom Code field:
- ❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+ ❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 ```javascript
 // Show the Save button only if the first tab is selected
