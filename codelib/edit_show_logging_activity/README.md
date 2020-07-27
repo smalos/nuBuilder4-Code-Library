@@ -17,7 +17,7 @@ Set its access to *Hidden*.
 ☛Add this JavaScript Code to your form’s Custom Code field.
 (Or in Setup -> Header, if you are planning to use the function in several forms)
 
-❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 
 ```javascript
