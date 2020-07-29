@@ -5,7 +5,7 @@ function saveFileName(ObjId, fileId, fileName) {
 }
 function setFileLink(ObjId) {
 	var file = $('#'+ ObjId);
-	var url = 'libs/upload/files/' + fileName.val();
+	var url = 'libs/upload/files/' + file.val();
 	file.css('cursor','pointer');
 	file.click(function () { 
 	   window.open(url);
