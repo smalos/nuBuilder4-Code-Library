@@ -3,8 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (65)
+## Code snippets (66)
 
+* 2020-07-30: <b>Browse Screen:</b> Filter Records by a Date Range [→ view](codelib/browse_filter_dates)
 
 * 2020-07-27: <b>Input:</b> Use a Button to Paste text from the Clipboard [→ view](codelib/input_paste_text_from_clipboard)
 
