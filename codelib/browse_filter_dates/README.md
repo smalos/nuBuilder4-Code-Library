@@ -15,18 +15,19 @@ This snippet will show you how to add two Inputs of Type Date to filter the reco
   <summary>Click to view the code!</summary>
   
 ```javascript
-function addDateFilterInput(container, id, placeholder) {
-
+function addDateFilterInput(id, placeholder) {
+	
+	// Date Inputs
 	var inputStyle = 'style="margin-left: 30px; width: 80px; height: 22px; text-align: left"';
-	var html = '<input id="' + id + '" type="nuDate" class="input_nuDate nuDate" data-nu-format="D|yyyy-mm-dd"  onclick="nuPopupCalendar(this);" placeholder="' + placeholder + '" autocomplete="off" ' + inputStyle + ' >';
+	var inputHtml = '<input id="' + id + '" type="nuDate" class="input_nuDate nuDate" data-nu-format="D|yyyy-mm-dd"  onclick="nuPopupCalendar(this);" placeholder="' + placeholder + '" autocomplete="off" ' + inputStyle + ' >';
 
-	var buttonStyle = 'style="font-size: 18px;"';
-	var btn = '<button class="nuActionButton" ' + buttonStyle + ' id="btn_clear_' + id + '" >×</button>';
+	// Clear Buttons
+	var btnStyle = 'style="font-size: 18px;"';
+	var btnHtml = '<button class="nuActionButton" ' + btnStyle + ' id="btn_clear_' + id + '" >×</button>';
 
-	$('#' + container).append(html + "&nbsp;" + btn);
+	$('#nuActionHolder').append(inputHtml + "&nbsp;" + btnHtml);
 
 	var inputId = $("#" + id);
-
 	inputId.on("blur", function() {
 		nuSetProperty(id, this.value);
 	});
@@ -42,8 +43,8 @@ function addDateFilterInput(container, id, placeholder) {
 
 
 if (nuFormType() == 'browse') {
-	addDateFilterInput('nuActionHolder', 'date_from', 'Date From');
-	addDateFilterInput('nuActionHolder', 'date_to', 'Date To');
+	addDateFilterInput('date_from', 'Date From');
+	addDateFilterInput('date_to', 'Date To');
 }
 ```
 </details>
