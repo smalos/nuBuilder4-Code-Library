@@ -86,6 +86,7 @@ function embedImage(json, d, w , h) {
 
 // Display the image in the Edit and Browse Screen
 if (nuFormType() == 'edit') {
+    $('#dsp_image_file_file').attr('accept','.gif,.jpg,.jpeg,.png');
     showEditImage();
 } else {
     showBrowseImages();
