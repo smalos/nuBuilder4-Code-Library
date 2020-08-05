@@ -9,8 +9,13 @@ This snippet is going to show how to upload an image and display it in the Brows
 <b>1.</b> Create a new Object of type HTML. 
 
 * Object ID: *dsp_view_image* 
-* Its width and height can be set to a small value, e.g. 15.
+* Its width and height can be set to a small value, e.g. 20.
 * In the HTML field (HTML tab), enter a Space.
+
+<p align="left">
+  <img src="screenshots/dsp_view_image.png">
+</p>
+
 
 This is where the image is displayed after saving the form.
 
@@ -20,8 +25,12 @@ This is where the image is displayed after saving the form.
 * Type: Input
 * Label: File
 * Width: 300
-* Height: 22
+* Height: 21
 * Input Tab: File
+
+<p align="left">
+  <img src="screenshots/dsp_image_file.png">
+</p>
 
  This allows the user to pick a file from the local drive to upload.
  
@@ -29,6 +38,10 @@ This is where the image is displayed after saving the form.
 
 * Object ID: *dsp_image_json* 
 * Access: Hidden
+
+<p align="left">
+  <img src="screenshots/dsp_image_json.png">
+</p>
 
 The image JSON is stored in this invisible field.
 
