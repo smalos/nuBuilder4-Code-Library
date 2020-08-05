@@ -1,6 +1,6 @@
 ## Edit Screen: Upload an Image an Display it
 
-This snippet is going to show how to upload an image and display it in the Browse and Edit Screen. The image is displayed in its original size (Only in the Edit screen)
+This snippet is going to show how to upload an image to the database and display it on the Browse and Edit Screen. The image is shown in its original size (Only in the Edit screen)
 
 <p align="left">
   <img src="screenshots/upload_display_image.png">
