@@ -140,4 +140,10 @@ function showBrowseImages() {
 </details>
 
 <b>5.</b> 
-Set the Row Height of the Browse Screen to 200 and Rows Per Page: 5.
+Open *Form Properties* (CTRL+SHIFT+F) and set the *Row Height* of the Browse Screen to 200 and *Rows Per Page* to 5.
+
+<p align="left">
+  <img src="screenshots/form_properties.png">
+</p>
+
+
