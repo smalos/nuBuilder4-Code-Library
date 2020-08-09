@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (67)
+## Code snippets (68)
+
+* 2020-08-09: <b>Globeadmin Helper:</b> Display the Data Type of a Database Column next to the Object ID. [→ view](codelib/globeadmin_display_data_type)
 
 * 2020-08-04: <b>Edit Screen:</b> Upload an Image an Display it [→ view](codelib/edit_upload_display_image)
 
