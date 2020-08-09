@@ -1,4 +1,4 @@
-## Edit Screen: Upload an Image an Display it
+## Edit Screen: Upload an Image and Display it
 
 This snippet is going to show how to upload an image to the database and display it on the Browse and Edit Screen. The image is shown in its original size (Only in the Edit screen)
 
