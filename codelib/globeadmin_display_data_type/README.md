@@ -1,4 +1,4 @@
-## Globeadmin: Display the Data Type of a Database Column next to the Object ID.
+## Globeadmin Helper: Display the Data Type of a Database Column next to the Object ID.
 
 This helper will indicate if the corresponding database column exists for an Object ID and also displays the data type of the column.
 In this way you can instantly verify if a data type is correct (or if it makes sense) and if the field exists in the database without having to open phpMyAdmin every time.
