@@ -41,6 +41,7 @@ function showDataType(id) {
             "left": id.cssNumber("left") + id.cssNumber("width") + 25,
             "position": "absolute",
         });
+        nuAddDataTab($('#nuDataType').attr('id'), '0', '');
     }
 
     $('#nuDataType').html(dataType == '' ? '' : 'Datatype: ' + dataType);
