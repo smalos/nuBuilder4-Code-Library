@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (68)
+## Code snippets (69)
+
+* 2020-08-09: Globeadmin:  Delete a Form with its associated data.  [→ view](codelib/globeadmin_delete_form_and_data)
 
 * 2020-08-09: <b>Globeadmin Helper:</b> Display the Data Type of a Database Column next to the Object ID. [→ view](codelib/globeadmin_display_data_type)
 
