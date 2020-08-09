@@ -9,7 +9,7 @@
 
 * 2020-08-09: <b>Globeadmin Helper:</b> Display the Data Type of a Database Column next to the Object ID. [→ view](codelib/globeadmin_display_data_type)
 
-* 2020-08-04: <b>Edit Screen:</b> Upload an Image an Display it [→ view](codelib/edit_upload_display_image)
+* 2020-08-04: <b>Edit Screen:</b> Upload an Image and Display it [→ view](codelib/edit_upload_display_image)
 
 * 2020-07-30: <b>Browse Screen:</b> Filter Records by a Date Range [→ view](codelib/browse_filter_dates)
 
