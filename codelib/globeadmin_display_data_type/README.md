@@ -10,7 +10,7 @@ In this way you can instantly verify if a data type is correct (or if it makes s
 
 ☛  Add this JavaScript code in the Header (❓ [Home ► Setup](codelib/common/setup_header.gif)). 
 
-☛  Then save, and log in again for the changes to take effect
+☛  Then click *Save*, and log in again for the changes to take effect
 
 
 <details>
@@ -49,8 +49,7 @@ function showDataType(id) {
 
 function initShowDataType() {
     if (nuCurrentProperties().form_id == 'nuobject' && nuFormType() == 'edit') {
-        var table = $("#sob_all_table").val();
-        debugger;
+        var table = $("#sob_all_table").val();        
         if (table !== '') {
             var id = $('#sob_all_id');
             showDataType(id);
