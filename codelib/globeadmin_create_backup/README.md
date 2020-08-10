@@ -37,4 +37,8 @@ To do so, open the Setup Tab in nuBuilder, click on the button "Run Procedure", 
 #### Automate the Export Process
 
 Moreover, you can also create scheduled backups to automate the export process (e.g. create a nightly backup). To do so,  you can use the procedure from this snippet:
-https://github.com/smalos/nuBuilder4-Code-Library/tree/master/codelib/automation_call_procedure_externally
+[Automation: How to run a PHP procedure from outside nuBuilder?](https://github.com/smalos/nuBuilder4-Code-Library/tree/master/codelib/automation_call_procedure_externally)
+
+## Related Articles
+
+[Restore a Database using PHPMyAdmin](https://github.com/smalos/nuBuilder4-Code-Library/wiki/Restore-a-Database-using-PHPMyAdmin)
