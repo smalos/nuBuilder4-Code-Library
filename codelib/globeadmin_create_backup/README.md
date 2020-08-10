@@ -1,4 +1,4 @@
-### PHP: Create a Backup of your nuBuilder Database
+### Globeadmin: Create a Backup of your nuBuilder Database
 
 It is important to keep backups of your nuBuilder database to ensure you are able to restore them in the event of data loss. 
 Downloading copies in the form of .sql files, can save you unnecessary stress and prevent future headaches. 
