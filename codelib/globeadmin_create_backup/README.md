@@ -11,7 +11,7 @@ This is a php version of mysqldump cli that comes with MySQL, without dependenci
 
 #### Download Mysqldump.php
 
-Download [Mysqldump.php](https://github.com/ifsnop/mysqldump-php/blob/master/src/Ifsnop/Mysqldump/Mysqldump.php) and place it in a folder */libs/upload/Mysqldump* in your nuBuilder root directory.
+Download [Mysqldump.php](https://github.com/ifsnop/mysqldump-php/blob/master/src/Ifsnop/Mysqldump/Mysqldump.php) and place it in a folder */libs/upload/Mysqldump* of your nuBuilder root directory.
 
 #### Create a Procedure
 
