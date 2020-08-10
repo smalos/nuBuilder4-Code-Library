@@ -40,3 +40,8 @@ Create a Button Object on your form and add an onclick Event under "Customer Cod
 ```javascript
 refreshiframe('run_object_id');
 ```
+
+#### Related Functions
+
+Use [nuFilterRun()](https://wiki.nubuilder.net/nubuilderforte/index.php/Javascript#nuFilterRun) to refresh an iFrame and set a filter at the same time.
+
