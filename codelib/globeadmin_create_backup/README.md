@@ -1,6 +1,6 @@
 ### Globeadmin: Create a Backup of your nuBuilder Database
 
-It is important to keep backups of your nuBuilder database to ensure you are able to restore them in the event of data loss. 
+It is important to create and keep backups of your nuBuilder database to ensure you are able to restore them in the event of data loss. 
 Downloading copies in the form of .sql files, can save you unnecessary stress and prevent future headaches. 
 
 You can accomplish this using the [mysqldump](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) command-line function or phpMyAdmin by exporting your database to an sql file.
