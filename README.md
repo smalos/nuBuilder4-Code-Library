@@ -5,6 +5,8 @@
 
 ## Code snippets (70)
 
+* 2020-06-10: <b>Run Object:</b> Refresh an iFrame [→ view](codelib/object_run_refresh)
+
 * 2020-08-10: <b>Globeadmin:</b> Create a Backup of your nuBuilder Database.  [→ view](codelib/globeadmin_create_backup)
 
 * 2020-08-09: <b>Globeadmin:</b> Delete a Form with its associated data.  [→ view](codelib/globeadmin_delete_form_and_data)
