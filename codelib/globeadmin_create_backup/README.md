@@ -7,7 +7,7 @@ You can accomplish this using the [mysqldump](https://dev.mysql.com/doc/refman/8
 However mysqldump is not always available, for example in a production server environment or on a shared hosting where shell access is denied.
 
 This snippet is going to show a third possibility that uses the open source library [Mysqldump.php](https://github.com/ifsnop/mysqldump-php).
-This is a php version of mysqldump cli that comes with MySQL, without dependencies, output compression and sane defaults.
+This is a php version of mysqldump cli that comes with MySQL, without dependencies, output compression and same defaults.
 
 #### Download Mysqldump.php
 
