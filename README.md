@@ -3,9 +3,11 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (69)
+## Code snippets (70)
 
-* 2020-08-09: <b>Globeadmin:</b>  Delete a Form with its associated data.  [→ view](codelib/globeadmin_delete_form_and_data)
+* 2020-08-10: <b>Globeadmin:</b> Create a Backup of your nuBuilder Database.  [→ view](codelib/globeadmin_create_backup)
+
+* 2020-08-09: <b>Globeadmin:</b> Delete a Form with its associated data.  [→ view](codelib/globeadmin_delete_form_and_data)
 
 * 2020-08-09: <b>Globeadmin Helper:</b> Display the Data Type of a Database Column next to the Object ID. [→ view](codelib/globeadmin_display_data_type)
 
