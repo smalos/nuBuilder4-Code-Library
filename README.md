@@ -3,7 +3,7 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (70)
+## Code snippets (71)
 
 * 2020-06-10: <b>Run Object:</b> Refresh an iFrame [→ view](codelib/object_run_refresh)
 
