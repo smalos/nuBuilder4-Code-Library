@@ -1,6 +1,6 @@
 ## Edit Screen: Return to the Browse Screen after an inactivity timeout period
 
-This snippet will (forcefully) redirect the user back to the Browse Screen after an inactivity timeout period. A countdown timer will show the time left.
+This snippet will (forcefully) redirect the user back to the Browse Screen after a pre-determined period of inactivity. A countdown timer will show the time left.
 When the mouse is moved, the timer is reset.
 
 <p align="left">
@@ -13,7 +13,9 @@ The dump contains a form, objects and a table. It will not overwrite/modify/dele
 
 
 ☛ This script expects a "Word" Object with an ID "counter" on your form.
+
 ☛ You can change that to what ever you want. (Also rename the variable *counter_id* in the code.)
+
 ☛ Change the timeout period (*countdown_time* variable)
 
 ☛ Add this JavaScript to your form's *Custom Code* field:
