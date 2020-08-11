@@ -3,9 +3,11 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (71)
+## Code snippets (72)
 
-* 2020-06-10: <b>Run Object:</b> Refresh an iFrame [→ view](codelib/object_run_refresh)
+* 2020-08-11: <b>Edit Screen:</b> Return to the Browse Screen after an inactivity timeout period [→ view](codelib/edit_return_to_browse_after_timeout)
+
+* 2020-08-10: <b>Run Object:</b> Refresh an iFrame [→ view](codelib/object_run_refresh)
 
 * 2020-08-10: <b>Globeadmin:</b> Create a Backup of your nuBuilder Database.  [→ view](codelib/globeadmin_create_backup)
 
