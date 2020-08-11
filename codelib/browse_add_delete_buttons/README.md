@@ -1,6 +1,7 @@
 ## Browse Screen: Add Delete Buttons
 
-This snippet will show you how how to add delete buttons in each row of a Browse Column. This allows a user to delete records directly from the Browse Screen without having to open the Edit Screen first.
+This snippet will show you how to add delete buttons in each row of a Browse Column. 
+This allows a user to delete records directly from the Browse Screen without having to open the Edit Screen first.
 
 <p align="left">
   <img src="screenshots/delete_row_demo.gif">
@@ -8,12 +9,12 @@ This snippet will show you how how to add delete buttons in each row of a Browse
 
 The following steps are carried out:
 
-1) JavaScript: Adds delete buttons to each row of a Browse Screen
-2) JavaScript: On clicking a delete button, a PHP procedure is executed
-3) PHP Procedure: Checks if the user has the delete permission for the form
-4) PHP Procedure: Deletes the record.
-5) PHP Procedure: Calls the JavaScript function afterDeleteRow()
-5) afterDeleteRow() function: Refreshes the Browse Screen
+1) JavaScript: Add delete buttons to each row of a Browse Screen.
+2) JavaScript: On clicking a delete button, a PHP procedure is executed.
+3) PHP Procedure: Checks if the user has the delete permission for the form.
+4) PHP Procedure: Delete the record.
+5) PHP Procedure: Call the JavaScript function afterDeleteRow()
+5) JavaScript afterDeleteRow() function: Refresh the Browse Screen
 
 <p align="left">
   <img src="screenshots/browse_delete_buttons.png">
@@ -110,9 +111,9 @@ if (nuFormType() == 'browse') {
 
 ☛ Code: deleteRow
 
-☛ Give it a *Description*
+☛ Enter a *Description*
 
-☛ Add this code to the PHP field
+☛ Add this code to the PHP field:
 
 
 <details>
