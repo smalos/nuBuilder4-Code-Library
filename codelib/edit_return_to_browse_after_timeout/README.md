@@ -135,6 +135,7 @@ if (nuFormType() == 'edit') {
 
     startActivityTracker();
     startTimer();
-}```
+}
+```
 
 </details>
