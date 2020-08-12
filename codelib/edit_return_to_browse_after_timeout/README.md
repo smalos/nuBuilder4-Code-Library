@@ -8,7 +8,7 @@ When the mouse is moved, the timer is reset.
 </p>
 
 
-If you just want to try the sample, go ahead and import [countdownBE.sql.gzip](/codelib/db_dump_countdownBE.sql.gzip) into your existing nuBuilder Database (using phpMyAdmin).
+If you just want to try the sample, go ahead and import [countdownBE.sql.gzip](/codelib/countdown.sql.gzip) into your existing nuBuilder Database (using phpMyAdmin).
 The dump contains a form, objects and a table. It will not overwrite/modify/delete any other data.
 
 
