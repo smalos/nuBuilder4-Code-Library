@@ -7,7 +7,7 @@ So you may have to pay Google if planning to translate a large amount of text.
 
 ☛ Add this JavaScript Code to your form’s Custom Code field or in the (Setup ->) Header.
 
-❓ [How to add Custom Code](/common/form_add_custom_code_javascript.gif)
+❓ [How to add Custom Code](/codelib//common/form_add_custom_code_javascript.gif)
 
 ```javascript
 /**
