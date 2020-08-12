@@ -11,6 +11,10 @@ Therefore, I created nucall_ext.php which makes this possible again.
 
 ☛ Create a new [Access Level](https://wiki.nubuilder.net/nubuilderforte/index.php/User_Access#Creating_an_Access_Level). For security reasons, do not assign that Access Level to a user. 
 
+<p align="left">
+  <img src="screenshots/create_access_level.png">
+</p>
+
 ☛ Add the Procedure to the Access Level.
 
 #### ✪ Example
