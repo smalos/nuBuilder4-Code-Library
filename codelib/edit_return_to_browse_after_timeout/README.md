@@ -1,15 +1,15 @@
 ## Edit Screen: Return to the Browse Screen after an inactivity timeout period
 
 This snippet will (forcefully) redirect the user back to the Browse Screen after a pre-determined period of inactivity. A countdown timer will show the time left.
-When the mouse is moved, the timer is reset.
+When the mouse is moved or any key is pressed, the countdown timer is reset.
 
 <p align="left">
   <img src="screenshots/countdown.gif">
 </p>
 
 
-If you just want to try the sample, go ahead and import [countdownBE.sql.gzip](/codelib/countdown.sql.gzip) into your existing nuBuilder Database (using phpMyAdmin).
-The dump contains a form, objects and a table. It will not overwrite/modify/delete any other data.
+If you just want to try the sample import [countdownBE.sql.gzip](/codelib/countdown.sql.gzip) into your existing nuBuilder Database (using phpMyAdmin).
+The dump contains a form its objects and a table. It will not overwrite/modify/delete any other data.
 
 
 ☛ This script expects a "Word" Object with an ID "counter" on your form.
@@ -32,10 +32,10 @@ The dump contains a form, objects and a table. It will not overwrite/modify/dele
 
 // *** Settings ****
 
-var trackMousemove = true;
-var trackKeypress = true;
-var counterObjId = "counter";
-var countdown_time = 1; // number of minutes
+var trackMousemove = true; // reset timer on mouse move
+var trackKeypress = true; // reset timer on key press 
+var counterObjId = "counter"; // ID of the "Word" object
+var countdown_time = 2; // number of minutes
 
 
 var form_id;
