@@ -3,13 +3,13 @@
 
 You have created a (complex) formula and want to edit it later? Unfortunately, the formula field is readonly, so that changes are not possible. 
 You have to re-create the whole formula...
-Calling enableFormulaField() in the Header will activate the formula field permanently.
+Calling enableFormulaField() in the Header will enable the formula field permanently.
 
 <p align="left">
   <img src="screenshots/formula_not_readonly.png">
 </p>
 
-☛  Add this JavaScript code in the Header (❓ [Home ► Setup](/common/setup_header.gif)). Click Save and log in again.
+☛  Add this JavaScript code in the Header (❓ [Home ► Setup](/codelib/common/setup_header.gif)). Click Save and log in again.
 
 ```javascript
 // Make the Formula Field (Object -> Calc Tab) not readonly
