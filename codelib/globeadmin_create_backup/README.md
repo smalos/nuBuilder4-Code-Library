@@ -39,6 +39,19 @@ To do so, open the Setup Tab in nuBuilder, click on the button "Run Procedure", 
 Moreover, you can also create scheduled backups to automate the export process (e.g. create a nightly backup). To do so,  you can use the procedure from this snippet:
 [Automation: How to run a PHP procedure from outside nuBuilder?](https://github.com/smalos/nuBuilder4-Code-Library/tree/master/codelib/automation_call_procedure_externally)
 
+Please note that the paths must be changed when the script is called from the cron job:
+
+```php
+//Use nuBuilder DB settings. Path to nuconfig.php
+$path_nuconfig_php = __DIR__ . '/../nuconfig.php';
+
+// Path to Mysqldump.php
+$path_mysqldump_php = __DIR__ . '/Mysqldump/Mysqldump.php';
+
+// Directory to write the sql dump to
+$path_sql_dump = __DIR__ . '/Mysqldump/dumps/';
+```
+
 ## Related Articles
 
 [Restore a Database using PHPMyAdmin](https://github.com/smalos/nuBuilder4-Code-Library/wiki/Restore-a-Database-using-PHPMyAdmin)
