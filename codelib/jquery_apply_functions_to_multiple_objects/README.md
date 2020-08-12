@@ -5,7 +5,7 @@ These function take just one argument / object ID.
 
 We can use jQuery.fn.extend to extend the jQuery prototype ($.fn) object to provide new custom methods that can be chained to the jQuery() function.
 
-☛  Add this JavaScript to the Header (❓ [Home ► Setup](/common/setup_header.gif)). Click Save and log in again.
+☛  Add this JavaScript to the Header (❓ [Home ► Setup](/codelib/common/setup_header.gif)). Click Save and log in again.
 
 ```javascript
 jQuery.fn.extend({
