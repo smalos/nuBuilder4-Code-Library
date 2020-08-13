@@ -6,8 +6,7 @@ This snippet is going to show how to upload an image to the database and display
   <img src="screenshots/upload_display_image.png">
 </p>
 
-
-If you want to see it in action, import the [sample](/sample/2020-08-13_004115_display_image.zip) into your existing nuBuilder database. 
+If you want to see it in action right away, import the [sample](/sample/2020-08-13_004115_display_image.zip) into your existing nuBuilder database. 
 
 ❓ [Instructions to import the sample](/codelib/common/import_sample_sql_file.md) 
 
