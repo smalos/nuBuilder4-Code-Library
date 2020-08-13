@@ -1,7 +1,7 @@
 ## Importing an SQL File into nuBuilder
 
 Some snippets contain a sample in the form of an SQL file (DB Dump). This can be imported directly into an existing nuBuilder database.
-The dump usually contains a form, its objects and table and sometimes a procedure. No existing data will be overwrite/modify or deleted!
+The dump usually contains a form, its objects and table and sometimes a procedure. No existing data will be overwritten/modified or deleted!
 
 How to import the file:
 
