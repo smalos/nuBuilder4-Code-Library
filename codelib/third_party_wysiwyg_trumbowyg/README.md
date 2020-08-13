@@ -44,6 +44,14 @@ Trumbowyg.js is a lightweight, customizable, extendable, semantic, cross-browser
 </details>
 
 
+
+If you want to see it in action right away, import the [sample](/sample/2020-08-13_013904_trumbowyg_sample.zip) into your existing nuBuilder database. 
+
+❓ [Instructions to import the sample](/codelib/common/import_sample_sql_file.md) 
+
+Otherwise continue with the steps below:
+
+
 4. In your form, create a new object of type HTML. Any object ID can be entered.
 
    ☛  Add this code in the HTML field (HTML tab).
