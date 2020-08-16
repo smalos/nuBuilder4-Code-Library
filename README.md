@@ -89,7 +89,7 @@
 
 * 2020-05-18: <b>Browse Screen:</b> Prevent columns from becoming too wide [→ view](codelib/browse_no_column_stretching)
 
-* 2020-05-16: <b>Object:</b> Create a (autocomplete) datalist [→ view](codelib/object_create_datalist)
+* 2020-05-16: <b>Object:</b> Use a HTML5 Datalist Element (Autocomplete Feature) [→ view](codelib/object_create_datalist)
 
 * 2020-05-16: <b>Globeadmin:</b> Add a Quick Access Menu [→ view](codelib/globeadmin_quick_access_menu)
 
