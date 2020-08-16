@@ -1,4 +1,4 @@
-### Object: Create a (autocomplete) datalist
+### Object: Use a HTML5 Datalist Element (Autocomplete Feature)
 
 The HTML `<datalist>` tag is is used to provide an auto complete feature on form element. 
 These suggested values will appear in the input control as a dropdown list and the available options will be filtered as the user enters data into the input control.
@@ -20,15 +20,16 @@ The function addDatalist() will turn a nuBuilder Text Input Object into a datali
  * Add a datalist to a Text Input Element
  *
  * @param  {string}  f     - Object ID of the Text Input
- * @param  {array}   a     - Array of strings
+ * @param  {array}   a     - Array of strings or a 2D array (to show a value and text)
  */
 function addDatalist(f, a) {
     var datalist = document.createElement('datalist');
     datalist.id = "datalist";
     document.body.appendChild(datalist);
     a.forEach(function (data) {
-        var option = document.createElement('option')
-        option.value = data
+        var option = document.createElement('option');				
+        option.value = $.isArray(data) ? data[0]: data;
+        option.text =  $.isArray(data) ? data[1]: data;
         datalist.appendChild(option);
     });
     $('#' + f).attr('list', "datalist").attr('autocomplete', 'off');
@@ -36,7 +37,7 @@ function addDatalist(f, a) {
 
 ```
 
-#### ✪ Example
+#### ✪ Example 1
 
 Add a datalist to the Text Input Object with ID *my_city*
 
@@ -47,7 +48,28 @@ if (nuFormType() == 'edit') {
 }
 ```
 
-#### ✪ Advanced Example
+#### ✪ Example 2
+
+Add a datalist to the Text Input Object with ID *exp_prefix*
+Pass a 2D array to display both a value and text.
+
+```javascript
+var prefixes = [
+   ["Y-m-d_His","(e.g. 2020-08-16_083015)"],
+   ["Y-m-d_Hi","(e.g. 2020-08-16_0830)"],
+   ["YmdHis","(e.g. 20200816083015)"],
+   ["Ymd","(e.g. 20200816)"]
+];   
+
+addDatalist('exp_prefix', ["Y-m-d_His", "YmdHis", "Ymd"]);
+```
+
+<p align="left">
+  <img src="screenshots/datalist_2d_array.png">
+</p>
+
+
+#### ✪ Example 3 (Advanced)
 
 Load the data from a database table.
 
