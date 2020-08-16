@@ -15,7 +15,7 @@ Download [Mysqldump.php](https://github.com/ifsnop/mysqldump-php/blob/master/src
 
 #### Create a Procedure
 
-Create a [Procedure](https://wiki.nubuilder.net/nubuilderforte/index.php/Procedures): *Tab Builders -> Procedure -> Add*d.
+Create a [Procedure](https://wiki.nubuilder.net/nubuilderforte/index.php/Procedures): *Tab Builders -> Procedure -> Add.
 
 ☛ Enter a Code: e.g. *create_backup*
 
