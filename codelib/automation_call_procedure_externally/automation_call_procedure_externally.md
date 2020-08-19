@@ -1,7 +1,7 @@
 ## Automation: How to run a PHP procedure from outside nuBuilder?
 
-In nuBuilderPro (v3) it was possible to run a Procedure at the server's command line via a cron jobs etc. 
-(Allow Non Secure Access). Unfortunately, this is no longer possible with nuBuilder 4.
+In nuBuilderPro (v3) it was possible to run a [Procedure](https://wiki.nubuilder.net/nubuilderforte/index.php/Procedures) from outside nuBuilder. 
+([By setting "Allow Non Secure Access"](https://wiki.nubuilder.net/nubuilderv3/index.php/Creating_PHP_Code#Allow_Non_Secure_Access)). Unfortunately, this is no longer possible with nuBuilder 4.
 
 Therefore, I created nucall_ext.php which makes this possible again.
 
