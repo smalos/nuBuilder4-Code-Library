@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (73)
+## Code snippets (74)
+
+* 2020-08-22: <b>JavaScript:</b> Sanitize a filename [→ view](codelib/javascript_sanitize_filename)
 
 * 2020-08-22: <b>Select Object:</b> Refresh on Button Click [→ view](codelib/object_select_refresh)
 
