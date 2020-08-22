@@ -1,4 +1,4 @@
-### Refresh a Select Object on Button Click
+### Select Object: Refresh on Button Click
 
 This code snippets shows how to refresh a [Select Object](https://wiki.nubuilder.net/nubuilderforte/index.php/Objects#Form_Tab) without refreshing the whole form.
 This can be useful when using Hash Cookies in the SQL and to implement cascaded dropdowns.
