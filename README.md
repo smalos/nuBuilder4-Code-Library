@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (72)
+## Code snippets (73)
+
+* 2020-08-22: <b>Select Object:</b> Refresh on Button Click [→ view](codelib/object_select_refresh)
 
 * 2020-08-11: <b>Edit Screen:</b> Return to the Browse Screen after an inactivity timeout period [→ view](codelib/edit_return_to_browse_after_timeout)
 
