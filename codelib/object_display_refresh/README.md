@@ -1,14 +1,14 @@
 ### Refresh a Display Object on button click
 
-This code snippets shows how we can refresh a Display Object without refreshing the whole form.
+This code snippets shows how to refresh a [Display Object](https://wiki.nubuilder.net/nubuilderforte/index.php/Objects#Form_Tab) without refreshing the whole form.
 
-#### 1. Create a Procedure: Builders -> Procedure -> Add
+#### 1. Create a [Procedure](https://wiki.nubuilder.net/nubuilderforte/index.php/Procedures)  (*Tab Builders -> Procedure -> Add*):
 
 ☛ **Code**: refreshDisplayObject
 
 ☛ **Description**: Refreshes a Display Object
 
-☛ **PHP**:
+☛ **PHP**: Paste this PHP code:
 
 ```php
 function getDisplayValue($obj) {
