@@ -65,7 +65,7 @@ function deleteRow(pk) {
 // This function is called after a successful delete operation.
 function afterDeleteRow() {    
     // Refresh the Browse Screen
-    nuSearchAction(1);    
+    nuSearchAction();    
 }
 
 // Creates a new button and assigns click event
