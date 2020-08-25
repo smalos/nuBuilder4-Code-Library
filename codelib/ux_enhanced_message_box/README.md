@@ -66,7 +66,7 @@ if (nuFormType() == 'edit') {
 
 #### ✪ Example 2: 
 
-Show an information message after the form has been saved.
+Show an error message after the form has been saved.
 
 <p align="left">
   <img src="screenshots/message_error.png">
