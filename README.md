@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (75)
+## Code snippets (76)
+
+* 2020-08-25: <b>UX:</b> Enhance the appearance of a Message Box [→ view](codelib/ux_enhanced_message_box)
 
 * 2020-08-25: <b>UX:</b> Transform the Search Field into a Type Search [→ view](codelib/ux_improve_search_field)
 
