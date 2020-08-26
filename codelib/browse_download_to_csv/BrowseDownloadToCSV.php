@@ -22,9 +22,9 @@ catch (PDOException $e){
     die();
 }
 
-//Retrieve Browse SQL from hash cookie
+//Retrieve the Browse SQL from hash cookie
+$sql  = json_decode(base64_decode("#browse_sql#"));
 
-$sql = "#browse_sql#";
 // Test with: $sql = "SELECT * FROM `zzzzsys_user` LIMIT 20";
 
 //Prepare the SQL query.
