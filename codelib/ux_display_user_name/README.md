@@ -7,6 +7,7 @@ This is especially useful if you log in with different users (to test functional
   <img src="screenshots/logged_in_user.png">
 </p>
 
+☛  Add this JavaScript code in the Header (❓ [Home ► Setup](/codelib/common/setup_header.gif)). Click Save and log in again.
 
 ```javascript
 function showLoggedInUser() {
