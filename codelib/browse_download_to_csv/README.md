@@ -19,8 +19,19 @@
 ❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 ```
+function base64encode(str) {
+	let encode = encodeURIComponent(str).replace(/%([a-f0-9]{2})/gi, (m, $1) => String.fromCharCode(parseInt($1, 16)))
+	return btoa(encode)
+}
+
+function browseDownloadToCSV() {
+	nuSetProperty('browse_sql', base64encode(JSON.stringify(nuCurrentProperties().browse_sql)));
+	nuRunPHP('BrowseDownloadToCSV');
+}
+
+
 if(nuFormType() == 'browse'){
-    nuAddActionButton('nuRunPHPHidden', 'Download to CSV', 'nuSetProperty("browse_sql",nuCurrentProperties().browse_sql); nuRunPHP("BrowseDownloadToCSV")');
+    nuAddActionButton('browseDownloadToCSV', 'Download to CSV', 'browseDownloadToCSV();');
 }
 ```
 
