@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (77)
+## Code snippets (78)
+
+* 2020-08-30: <b>Subform:</b> Freeze the first column upon scrolling horizontally [→ view](codelib/subform_freeze_column)
 
 * 2020-08-30: <b>Edit Screen:</b> Prevent a user from editing saved records [→ view](codelib/edit_prevent_editing_saved_records)
 
