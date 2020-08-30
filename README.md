@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (76)
+## Code snippets (77)
+
+* 2020-08-30: <b>Edit Screen:</b> Prevent a user from editing saved records [→ view](codelib/edit_prevent_editing_saved_records)
 
 * 2020-08-25: <b>UX:</b> Enhance the appearance of a Message Box [→ view](codelib/ux_enhanced_message_box)
 
