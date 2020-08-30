@@ -1,6 +1,6 @@
-## Browse Screen: Improve navigator
+## Browse Screen: Improve the Browse Navigator
 
-This will add two additional icons in the record navigator of any Browse Screen: 
+The functionaddBrowseAdditionalNavButtons() will add two additional icons in the record navigator of any Browse Screen: 
 
 * "Go to the first record" 
 * "Go to the last record"
@@ -11,12 +11,11 @@ In addition, this will also disable the Previous and Next buttons on the record 
   <img src="screenshots/improve_navigator.gif">
 </p>
 
-☛  Add this Javascript code in the Header under Home ► Setup
+☛  Add this JavaScript code in the Header (❓ [Home ► Setup](/codelib/common/setup_header.gif)).  Save the changes and log in again.
 
 ```javascript
 function addBrowseAdditionalNavButtons() {
-
-    // Add additional icons first and last in Browse Screen
+    
     if (nuFormType() == 'browse') {
 
         var disabled = {
