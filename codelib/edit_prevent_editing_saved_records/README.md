@@ -1,4 +1,4 @@
-# Edit Screen: Prevent a user from editing saved records?
+# Edit Screen: Prevent a user from editing saved records
 
 You may want to prevent users from making changes to existing records.
 More precisely, users would only be permitted to add a new record and save it but then after the record is saved they can no longer edit it.
