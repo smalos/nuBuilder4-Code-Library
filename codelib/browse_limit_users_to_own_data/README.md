@@ -6,7 +6,7 @@ When saving the form, store the nuBuilder user id in a db column (e.g. user_id).
 To do so, place this code in the AS (PHP After Save) event:
 
 ```php
-if(nuHasNewRecordID()){
+if(nuHasNoRecordID()){
   $qry  = "UPDATE `your_table` SET `user_id` = ? WHERE your_table_pk = ?";
   nuRunQuery($qry,["#USER_ID#", "#RECORD_ID#"]); 
 }
