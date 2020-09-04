@@ -23,6 +23,11 @@ function addDevButton(i, v, f) {
     $('#nuActionHolder').prepend(button);
 }
 
+jQuery.fn.cssNumber = function(prop) {
+    var v = parseInt(this.css(prop), 10);
+    return isNaN(v) ? 0 : v;
+};
+
 function addDevButtons() {
 
     if (global_access) {
@@ -38,6 +43,12 @@ function addDevButtons() {
         if (e) { addDevButton("DevBtnBB", "BB", 'editPHP("BB");'); }
         if (e) { addDevButton("DevBtnBS", "BS", 'editPHP("BS");'); }
         if (e) { addDevButton("DevBtnAS", "AS", 'editPHP("AS");'); }
+
+        var frame = parent.$('#nuDragDialog iframe')
+        frame.css('height', frame.cssNumber("height") + 50);
+
+        var dragDialog = parent.$('#nuDragDialog')
+        dragDialog.css('height', dragDialog.cssNumber("height") + 50);
 
         $("input[type='button'][id^='nuDevBtn']").css({ 'margin-bottom': '10px', 'background-color': '#f6f6f6', 'background-image': 'none', 'color': 'black', 'border-color': '#9fa5a9', 'text-shadow': 'none' });
         $("<br>").insertAfter($("#nuDevBtnPropertiesButton"));
