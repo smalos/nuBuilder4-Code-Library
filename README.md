@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (78)
+## Code snippets (79)
+
+* 2020-09-04: <b>Select Object:</b> Select multiple items without holding the Ctrl Key [→ view](codelib/object_select_multiple_without_ctrl_key)
 
 * 2020-08-30: <b>Subform:</b> Freeze the first column upon scrolling horizontally [→ view](codelib/subform_freeze_column)
 
