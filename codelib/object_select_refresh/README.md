@@ -63,8 +63,6 @@ $js = "
 	populateSelectObject();
 ";
 
-nuJavascriptCallback($js);
-";
 
 nuJavascriptCallback($js);
 ```
