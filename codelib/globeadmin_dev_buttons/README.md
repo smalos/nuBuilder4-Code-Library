@@ -7,6 +7,13 @@ The function addDevButtons() adds additional buttons for the globeadmin for quic
 </p>
 
 
+View the Form Description, Form ID, Form Code and Record ID, Browse SQL (Browse Forms)  on a button click:
+
+<p align="left">
+  <img src="screenshots/form_info.png">
+</p>
+
+
 ☛  Add this JavaScript and CSS code in the Header (❓ [Home ► Setup](/common/setup_header.gif)). Click Save and log in again.
 
 ```javascript
