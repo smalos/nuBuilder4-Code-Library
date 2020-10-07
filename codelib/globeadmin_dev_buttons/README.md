@@ -3,7 +3,7 @@
 The function addDevButtons() adds additional buttons for the globeadmin for quick access to the Form Properties, PHP Events. 
 
 <p align="left">
-  <img src="screenshots/globeadmin_dev_buttons.png">
+  <img src="screenshots/globeadmin_dev_buttons2.png">
 </p>
 
 
@@ -28,6 +28,13 @@ jQuery.fn.cssNumber = function(prop) {
     return isNaN(v) ? 0 : v;
 };
 
+function showFormInfo() {
+    var cp = nuCurrentProperties();
+    var record_id = nuFormType() == 'edit' && cp.form_type !== 'launch' ? "<b>Record ID:</b> " + cp.record_id : '';
+    var browse_sql = nuFormType() == 'browse' ? "<b>Browse SQL:</b></br> " + cp.browse_sql : '';
+
+    nuMessage(["<h1>" + cp.form_description + "</h1>", "<b>Form ID:</b> " + cp.form_id, "<b>Form Code:</b> " + cp.form_code, record_id, browse_sql]);
+}
 function addDevButtons() {
 
     if (global_access) {
@@ -37,8 +44,10 @@ function addDevButtons() {
         var l = ft.indexOf("launch") >= 0;
 
         $('#nuActionHolder').css('height', '50px');
-
-        addDevButton("DevBtnProperties", "Prop", "openCurrentProperties();");
+        
+        addDevButton("DevBtnFormInfo", "Info", 'showFormInfo();');
+        addDevButton("DevBtnProperties", "Prop", 'openCurrentProperties();');
+               
         if (b || l) { addDevButton("DevBtnBE", "BE", 'editPHP("BE");'); }
         if (e) { addDevButton("DevBtnBB", "BB", 'editPHP("BB");'); }
         if (e) { addDevButton("DevBtnBS", "BS", 'editPHP("BS");'); }
@@ -51,7 +60,7 @@ function addDevButtons() {
         dragDialog.css('height', dragDialog.cssNumber("height") + 50);
 
         $("input[type='button'][id^='nuDevBtn']").css({ 'margin-bottom': '10px', 'background-color': '#f6f6f6', 'background-image': 'none', 'color': 'black', 'border-color': '#9fa5a9', 'text-shadow': 'none' });
-        $("<br>").insertAfter($("#nuDevBtnPropertiesButton"));
+        $("<br>").insertAfter($("#nuDevBtnFormInfoButton"));
     }
 
 }
