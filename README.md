@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (79)
+## Code snippets (80)
+
+* 2020-10-20: <b>Browse Screen:</b> Sticky Headers [→ view](codelib/browse_sticky_headers)
 
 * 2020-09-04: <b>Select Object:</b> Select multiple items without holding the Ctrl Key [→ view](codelib/object_select_multiple_without_ctrl_key)
 
