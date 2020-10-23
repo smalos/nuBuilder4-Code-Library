@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (80)
+## Code snippets (81)
+
+* 2020-10-23: <b>Subform:</b>  Copy from Excel, Paste to a Subform [→ view](codelib/subform_paste_from_excel)
 
 * 2020-10-20: <b>Browse Screen:</b> Sticky Headers [→ view](codelib/browse_sticky_headers)
 
