@@ -2,6 +2,12 @@
 
 This code snippet allows you to copy data from Excel (a similar spreadsheet program) and paste it into a nuBuilder subform.
 
+
+<p align="left">
+  <img src="screenshots/subform_paste_from_excel.gif">
+</p>
+
+
 ☛Add this JavaScript Code to your form’s Custom Code field. (Or in the (Setup -> Header), if the function is going to be used in several forms)
 
 ❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
