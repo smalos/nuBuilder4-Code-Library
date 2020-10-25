@@ -3,7 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (83)
+## Code snippets (84)
+
+* 2020-10-25: <b>Edit Screen:</b> Create a basic HTML Tag Editor [→ view](codelib/edit_screen_html_tag_editor)
 
 * 2020-10-25: <b>PHP:</b> Get a shareable link to a record [→ view](codelib/php_retrieve_url_of_record)
 
