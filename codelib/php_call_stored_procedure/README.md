@@ -1,6 +1,14 @@
-### PHP: Execute a stored procedure
+### PHP: Execute a Stored Procedure
 
 This example shows how to create a stored procedure on a MySQL server and execute it by passing parameters to it.
+
+
+#### What is a Stored Procedure? 
+
+>A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
+>So if you have an SQL query that you write over and over again, save it as a stored procedure, and then just call it to execute it.
+>You can also pass parameters to a stored procedure, so that the stored procedure can act based on the parameter value(s) that is passed.
+>(Source: w3schools.com)
 
 For the purpose of this example we will need a stored procedure named "Update_userpassword" that will update a user's password.
 
