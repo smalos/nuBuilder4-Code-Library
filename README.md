@@ -3,8 +3,9 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-## Code snippets (82)
+## Code snippets (83)
 
+* 2020-10-25: <b>PHP:</b> Get shareable link to a record [→ view](codelib/php_retrieve_url_of_record)
 
 * 2020-10-25: <b>PHP:</b> Execute a stored procedure [→ view](codelib/php_call_stored_procedure)
 
