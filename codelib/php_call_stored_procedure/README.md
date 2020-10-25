@@ -53,7 +53,7 @@ function callStoredProcedure ($name, $params) {
 
 ### Example: 
 
-Set the passwort of the user with ID 5f954b8f98f689d.
+Update the password of the user with ID 5f954b8f98f689d.
 
 ```javascript
    $params = array(':p_user_id' => '5f954b8f98f689d', ':p_password' => md5("hello$$nubuilder!"));
