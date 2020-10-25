@@ -55,7 +55,7 @@ function callStoredProcedure ($name, $params) {
 
 Update the password of the user with ID 5f954b8f98f689d.
 
-```javascript
+```php
    $params = array(':p_user_id' => '5f954b8f98f689d', ':p_password' => md5("hello$$nubuilder!"));
    callStoredProcedure("Update_userpassword", $params);
 ```
