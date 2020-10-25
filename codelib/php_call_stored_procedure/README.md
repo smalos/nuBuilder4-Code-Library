@@ -27,27 +27,30 @@ DELIMITER ;
 Now use the PHP function callStoredProcedure to invoke the stored procedure with the values we want to update.
 
 ```php
-function callStoredProcedure ($name, $params) {
+function callStoredProcedure($name, $params) {
 
-   global $DBCharset;   
-   $db = nuRunQuery('');
-   
-   try {
-   
-      $cn = new PDO("mysql:host=$db[0];dbname=$db[1];charset=$DBCharset", $db[2], $db[3], array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES $DBCharset"));
-      
-	  $p = implode(",", array_keys($params));
-      $stmt = $cn->prepare("CALL $name($p)");
-	  
-	  foreach ($params as $key => &$val) {
-			$stmt->bindParam($key, $val);
-	  }
-   
-      $stmt->execute();
+    global $DBCharset;
+    $db = nuRunQuery('');
 
-   }catch(PDOException $ex){
-      nuDisplayError($ex->getMessage());
-   }
+    try {
+
+        $cn = new PDO("mysql:host=$db[0];dbname=$db[1];charset=$DBCharset", $db[2], $db[3], array(
+            PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES $DBCharset"
+        ));
+
+        $p = implode(",", array_keys($params));
+        $stmt = $cn->prepare("CALL $name($p)");
+
+        foreach ($params as $key => & $val) {
+            $stmt->bindParam($key, $val);
+        }
+
+        $stmt->execute();
+
+    }
+    catch(PDOException $ex) {
+        nuDisplayError($ex->getMessage());
+    }
 }
 ```
 
