@@ -16,8 +16,12 @@ function getHttpOrigin() {
     return $origin;
 }
 
-$urlRecord = getHttpOrigin() . '/index.php?f=' . nuHash() ['form_id'] . '&r=' . nuHash() ['RECORD_ID'] . '&h=nuuserhome';
-$editRecord = "<br><br><a href=\"$urlRecord\">Edit Record</a>";
+function getRecordURL($subFolder, $homepageId) {
+  $urlRecord = getHttpOrigin() . $subFolder . '/index.php?f=' . nuHash() ['form_id'] . '&r=' . nuHash() ['RECORD_ID'] . '&h='.$homepageId;
+  return "<br><br><a href=\"$urlRecord\">Edit Record</a>"; 
+}
 
-$r = nuSendEmail('to@test.com', 'from@test.com', 'From Name', 'Body' . $editRecord, 'Subject', [], true, '', '')
+
+$recordURL = getRecordURL('', 'nuuserhome'); // 1. argument: leave blank is index.php is in the root.
+$r = nuSendEmail('to@test.com', 'from@test.com', 'From Name', 'Body' . $recordURL, 'Subject', [], true, '', '');
 ```
