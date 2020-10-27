@@ -55,7 +55,7 @@ jQuery.fn.labelOnTop = function (offsetTop = -18, offsetLeft = 0) {
 
 #### ✪ Example 1: 
 
-Position the labels of all object at the top of their objects:
+Position all labels at the top of their objects:
 
 ```javascript
 if (nuFormType() == 'edit') {
@@ -66,7 +66,7 @@ if (nuFormType() == 'edit') {
 
 #### ✪ Example 2</strong>: 
   
-Position the labels of all objects above their objects, but exclude some:
+Position all labels above their objects, but exclude some:
 
 ```javascript
 if (nuFormType() == 'edit') {
