@@ -22,6 +22,6 @@ function getRecordURL($subFolder, $homepageId) {
 }
 
 
-$recordURL = getRecordURL('', 'nuuserhome'); // 1. argument: leave blank is index.php is in the root.
+$recordURL = getRecordURL('', 'nuuserhome'); // 1. argument: leave blank if index.php is in the root.
 $r = nuSendEmail('to@test.com', 'from@test.com', 'From Name', 'Body' . $recordURL, 'Subject', [], true, '', '');
 ```
