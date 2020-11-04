@@ -24,7 +24,7 @@ function labelOnTop(f, e) {
 
             $('#' + 'label_' + f[i]).css({
                    'top': parseInt($('#'+f[i]).css("top")) - 18
-                , 'left': parseInt($('#'+f[i]).css("left"))- 15
+                , 'left': parseInt($('#'+f[i]).css("left"))
                 , 'text-align': 'left'
             })
         }
