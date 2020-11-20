@@ -31,6 +31,7 @@ var quickAccessMenu = `<div class="dropdown">
       <a id="dropFormAll" title="Browse all Forms" href="#" onclick="nuForm('nuform','','','',2);return false;">All Forms</a>
       <a id="dropObjectsAll" title="Browse all Objects" href="#" onclick="nuForm('nuobject','','','',2);return false;">All Objects</a>
       <hr class="dropdown-divider">  
+      <a id="dropCloner" title="Cloner" href="#" onclick="openCloner();return false;">Cloner</a>      
       <a id="dropDuplicateForm" title="Duplicate Form" href="#" onclick="duplicateForm();return false;">Duplicate Form</a>      
       <hr class="dropdown-divider">  
       <a id="dropLogout" title="Logout" href="#" onclick="nuLogout();return false;">Logout</a>
@@ -42,6 +43,9 @@ function duplicateForm() {
     nuForm(window.nuFORM.getCurrent().form_id, r, '', '', 2);
 }
 
+function openCloner() {
+    nuPopup('5f9aaac95b3fa9a', '-1', '');
+}
 function create(htmlStr) {
     var df = document.createDocumentFragment()
         , temp = document.createElement('div');
