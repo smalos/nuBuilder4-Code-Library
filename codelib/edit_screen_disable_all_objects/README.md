@@ -1,7 +1,7 @@
 ### Edit Screen: Disable all Objects
 
-The function disableAllObjects() will disable all Object on a form.
-Provide the optional argument excludeTypes (array) to exclude certain types.
+The function disableAllObjects() will disable all objects on a form.
+Provide the optional argument excludeTypes (array) to exclude certain object types.
 
 
 Add this JavaScript to your form's **Custom Code** field.
