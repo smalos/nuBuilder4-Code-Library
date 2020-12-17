@@ -9,21 +9,27 @@ Add this JavaScript to your form's **Custom Code** field.
 
 
 ```javascript
-function disableAllObjects(excludeTypes) {
 
-    if (typeof dOptions === 'undefined') {
+function disableAllObjects(excludeTypes, excludeIds) {
+
+    if (typeof excludeTypes === 'undefined') {
         let excludeTypes = [];
     }
 
+    if (typeof excludeIds === 'undefined') {
+        let excludeIds = [];
+    }
+	
     var r = JSON.parse(JSON.stringify(nuSERVERRESPONSE));
     for (var i = 0; i < r.objects.length; i++) {
         let obj = r.objects[i];
-        if ($.inArray(obj.type, excludeTypes) == -1) {
+		
+        if ($.inArray(obj.type, excludeTypes) == -1 && $.inArray(obj.id, excludeIds) == -1 ) {
             nuDisable(obj.id);
         }
     }
+	
 }
-
 
 ```
 
@@ -37,6 +43,10 @@ disableAllObjects();
 disableAllObjects(['html', 'display', 'word']);
 ```
 
+#### ✪ Example 3: Disable all objects but exclude the object with id "cus_name"
+```javascript
+disableAllObjects([],['cus_name']);
+```
 #### ✪ Example 3: Disable all objects but not for globeadmin and the Access Level "manager"
 ```javascript
 if (nuFormType() == 'edit') {
