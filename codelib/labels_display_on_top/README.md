@@ -6,7 +6,7 @@ This is especially useful when the caption is a little longer and it would take 
   <img src="screenshots/labels_on_top.gif">
 </p>
 
-☛</strong>  Add this JavaScript to your form’s Custom Code field</p>
+☛</strong>  Add this JavaScript to your form’s Custom Code field (It's already included in nuBuilder v4.5)</p>
 
 ❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
@@ -17,7 +17,7 @@ This is especially useful when the caption is a little longer and it would take 
  * @param  {array}   f     - Array of object IDs to include
  * @param  {array}   e     - Array of object IDs to exclude
  */
-function labelOnTop(f, e) {
+function nuLabelOnTop(f, e) {
 
     for (var i = 0; i < f.length; i++) {
         if (jQuery.inArray(f[i], e) == -1) {
@@ -31,7 +31,7 @@ function labelOnTop(f, e) {
     }
 }
 
-// Add a function called labelOnTop to $.fn and it will be available just like any other jQuery object method
+// Add a function called nuLabelOnTop to $.fn and it will be available just like any other jQuery object method
 
 /**
  *
@@ -39,7 +39,7 @@ function labelOnTop(f, e) {
  * @param   {int}   [offsetLeft]    - Left offset to the object in pixels
  */
 
-jQuery.fn.labelOnTop = function (offsetTop = -18, offsetLeft = 0) {
+jQuery.fn.nuLabelOnTop = function (offsetTop = -18, offsetLeft = 0) {
 
     return this.each(function () {
         $('#' + 'label_' + this.id).css({
@@ -60,7 +60,7 @@ Position all labels at the top of their objects:
 ```javascript
 if (nuFormType() == 'edit') {
     var f = nuSubformObject("").fields;          // include all objects of your main form.
-    labelOnTop(f, []);
+    nuLabelOnTop(f, []);
 }
 ```
 
@@ -72,7 +72,7 @@ Position all labels above their objects, but exclude some:
 if (nuFormType() == 'edit') {
     var f = nuSubformObject("").fields;          // include all objects of your form
     var e = ["cus_firstname", "cus_lastname"];   // but exclude these two objects
-    labelOnTop(f, e);
+    nuLabelOnTop(f, e);
 }
 ```
 
@@ -83,7 +83,7 @@ Position the labels of some objects above their objects:
 ```javascript
 if (nuFormType() == 'edit') {
     var f = ["cus_firstname", "cus_lastname"];   // include just these two objects
-    labelOnTop(f, []);
+    nuLabelOnTop(f, []);
 }
 ```
 
@@ -93,7 +93,7 @@ Position the labels of all objects at the top of their objects:
 
 ```javascript
 if (nuFormType() == 'edit') {
-    $('input').labelOnTop();
+    $('input').nuLabelOnTop();
 }
 ```
 
@@ -105,7 +105,7 @@ Position all labels of the subform with ID subfromObjID at the top of their obje
 
 ```javascript
 if (nuFormType() == 'edit') {
-    $('[id^=subfromObjID]).labelOnTop();
+    $('[id^=subfromObjID]).nuLabelOnTop();
 }
 ```
 
@@ -115,6 +115,6 @@ Position the label of the Object with ID firstname in the subform with ID subfro
 
 ```javascript
 if (nuFormType() == 'edit') {
-	$('[id^=subfromObjID][id$=firstname]').labelOnTop();
+	$('[id^=subfromObjID][id$=firstname]').nuLabelOnTop();
 }
 ```
