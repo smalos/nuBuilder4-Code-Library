@@ -5,7 +5,7 @@
 
 ## Code snippets (85)
 
-* 2020-12-01: <b>Edit Screen:</b> Disable all Objects [→ view](codelib/edit_screen_disable_all_objects)
+* 2020-12-01: <b>Edit Screen:</b> Enable/Disable all Objects [→ view](codelib/edit_screen_disable_all_objects)
 
 * 2020-10-25: <b>Edit Screen:</b> Create a basic HTML Tag Editor [→ view](codelib/edit_screen_html_tag_editor)
 
