@@ -1,58 +1,82 @@
-### Edit Screen: Disable all Objects
+### Edit Screen: Disable/Enable all Objects
 
-The function disableAllObjects() will disable all objects on a form.
+The function disableAllObjects() will disable all objects on a form. nuEnableAllObjects() will enable all objects.
+
 Provide the optional argument excludeTypes (array) to exclude certain object types.
 
 
-Add this JavaScript to your form's **Custom Code** field.
-   ❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
+☛  Add the following JavaScript Code to your form’s Custom Code field. Or add it under Setup -> Header, if the functions are going to be used in several forms.
+(They are already included in nuBuilder v4.5)
 
+❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
+<details>
+  <summary>Click to view the code!</summary>
+  
 ```javascript
 
-function disableAllObjects(excludeTypes, excludeIds) {
+function nuEnableDisableAllObjects(v, excludeTypes, excludeIds) {
 
-    if (typeof excludeTypes === 'undefined') {
-        let excludeTypes = [];
-    }
+	if (typeof excludeTypes === 'undefined') {
+		let excludeTypes = [];
+	}
 
-    if (typeof excludeIds === 'undefined') {
-        let excludeIds = [];
-    }
-	
-    var r = JSON.parse(JSON.stringify(nuSERVERRESPONSE));
-    for (var i = 0; i < r.objects.length; i++) {
-        let obj = r.objects[i];
-		
-        if ($.inArray(obj.type, excludeTypes) == -1 && $.inArray(obj.id, excludeIds) == -1 ) {
-            nuDisable(obj.id);
-        }
-    }
-	
+	if (typeof excludeIds === 'undefined') {
+		let excludeIds = [];
+	}
+
+	var r = JSON.parse(JSON.stringify(nuSERVERRESPONSE));
+	for (var i = 0; i < r.objects.length; i++) {
+		let obj = r.objects[i];
+
+		if ($.inArray(obj.type, excludeTypes) == -1 && $.inArray(obj.id, excludeIds) == -1 ) {
+			nuEnable(obj.id, v);
+		}
+	}
+
+}
+
+function nuEnableAllObjects(excludeTypes, excludeIds) {
+
+	 nuEnableDisableAllObjects(true, excludeTypes, excludeIds);
+ 
+}
+
+function nuDisableAllObjects(excludeTypes, excludeIds) {
+
+	nuEnableDisableAllObjects(false, excludeTypes, excludeIds);
+
 }
 
 ```
+</details>
 
 #### ✪ Example 1: Disable all objects
 ```javascript
-disableAllObjects();
+nuDisableAllObjects();
 ```
 
-#### ✪ Example 2: Disable all objects but exclude some types.
+#### ✪ Example 2: Enable all objects
 ```javascript
-disableAllObjects(['html', 'display', 'word']);
+nuEnableAllObjects();
 ```
 
-#### ✪ Example 3: Disable all objects but exclude the object with id "cus_name"
+#### ✪ Example 3: Disable all objects but exclude some types.
 ```javascript
-disableAllObjects([],['cus_name']);
+nuDisableAllObjects(['html', 'display', 'word']);
 ```
-#### ✪ Example 3: Disable all objects but not for globeadmin and the Access Level "manager"
+
+#### ✪ Example 4: Disable all objects but exclude the object with id "cus_name"
+```javascript
+nuDisableAllObjects([],['cus_name']);
+```
+
+#### ✪ Example 5: Disable all objects but not for globeadmin and the Access Level "manager"
 ```javascript
 if (nuFormType() == 'edit') {
     var alc = nuAccessLevelCode();
     if (!window.global_access || !alc == 'manager') {
-        disableAllObjects();
+        nuDisableAllObjects();
     }
 }
 ```
