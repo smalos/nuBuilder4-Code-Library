@@ -6,24 +6,29 @@ all the previously selected items are lost.
 To prevent accidentally clearing your selections, use the JavaScript below. It allows you to select items without holding the Ctrl Key.
 
 
-☛ Add this JavaScript to your form's *Custom Code* field:
+☛  Add the following JavaScript Code to your form’s Custom Code field. 
 
  ❓ [How to add Custom Code](/codelib/common/form_add_custom_code_javascript.gif)
 
 ```javascript
+function nuSelectMultiWithoutCtrl(i) {
+
+	i = i === undefined ? 'select' : '#' + i;
+	$(i + "[multiple] option").mousedown(function(event) {
+
+		if (event.shiftKey) return;
+		event.preventDefault();
+		this.focus();
+		var scroll = this.scrollTop;
+		event.target.selected = !event.target.selected;
+		this.scrollTop = scroll;
+		$(this).parent().change();
+
+	});
+
+}
+
 if (nuFormType() == 'edit') {
-
-   $("select[multiple] option").mousedown(function (event) {
-
-      if (event.shiftKey) return;
-      event.preventDefault();
-      this.focus();
-      var scroll = this.scrollTop;
-      event.target.selected = !event.target.selected;
-      this.scrollTop = scroll;
-      $(this).parent().change();
-      
-   });
-
+   nuSelectMultiWithoutCtrl()
 }
 ```
