@@ -3,7 +3,7 @@
 #### [https://www.nubuilder.com](nubuilder.com)
 
 
-Using nuBuilder v4.5? Head over to the [https://github.com/nuBuilder/nuBuilder-4.5-Code-Library](nuBuilder 4.5 Library)
+Using nuBuilder v4.5? Head over to the nuBuilder 4.5 Library: https://github.com/nuBuilder/nuBuilder-4.5-Code-Library
 
 
 
